@@ -40,7 +40,7 @@ bool manual_control_mode_ready
 bool autonomous_control_mode_ready
 
 # Current Motor Controls string for Manual motor control mode. Returns a string "[['motor_index','motor_speed_ratio'],...]
-string current_motor_control_settings
+RBXMotorControl[] current_motor_control_settings
 
 
 # Last Command String. Can be added to rbx automation script file
