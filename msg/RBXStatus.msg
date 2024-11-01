@@ -48,3 +48,5 @@ string last_cmd_string
 
 # Last error message
 string last_error_message
+
+bool fake_gps_enabled

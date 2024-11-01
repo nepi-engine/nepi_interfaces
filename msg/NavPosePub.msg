@@ -9,12 +9,18 @@ float32 geoid_height_meters
 float32 heading_deg
 
 # Orientation Degrees in selected 3d frame (roll,pitch,yaw)
-geometry_msgs/Vector3 orientation_rpy_degs
+float32 roll_deg
+float32 pitch_deg
+float32 yaw_deg
 
 # Relative Position Meters in selected 3d frame (x,y,z) with x forward, y right/left, and z up/down
-geometry_msgs/Vector3 position_xyz_meters
+float32 x_m
+float32 y_m
+float32 z_m
 
 # Global Location in set altitude frame (lat,long,alt) with alt in meters
-geometry_msgs/Vector3 location_geo
+float32 lat
+float32 long
+float32 alt_m
 
 

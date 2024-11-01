@@ -16,11 +16,11 @@ bool has_goto_position
 bool has_goto_location
 bool has_fake_gps
 
-string state_options
-string mode_options
-string setup_action_options
-string go_action_options
-string data_products
+string[] state_options
+string[] mode_options
+string[] setup_action_options
+string[] go_action_options
+string[] data_products
 
 
 
