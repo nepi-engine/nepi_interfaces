@@ -128,8 +128,6 @@ add_message_files(FILES
     UpdateOption.msg
     AppsStatus.msg
     AppStatus.msg
-    AiTargetingStatus.msg
-    AiTargetingTargets.msg
     ImageMuxInput.msg
     ImageMuxSequence.msg
     ImageSelection.msg

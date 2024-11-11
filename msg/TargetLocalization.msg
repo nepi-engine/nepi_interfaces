@@ -10,6 +10,12 @@ int32 id
 string uid
 float64 confidence
 
+# 2D Box
+int64 xmin
+int64 ymin
+int64 xmax
+int64 ymax
+
 # 3D position
 float64 range_m
 float64 azimuth_deg
