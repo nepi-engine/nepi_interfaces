@@ -1,5 +1,5 @@
-## pan tilt soft limits msg
-float32 min_yaw_softstop_deg
-float32 max_yaw_softstop_deg
-float32 min_pitch_softstop_deg
-float32 max_pitch_softstop_deg
+## pan tilt limits msg
+float32 min_yaw_deg
+float32 max_yaw_deg
+float32 min_pitch_deg
+float32 max_pitch_deg
