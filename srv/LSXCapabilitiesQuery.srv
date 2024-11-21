@@ -5,7 +5,7 @@ bool has_standby_mode
 bool has_on_off_control
 bool has_intensity_control
 bool has_color_control
-string color_options_list
+string[] color_options_list
 bool has_kelvin_control
 int32 kelvin_min
 int32 kelvin_max
