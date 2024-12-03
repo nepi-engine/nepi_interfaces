@@ -24,4 +24,6 @@ float32 pitch_max_hardstop_deg
 float32 pitch_min_softstop_deg
 float32 pitch_max_softstop_deg
 
+bool is_scanning
+float32 timed_scan_sec
 string[] error_msgs
