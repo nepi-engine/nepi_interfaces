@@ -23,6 +23,7 @@ uint8 resolution_mode
 
 # The frame_rate_mode field indicates the generic frame rate setting for the device
 uint8 framerate_mode
+float32 framerate_current
 
 
 # Enable or Disable IDX controls
