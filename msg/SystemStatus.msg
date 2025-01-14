@@ -4,6 +4,9 @@
 # Interpretation of many of the fields is provided by the SystemDefs message type that can
 # be obtained through the system_defs service.
 
+# Running in Container
+bool in_container
+
 # Current system time (ROS time)
 time sys_time
 
