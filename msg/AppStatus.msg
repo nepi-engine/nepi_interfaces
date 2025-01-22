@@ -11,6 +11,9 @@ string rui_main_class
 string rui_menu_name
 
 string description
+string license_type
+string license_link
+
 bool active_state
 int32 order
 string msg_str
