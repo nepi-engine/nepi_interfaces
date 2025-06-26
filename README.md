@@ -8,7 +8,7 @@ License: 3-clause BSD, see https://opensource.org/licenses/BSD-3-Clause
 -->
 # nepi_interfaces
 
-This repository contains the public API for the NEPI ROS Interface. All NEPI-custom message and service definitions that are exposed to external applications are contained in this repo, along with ROS support files (e.g., rviz-config files).
+This repository contains the public API for the NEPI ROS or ROS2 Interfaces depending on the branch you checkout. All NEPI-custom message and service definitions that are exposed to external applications are contained in this repo, along with ROS support files (e.g., rviz-config files).
 
 ### Build and Install ###
 This repository is included as a submodule of [nepi_engine_ws](https://github.com/nepi-engine/nepi_engine_ws) and is built for NEPI devices using the build instructions contained in that project's top-level README.
