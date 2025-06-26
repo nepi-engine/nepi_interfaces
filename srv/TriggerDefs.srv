@@ -1,8 +1,0 @@
-# This service definition provides the metadata to support the trigger status query
-
----
-# Constant to specify that there is no trigger associated with a specific index
-string NO_TRIGGER="None"
-
-# Array of trig_names indexed by their trigger index (i.e., bit offset in trig mask)
-string[] trig_names

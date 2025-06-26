@@ -6,7 +6,14 @@ string type_str
 # Setting Key Name string
 string name_str
 
-# Setting Value string options "MenuOption:Ind","DiscreteOption","String", "True" or "False", "#", "#.#" based on type
+
+# Setting Value string value string based on type
+#"Menu" -> "MenuOptionString"
+#"Discrete" -> "DiscreteOptionString"
+#"String" -> "String"
+#"Bool" -> "True" or "False"
+#"Int"-> "#"
+#"Float" -> "#.#"
 string value_str
 
 

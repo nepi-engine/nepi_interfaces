@@ -1,7 +1,9 @@
 # This message details the data saving rate controls.
 
 # Special constant to indicate that a message should affect all data products
-string ALL_DATA_PRODUCTS=all
+string ALL_DATA_PRODUCTS=All
+string NONE_DATA_PRODUCTS=None
+string ACTIVE_DATA_PRODUCTS=Active
 
 # The data_product field specifies which data product this message controls
 string data_product

@@ -1,15 +1,26 @@
 # The current_data_dir field provides the current directory to which NEPI data products are saved
 string current_data_dir
 
-# The filename prefix folder added to base data directory 
-string current_folder_prefix
-
-# The filename prefix added to NEPI data product save files
+# The filename prefix added to NEPI data product save folders and/or files
 string current_filename_prefix
+# The sub folder added to base data directory 
+string current_subfolder
+
+bool save_data_utc
+string current_timezone
 
 # Array of data product names
-nepi_ros_interfaces/SaveDataRate[] save_data_rates
+nepi_interfaces/SaveDataRate[] save_data_rates
 
 # The save_data field indicates whether captured data is currently being saved in continuous fashion. The
 # save-data-next control does not affect this field
-SaveData save_data
+bool save_data_enabled
+
+# Current filename configuration
+FilenameConfig filename_config
+
+string example_filename
+
+
+
+

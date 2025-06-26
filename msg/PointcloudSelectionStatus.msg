@@ -16,7 +16,7 @@ string available_3d_frames
 string output_3d_frame
 
 # string list of transforms 
-# from source's native frame to the nepi_center_frame 
+# from source's native frame to the nepi_frame 
 # example: str([[x_offset,y_offset,z_offset,roll_offset,pitch_offset,yaw_offset,heading_offset],[...]])
 string transforms_list
 

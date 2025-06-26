@@ -1,6 +1,0 @@
-# This service definition provides the list of camera (IDX) and pan/tilt (PTX) drivers that can be assigned to an ONVIF device
-
----
-string[] idx_drivers
-string[] ptx_drivers
-

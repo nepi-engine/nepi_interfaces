@@ -1,0 +1,29 @@
+# This service definition provides the capabilities report for image type data
+
+---
+bool has_resolution
+bool has_auto_adjust
+bool has_contrast
+bool has_brightness
+bool has_threshold
+bool has_range
+bool has_zoom
+bool has_pan
+bool has_window
+bool has_rotate
+bool has_tilt
+
+bool has_enhances
+string[] enhance_options
+
+# If supported
+
+bool has_depth_map
+string depth_map_topic
+
+bool has_pointcloud
+string pointcloud_topic
+
+
+
+

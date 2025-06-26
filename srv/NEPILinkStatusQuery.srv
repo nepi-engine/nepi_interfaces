@@ -1,4 +1,4 @@
 # This service provides a way to obtain the state and status of the NEPI Edge device
 
 ---
-nepi_ros_interfaces/NEPILinkStatus status
+nepi_interfaces/NEPILinkStatus status

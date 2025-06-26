@@ -1,5 +1,0 @@
-# This service definition provides a config deletion request and a status response for ONVIF device configuration
-
-string device_uuid
----
-bool success

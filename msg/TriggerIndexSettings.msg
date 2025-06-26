@@ -1,2 +1,0 @@
-string trigger_name
-uint32 index

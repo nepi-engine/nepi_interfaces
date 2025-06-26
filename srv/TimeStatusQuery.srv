@@ -2,4 +2,5 @@
 # Time Synchronization subsystems.
 
 ---
-TimeStatus time_status
+MgrTimeStatus time_status
+string[] available_timezones

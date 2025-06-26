@@ -1,6 +1,12 @@
-# This service definition provides the navpose capabilities report for a general NEPI NEX driver node
+# This service provides the navpose data capabilities 
 
 ---
-bool has_gps
-bool has_orientation
-bool has_heading
+
+bool has_location_pub
+bool has_heading_pub
+bool has_position_pub
+bool has_orientation_pub
+bool has_altitude_pub
+bool has_depth_pub
+
+

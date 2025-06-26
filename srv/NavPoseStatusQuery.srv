@@ -1,5 +1,0 @@
-# This service allows for queries of the state and status of
-# Navigation and Positioning subsystems.
-
----
-NavPoseStatus status

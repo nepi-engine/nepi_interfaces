@@ -1,5 +1,0 @@
-# This service definition provides the list of current image mux sequences known to sequential_image_mux node
-
----
-# Array of structs... see ImageMuxSequence for details
-ImageMuxSequence[] img_mux_sequences

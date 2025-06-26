@@ -1,11 +1,14 @@
-# This message details a pointcloud frame transform message
-# Transforms are from source's native frame to the nepi_center_frame 
+# This message details a navpose 3d transform message
+# Transforms are from source's native frame to the user provided frame 
 # Transforms use the following conventions:
-# 1)Transforms are positive FROM the Device Frame of Reference TO the External INS Frame of Reference
+# 1)Transforms are positive FROM the Source Frame of Reference TO the Desired_Frame (as defined by user)
 # 2) Transformation order is X, Y, then Z in meters
 # 3) Rotation order is ∆X, then ∆Y, then ∆Z in degrees (right-handed rotations) 
 #    where the rotation axes are fixed to the Device's Frame of Reference (DFoR) throughout the rotation sequence
-# 4) Heading is optional offset to NEPI nav_pose configured solution output
+# 4) Heading is optional offset to navpose configured solution output
+
+string source_ref_description
+string end_ref_description
 
 # X,Y,Z translation transform vector in meters
 geometry_msgs/Vector3 translate_vector

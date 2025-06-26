@@ -12,4 +12,4 @@ string depth_topic
 Header depth_header
 
 # Array of individual localized targets
-nepi_ros_interfaces/TargetLocalization[] target_localizations
+nepi_interfaces/TargetLocalization[] target_localizations

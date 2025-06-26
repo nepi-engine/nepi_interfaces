@@ -7,7 +7,7 @@ This file is part of nepi-engine
 License: 3-clause BSD, see https://opensource.org/licenses/BSD-3-Clause
 ]]
 cmake_minimum_required(VERSION 2.8.3)
-project(nepi_ros_interfaces)
+project(nepi_interfaces)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 add_compile_options(-std=c++11)
@@ -55,111 +55,126 @@ find_package(catkin REQUIRED COMPONENTS message_generation std_msgs sensor_msgs 
 
 ## Generate messages in the 'msg' folder
 add_message_files(FILES
-    AiFrameworksStatus.msg
-    Annotation.msg
-    Reset.msg
-    SaveData.msg
-    SaveDataStatus.msg
-    SaveDataRate.msg
-    DatafileCtrl3DX.msg
-    RangeWindow.msg
+    PanTiltAbsoluteWaypoint.msg
+    AiDetectorInfo.msg
+    AiDetectorStatus.msg
+    AiPoseStatus.msg
+    AiSegmentorStatus.msg
     Angle3DX.msg
+    Annotation.msg
+    MgrAppsStatus.msg
+    AppStatus.msg
     AutoManualSelection3DX.msg
+    AutoStartEnabled.msg
+    AxisControls.msg
     BoundingBox.msg
     BoundingBox3D.msg
     BoundingBoxes.msg
     BoundingBoxes3D.msg
+    DepthMapStatus.msg
+    DatafileCtrl3DX.msg
+    ImageStatus.msg
+    NavPoseStatus.msg
+    PointcloudStatus.msg
+    IntensityMapStatus.msg
+    DeviceIDXStatus.msg
+    DeviceLSXStatus.msg
+    DeviceNPXStatus.msg
+    DevicePTXStatus.msg
+    DeviceRBXInfo.msg
+    DeviceRBXStatus.msg
+    MgrDriversStatus.msg
+    DriverStatus.msg
+    ErrorBounds.msg
+    FilenameConfig.msg
     Frame3DTransform.msg
-    Frame3DTransformUpdate.msg
-    IDXStatus.msg
+    Frame3DTransforms.msg
+    Frame3DTransformStatus.msg
+    GotoErrors.msg
+    GotoLocation.msg
+    GotoPose.msg
+    GotoPosition.msg
     HwTrigInCfg.msg
     HwTrigOutCfg.msg
-    TestPatternCfg.msg
-    PeriodicSwTrig.msg
-    NavPose.msg
-    NavPoseResponse.msg
-    StampedString.msg
-    SystemStatus.msg
-    SystemDefs.msg
-    TriggerStatus.msg
-    WarningFlags.msg
-    NavPoseStatus.msg
-    TimeStatus.msg
-    TriggerIndexSettings.msg
-    OotStatus.msg
-    ClassifierSelection.msg
-    Heading.msg
-    NEPILinkStatus.msg
-    ObjectCount.msg
-    Setting.msg
-    Settings.msg
-    SettingCap.msg
-    SettingCaps.msg
-    StringArray.msg
-    StringArrays.msg
-    StringEnable.msg
-    Offset.msg
-    RUISettings.msg
-    SonarFieldOfView.msg
-    TargetLocalization.msg
-    TargetLocalizations.msg
-    ImageSize.msg
-    AutoStartEnabled.msg
-    WifiCredentials.msg
-    PanTiltPosition.msg
-    PanTiltLimits.msg
-    PanTiltStatus.msg
-    SingleAxisTimedMove.msg
-    AbsolutePanTiltWaypoint.msg
-    AxisControls.msg
-    RBXErrorBounds.msg
-    RBXGotoErrors.msg
-    RBXGotoPose.msg
-    RBXGotoPosition.msg
-    RBXGotoLocation.msg
-    RBXMotorControl.msg
-    RBXInfo.msg
-    RBXStatus.msg
-    LSXStatus.msg
-    DriversStatus.msg
-    DriverStatus.msg
-    UpdateState.msg
-    UpdateOrder.msg
-    UpdateOption.msg
-    AppsStatus.msg
-    AppStatus.msg
-    ImageMuxInput.msg
-    ImageMuxSequence.msg
     ImageSelection.msg
-    OnvifDeviceCfg.msg
-    OnvifDeviceStatus.msg
+    ImageSize.msg
+    ImageWindow.msg
+    ImageWindowRatios.msg
+    Message.msg
+    MgrAiDetectorStatus.msg
+    MgrAiModelsStatus.msg
+    MgrNavPoseCompInfo.msg
+    MgrNavPoseStatus.msg
+    MotorControl.msg
+    NavPose.msg
+    NavPoseAltitude.msg
+    NavPoseDepth.msg
+    NavPoseHeading.msg
+    NavPoseLocation.msg
+    NavPoseOrientation.msg
+    NavPosePosition.msg
+    NavPoseTrack.msg
+    ObjectCount.msg
+    NavPoseOffset.msg
+    PanTiltLimits.msg
+    PanTiltOffsets.msg
+    PanTiltPosition.msg
+    PeriodicSwTrig.msg
     PointcloudProcessStatus.msg
     PointcloudRenderStatus.msg
     PointcloudSelectionStatus.msg
-    NavPosePub.msg
-    MgrsStatus.msg
-    MgrStatus.msg
-    Message.msg
-    
+    RangeWindow.msg
+    Reset.msg
+    RUISettings.msg
+    SaveDataRate.msg
+    SaveDataStatus.msg
+    Setting.msg
+    SettingCap.msg
+    SettingCaps.msg
+    Settings.msg
+    SettingsStatus.msg
+    SingleAxisTimedMove.msg
+    FieldOfView.msg
+    StampedString.msg
+    StringArray.msg
+    StringArrays.msg
+    StringEnable.msg
+    SystemDefs.msg
+    SystemState.msg
+    SystemStatesStatus.msg
+    MgrSystemStatus.msg
+    SystemTrigger.msg
+    SystemTriggersStatus.msg
+    TargetData.msg
+    TargetLocalization.msg
+    TargetLocalizations.msg
+    TargetsData.msg
+    TestPatternCfg.msg
+    MgrTimeStatus.msg
+    TimeUpdate.msg
+    UpdateFrame3DTransform.msg
+    UpdateNavPoseTopic.msg
+    UpdateOption.msg
+    UpdateOrder.msg
+    UpdateRangeWindow.msg
+    UpdateRatio.msg
+    UpdateState.msg
+    UpdateTopic.msg
+    WarningFlags.msg
+    NetworkWifiCredentials.msg
+
 )
 
 ## Generate services in the 'srv' folder
-add_service_files(
-    FILES
+add_service_files(FILES
     ConvertRawTstamp.srv
-    FileReset.srv
+    ParamsReset.srv
     SystemDefsQuery.srv
-    TriggerStatusQuery.srv
-    TriggerDefs.srv
-    NavPoseQuery.srv
-    NavPoseStatusQuery.srv
     TimeStatusQuery.srv
     IPAddrQuery.srv
     WifiQuery.srv
     OpEnvironmentQuery.srv
-    ImageClassifierListQuery.srv
-    ImageClassifierStatusQuery.srv
-    DataProductQuery.srv
+    SaveDataCapabilitiesQuery.srv
     NEPILinkStatusQuery.srv
     BandwidthUsageQuery.srv
     SystemSoftwareStatusQuery.srv
@@ -175,17 +190,26 @@ add_service_files(
     SystemStorageFolderQuery.srv
     PTXCapabilitiesQuery.srv
     RBXCapabilitiesQuery.srv
-    NavPoseCapabilitiesQuery.srv
+    NPXCapabilitiesQuery.srv
     LSXCapabilitiesQuery.srv
-    ImageMuxSequenceQuery.srv
-    OnvifDeviceCfgDelete.srv
-    OnvifDeviceCfgUpdate.srv
-    OnvifDeviceDriverListQuery.srv
-    OnvifDeviceListQuery.srv
     AppStatusQuery.srv
     DriverStatusQuery.srv
-    NavPosePubQuery.srv
-    MgrStatusQuery.srv
+    SetBoolState.srv
+    AiModelsInfoQuery.srv
+    AiDetectorInfoQuery.srv
+    SystemStatesQuery.srv
+    SystemTriggersQuery.srv
+    SystemStatusQuery.srv
+    DebugQuery.srv
+    ImageCapabilitiesQuery.srv
+    DepthMapCapabilitiesQuery.srv
+    PointcloudCapabilitiesQuery.srv
+    NavPoseCapabilitiesQuery.srv
+    NavPoseQuery.srv
+    Frame3DTransformsQuery.srv
+    Frame3DTransformRegister.srv
+    Frame3DTransformDelete.srv
+    
 )
 
 ## Generate actions in the 'action' folder
@@ -244,10 +268,10 @@ catkin_package(
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
-include_directories(
+#include_directories(
 # include
 # ${catkin_INCLUDE_DIRS}
-)
+#)
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
@@ -295,10 +319,10 @@ include_directories(
 # )
 
 ## Mark cpp header files for installation - Msgs and Services are under the project name subdir
-install(DIRECTORY include/${PROJECT_NAME}/
-  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
-  FILES_MATCHING PATTERN "*.h"
-)
+#install(DIRECTORY include/${PROJECT_NAME}/
+#  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+#  FILES_MATCHING PATTERN "*.h"
+#)
 
 ## Mark cpp header files for installation
 # install(DIRECTORY include/${PROJECT_NAME}/

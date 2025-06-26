@@ -6,7 +6,7 @@ This file is part of nepi-engine
 
 License: 3-clause BSD, see https://opensource.org/licenses/BSD-3-Clause
 -->
-# nepi_ros_interfaces
+# nepi_interfaces
 
 This repository contains the public API for the NEPI ROS Interface. All NEPI-custom message and service definitions that are exposed to external applications are contained in this repo, along with ROS support files (e.g., rviz-config files).
 

@@ -1,11 +1,14 @@
 # This service definition provides the capabilities report for a NEPI PTX (pan/tilt) actuator
 
 ---
-# NEX Generic Parameters
-bool has_standby_mode
+bool has_absolute_positioning
+bool has_timed_positioning
+bool has_seperate_pan_tilt_control
+bool has_position_feedback
+bool has_adjustable_speed
+bool has_limit_controls
+bool has_auto_pan
+bool has_auto_tilt
+bool has_homing
+bool has_set_home
 
-# PTX Generic Parameters
-bool adjustable_speed
-bool absolute_positioning
-bool homing
-bool waypoints

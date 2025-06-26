@@ -1,0 +1,17 @@
+# AI Model Info Query Service
+
+---
+string[] detector_name_list
+AiDetectorInfo[] detector_info_list
+
+
+
+
+
+
+
+
+
+
+
+

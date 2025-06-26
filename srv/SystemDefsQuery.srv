@@ -3,4 +3,4 @@
 # (dynamic) SystemStaus message.
 
 ---
-nepi_ros_interfaces/SystemDefs defs
+nepi_interfaces/SystemDefs defs

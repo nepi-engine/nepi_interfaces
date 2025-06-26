@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>nepi_ros_interfaces</name>
+  <name>nepi_interfaces</name>
   <version>0.0.0</version>
   <description>NEPI Edge ROS service, message, and utility config files</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
   <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
-  <maintainer email="nepi@numurus.com">Numurus</maintainer>
+  <maintainer email="nepi@numurus.com">Numurus_Nepi</maintainer>
 
 
   <!-- One license tag required, multiple allowed, one license per tag -->
@@ -43,6 +43,7 @@
   <!--   <test_depend>gtest</test_depend> -->
   <!-- Use doc_depend for packages you need only for building documentation: -->
   <!--   <doc_depend>doxygen</doc_depend> -->
+  <depend>std_msgs</depend>
   <depend>sensor_msgs</depend>
   <depend>geometry_msgs</depend>
   <depend>nav_msgs</depend>

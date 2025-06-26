@@ -1,5 +1,0 @@
-# This service definition provides a config update request and a status response for ONVIF device configuration
-
-OnvifDeviceCfg cfg
----
-bool success

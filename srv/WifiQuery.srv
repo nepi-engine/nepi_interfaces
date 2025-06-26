@@ -6,8 +6,10 @@ bool wifi_ap_enabled
 string wifi_ap_ssid
 string wifi_ap_passphrase
 bool wifi_client_enabled
+bool wifi_client_connecting
 bool wifi_client_connected
 string wifi_client_ssid
 string wifi_client_passphrase
 string[] available_networks
+bool clock_skewed
 bool internet_connected

@@ -1,4 +1,5 @@
 Header header
+string model_name
 Header image_header
 string image_topic
 int32 image_height

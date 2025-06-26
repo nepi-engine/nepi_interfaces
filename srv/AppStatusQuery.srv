@@ -1,5 +1,6 @@
-string name
+string app_name
 ---
+string app_name
 string pkg_name
 string group_name
 string node_name

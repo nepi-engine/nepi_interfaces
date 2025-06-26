@@ -1,6 +1,7 @@
-# This service definition provides the capabilities report for a NEPI Settings
+# This service definition provides the capabilities report for a Nodes Settings Options
 
 ---
 int32 settings_count
 SettingCap[] setting_caps_list
+bool has_cap_updates
 
