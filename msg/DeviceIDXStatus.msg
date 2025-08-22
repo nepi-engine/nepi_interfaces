@@ -15,8 +15,11 @@ string data_source_description
 string data_ref_description
 string device_mount_description
 
-float32 width_deg
-float32 height_deg
+int32 width_deg
+int32 height_deg
+
+# Image perspective options ['pov','top']
+string perspective
 
 # URL to RTSP video stream if exists
 string rtsp_url
@@ -42,6 +45,7 @@ string[] data_products
 float32[] framerates
 
 bool auto_adjust_enabled
+string[] auto_adjust_controls
 
 # The contrast field indicates the 0.0 - 1.0 contrast setting of the device
 float32 contrast_ratio

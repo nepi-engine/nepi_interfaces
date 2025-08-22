@@ -14,7 +14,6 @@ bool has_go_stop
 bool has_goto_pose
 bool has_goto_position
 bool has_goto_location
-bool has_fake_gps
 
 string[] state_options
 string[] mode_options

@@ -34,9 +34,8 @@ bool image_status_overlay
 float32 home_lat
 float32 home_long
 float32 home_alt
+float32 home_depth
 
-# Fake GPS Enabled
-bool fake_gps_enabled
 
 
 

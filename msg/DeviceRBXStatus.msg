@@ -10,15 +10,6 @@ string data_source_description
 string data_ref_description
 string device_mount_description
 
-# Current nav_pose info
-float32 current_lat
-float32 current_long
-float32 current_altitude
-float32 current_heading
-float32 current_roll
-float32 current_pitch
-float32 current_yaw
-
 
 # Human readable description of any current control process, set to string “None” if no active process
 string process_current
@@ -59,8 +50,6 @@ string last_cmd_string
 # Last error message
 string last_error_message
 
-bool fake_gps_enabled
 
-# Transform from device native ref frame to the nepi_frame,
-# Or PanTilt center tilt axis if panTilt mounted
+# Transform from device native ref frame to the nepi_frame
 nepi_interfaces/Frame3DTransform frame_3d_transform

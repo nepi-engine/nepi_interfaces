@@ -18,8 +18,11 @@ string namespace
 bool enabled
 string state
 
+bool detection_state
+
 float32 max_proc_rate_hz
 float32 max_img_rate_hz
+bool use_last_image
 
 string[] available_classes
 string[] selected_classes

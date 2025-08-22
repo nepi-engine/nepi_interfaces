@@ -1,0 +1,6 @@
+
+---
+bool admin_mode_enabled
+string[] admin_restrict_options
+string[] admin_restricted
+

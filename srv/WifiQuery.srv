@@ -5,6 +5,7 @@ bool has_wifi
 bool wifi_ap_enabled
 string wifi_ap_ssid
 string wifi_ap_passphrase
+bool wifi_ap_running
 bool wifi_client_enabled
 bool wifi_client_connecting
 bool wifi_client_connected

@@ -18,7 +18,7 @@ string frame_3d
 
 
 bool has_transform
-bool supports_transform_updates
+bool supports_updates
 
 # Transform from device native ref frame to the nepi_frame,
 nepi_interfaces/Frame3DTransform frame_3d_transform

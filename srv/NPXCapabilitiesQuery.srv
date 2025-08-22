@@ -8,7 +8,7 @@ bool has_location
 bool has_altitude
 bool has_depth
 
-bool supports_transform_updates
+bool supports_updates
 
 float32[] pub_rate_min_max
 

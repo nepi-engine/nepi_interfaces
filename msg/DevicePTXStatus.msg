@@ -49,16 +49,22 @@ bool reverse_tilt_enabled
 
 bool has_adjustable_speed
 float32 speed_ratio
+float32 speed_pan_dps
+float32 speed_tilt_dps
 
+
+bool has_auto_sin
 
 bool has_auto_pan
 bool auto_pan_enabled
+bool sin_pan_enabled
 RangeWindow auto_pan_range_window
 bool auto_pan_sec
 
 
 bool has_auto_tilt
 bool auto_tilt_enabled
+bool sin_tilt_enabled
 RangeWindow auto_tilt_range_window
 float32 auto_tilt_sec
 

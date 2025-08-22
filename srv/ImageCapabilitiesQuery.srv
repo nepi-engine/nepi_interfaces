@@ -1,8 +1,8 @@
 # This service definition provides the capabilities report for image type data
 
 ---
-bool has_resolution
 bool has_auto_adjust
+bool has_resolution
 bool has_contrast
 bool has_brightness
 bool has_threshold

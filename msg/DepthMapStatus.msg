@@ -19,10 +19,6 @@ float32 height_deg
 float32 min_range_m
 float32 max_range_m
 
-### Data Controls
-# Each range is expressed as a multiplier on the pointcloud's min/max range (0.0 - 1.0)
-RangeWindow range_ratios
-
 ### Data Stats
 float32 get_latency_time
 float32 pub_latency_time
@@ -31,5 +27,7 @@ float32 avg_pub_rate
 float32 last_pub_sec
 
 bool publishing
+
+bool img_pub_enabled
 
 

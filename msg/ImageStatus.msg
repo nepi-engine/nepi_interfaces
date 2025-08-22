@@ -15,15 +15,24 @@ int32 height_px
 float32 width_deg
 float32 height_deg
 
+# Image perspective options ['pov','top']
+string perspective
+
+# Following provide the range limits in meters for the published data (if available)
+float32 min_range_m
+float32 max_range_m
+
+# Enable or Disable auto adjusting brightness, contrast, and threshold control
+bool auto_adjust_enabled
+float32 auto_adjust_ratio
+string[] auto_adjust_controls
 
 ### Data Controls
 # The resolution field indicates the 0.0 - 1.0 brightness setting of the device
 float32 resolution_ratio
 string resolution_current
 
-# Enable or Disable auto adjusting brightness, contrast, and threshold control
-bool auto_adjust_enabled
-float32 auto_adjust_ratio
+
 
 # The contrast field indicates the 0.0 - 1.0 contrast setting of the device
 float32 contrast_ratio
@@ -59,6 +68,7 @@ bool[] enhance_states
 float32[] enhance_ratios
 
 ### Overlay Controls
+float32 overlay_size_ratio
 bool overlay_img_name
 bool overlay_date_time
 bool overlay_nav
