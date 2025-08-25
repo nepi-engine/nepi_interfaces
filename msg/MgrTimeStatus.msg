@@ -1,6 +1,8 @@
 # This message contains the state and status of the system clock,
 # including status about synchronization sources
 
+bool manages_time
+
 # Current system clock time
 float32 current_time
 
@@ -27,4 +29,8 @@ string[] current_offset
 
 # Last set_time (hard set from external host)
 float32 last_set_time
+
+# auto sync clock and timezone to connected PC settings.  auto_sync_clocks is disabled if NTP is connected
+bool auto_sync_clocks
+bool auto_sync_timezones
 

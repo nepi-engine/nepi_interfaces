@@ -4,8 +4,15 @@
 # Interpretation of many of the fields is provided by the SystemDefs message type that can
 # be obtained through the system_defs service.
 
-# Running in Container
+# System Info
+string hw_type
+string hw_model
 bool in_container
+bool has_cuda
+bool manages_ssh
+bool manages_share
+bool manages_time
+bool manages_network
 
 # Current temperature(s) (C)
 float32[] temperatures
@@ -37,5 +44,7 @@ string sys_img_archive_filename
 bool sys_debug_enabled
 
 bool sys_admin_enabled
+string sys_admin_password
 string[] sys_admin_restrict_options
 string[] sys_admin_restricted
+

@@ -1,5 +1,7 @@
 #  Network Status Msg.  
 
+bool manages_network
+
 ################
 # Wired Network Info
 ################

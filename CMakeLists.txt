@@ -73,6 +73,7 @@ add_message_files(FILES
     BoundingBoxes3D.msg
     DepthMapStatus.msg
     DatafileCtrl3DX.msg
+    EnableAdmin.msg
     ImageStatus.msg
     NavPoseStatus.msg
     PointcloudStatus.msg
@@ -159,8 +160,10 @@ add_message_files(FILES
     UpdateNavPoseTopic.msg
     UpdateOption.msg
     UpdateOrder.msg
+    UpdatePassword.msg
     UpdateRangeWindow.msg
     UpdateRatio.msg
+    UpdateRestricted.msg
     UpdateState.msg
     UpdateTopic.msg
     WarningFlags.msg
