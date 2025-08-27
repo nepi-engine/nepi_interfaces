@@ -33,6 +33,9 @@ StampedString[] info_strings
 WarningFlags warnings
 
 # System image update status and progress
+string[] sys_img_update_options
+string sys_img_update_selected
+
 string sys_img_update_status
 float32 sys_img_update_progress
 
