@@ -5,10 +5,10 @@
 # Response
 
 # Location that is checked for a new system image
-string new_sys_img_staging_device
+string new_sys_img_staging
 
 # Free space on staging device
-float32 new_sys_img_staging_device_free_mb
+float32 new_sys_img_staging_free_mb
 
 # System image filename
 string new_sys_img

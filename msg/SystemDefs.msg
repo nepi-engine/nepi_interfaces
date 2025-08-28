@@ -36,14 +36,14 @@ bool manages_time
 bool manages_network
 
 # Current FIRST_STAGE ROOTFS partition
-string first_stage_rootfs_device
+string boot_rootfs
 
 # Current ACTIVE ROOTFS partition
-string active_rootfs_device
+string active_rootfs
 float32 active_rootfs_size_mb
 
 # Current INACTIVE ROOTFS partition
-string inactive_rootfs_device
+string inactive_rootfs
 float32 inactive_rootfs_size_mb
 
 # Current INACTIVE ROOTFS firmware version
