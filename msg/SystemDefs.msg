@@ -36,7 +36,7 @@ bool manages_time
 bool manages_network
 
 # Current FIRST_STAGE ROOTFS partition
-string boot_rootfs
+string first_rootfs
 
 # Current ACTIVE ROOTFS partition
 string active_rootfs
