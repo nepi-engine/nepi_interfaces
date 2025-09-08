@@ -114,6 +114,7 @@ add_message_files(FILES
     MgrNavPoseStatus.msg
     MgrNetworkStatus.msg
     MgrTargetStatus.msg
+    MgrTimeStatus.msg
     MotorControl.msg
     NavPose.msg
     NavPoseAltitude.msg
@@ -157,10 +158,10 @@ add_message_files(FILES
     SystemTriggersStatus.msg
     TargetData.msg
     TargetInfo.msg
+    Targets.msg
     TargetLocalization.msg
     TargetLocalizations.msg
     TestPatternCfg.msg
-    MgrTimeStatus.msg
     TimeUpdate.msg
     UpdateFrame3DTransform.msg
     UpdateNavPoseTopic.msg
