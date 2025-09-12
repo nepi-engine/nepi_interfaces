@@ -273,10 +273,6 @@ generate_messages(
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
    CATKIN_DEPENDS 
-   std_msgs  # Or other packages containing msgs
-   sensor_msgs
-   geometry_msgs
-   nav_msgs
    message_runtime
 )
 
@@ -319,30 +315,6 @@ catkin_package(
 ## Install ##
 #############
 
-
-if(NOT NEPI_BASE)
-  set( NEPI_BASE 
-    /opt/nepi
-  )
-endif()
-
-if(NOT NEPI_RUI)
-  set( NEPI_RUI 
-    ${NEPI_BASE}/nepi_rui
-  )
-endif()
-
-if(NOT NEPI_ENGINE)
-  set( NEPI_ENGINE 
-    ${NEPI_BASE}/nepi_engine
-  )
-endif()
-
-if(NOT NEPI_ETC)
-  set( NEPI_ETC 
-    ${NEPI_BASE}/etc
-  )
-endif()
 
 # all install targets should use catkin DESTINATION variables
 # See http://ros.org/doc/api/catkin/html/adv_user_guide/variables.html
