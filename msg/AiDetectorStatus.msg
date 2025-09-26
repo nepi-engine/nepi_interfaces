@@ -35,9 +35,9 @@ float32 color_filter_sensitivity
 float32 range_filter
 bool largest_targets_filter
 
+bool pub_image_enabled
 bool overlay_labels
 bool overlay_range_bearing
-
 bool overlay_clf_name
 bool overlay_img_name
 
