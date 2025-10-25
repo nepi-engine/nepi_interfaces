@@ -27,7 +27,7 @@ float32 disk_capacity
 
 # System Info
 string hw_type
-string hw_model
+string sw_desc
 bool in_container
 bool has_cuda
 bool manages_ssh
