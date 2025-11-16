@@ -26,7 +26,6 @@ bool use_last_image
 
 string[] available_classes
 string[] selected_classes
-std_msgs/ColorRGBA[] selected_classes_colors
 
 float32 threshold_filter
 float32 pixel_area_size_filter
@@ -64,6 +63,7 @@ float32 detect_latency_time
 float32 preprocess_time
 float32 detect_time
 float32 avg_rate_hz
+float32 max_rate_hz
 
 
 
