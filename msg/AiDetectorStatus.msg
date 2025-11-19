@@ -36,6 +36,7 @@ bool largest_targets_filter
 
 bool pub_image_enabled
 bool overlay_labels
+bool overlay_targeting
 bool overlay_range_bearing
 bool overlay_clf_name
 bool overlay_img_name
@@ -62,6 +63,8 @@ float32 image_latency_time
 float32 detect_latency_time
 float32 preprocess_time
 float32 detect_time
+
+float32 avg_latency_sec
 float32 avg_rate_hz
 float32 max_rate_hz
 
