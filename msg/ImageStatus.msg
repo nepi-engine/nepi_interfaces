@@ -43,6 +43,13 @@ float32 brightness_ratio
 # The thresholding field indicates the 0.0 - 1.0 thresholding setting of the device
 float32 threshold_ratio
 
+# The image horz axis flip applied before 2d rotation 
+bool flip_2d
+
+# The image rotation applied in degrees (0-360)
+int32 rotation_2d_deg
+
+
 # The range_window field provides the start and stop range as currently configured for the device
 # Each range is expressed as a multiplier on the sensor's max range (0.0 - 1.0)
 RangeWindow range_ratios
@@ -58,10 +65,10 @@ float32 pan_up_down_ratio
 ImageWindowRatios window_ratios
 
 # The rotate field 0.0 - 1.0 
-float32 rotate_ratio
+float32 rotate_3d_ratio
 
 # The tilt field 0.0 - 1.0 
-float32 tilt_ratio
+float32 tilt_3d_ratio
 
 string[] enhance_options
 bool[] enhance_states

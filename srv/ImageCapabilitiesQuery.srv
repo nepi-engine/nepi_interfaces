@@ -6,12 +6,14 @@ bool has_resolution
 bool has_contrast
 bool has_brightness
 bool has_threshold
+bool has_flip_2d
+bool has_rotate_2d
 bool has_range
 bool has_zoom
 bool has_pan
 bool has_window
-bool has_rotate
-bool has_tilt
+bool has_rotate_3d
+bool has_tilt_3d
 
 bool has_enhances
 string[] enhance_options
