@@ -60,7 +60,6 @@ bool image_connected
 
 
 ###############
-float32 avg_image_receive_latency
 float32 avg_image_receive_rate
 
 float32 avg_image_process_time
