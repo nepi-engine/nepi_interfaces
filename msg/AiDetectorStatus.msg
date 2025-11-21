@@ -41,6 +41,8 @@ bool overlay_range_bearing
 bool overlay_clf_name
 bool overlay_img_name
 
+
+##################
 string[] selected_img_topics
 string[] image_source_topics
 string[] depth_map_topics
@@ -51,22 +53,27 @@ int32[] image_fov_vert_degs
 int32[] image_fov_horz_degs 
 
 bool[] images_connected
-float32[] image_latency_times
-float32[] detect_latency_times
-float32[] preprocess_times
-float32[] detect_times
 
+#################
 bool image_selected
 bool image_connected
 
-float32 image_latency_time
-float32 detect_latency_time
-float32 preprocess_time
-float32 detect_time
 
-float32 avg_latency_sec
-float32 avg_rate_hz
-float32 max_rate_hz
+###############
+float32 avg_image_receive_latency
+float32 avg_image_receive_rate
+
+float32 avg_image_process_time
+
+float32 avg_image_process_latency
+float32 avg_image_process_rate
+    
+float32 avg_detect_process_time
+    
+float32 avg_detect_process_latency
+float32 avg_detect_process_rate
+
+float32 max_detect_rate
 
 
 

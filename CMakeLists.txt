@@ -65,6 +65,7 @@ add_message_files(FILES
     AiDetectorStatus.msg
     AiPoseStatus.msg
     AiSegmentorStatus.msg
+    AiBoundingBoxes.msg
     Angle3DX.msg
     Annotation.msg
     MgrAppsStatus.msg
@@ -74,7 +75,6 @@ add_message_files(FILES
     AxisControls.msg
     BoundingBox.msg
     BoundingBox3D.msg
-    BoundingBoxes.msg
     BoundingBoxes3D.msg
     DepthMapStatus.msg
     DatafileCtrl3DX.msg

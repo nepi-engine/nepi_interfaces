@@ -1,7 +1,7 @@
-Header header
 string model_name
-Header image_header
+float64 detect_timestamp
 string image_topic
+float64 image_timestamp
 int32 image_height
 int32 image_width
 int32 prc_height
