@@ -76,6 +76,7 @@ add_message_files(FILES
     BoundingBox.msg
     BoundingBox3D.msg
     BoundingBoxes3D.msg
+    ColorBGR.msg
     DepthMapStatus.msg
     DatafileCtrl3DX.msg
     ImageStatus.msg
