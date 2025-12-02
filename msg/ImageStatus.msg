@@ -7,6 +7,9 @@ string device_mount_description
 ### Data Info
 string frame_3d
 
+string depth_map_topic
+string pointcloud_topic
+
 string encoding
 
 int32 width_px

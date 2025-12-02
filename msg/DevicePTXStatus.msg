@@ -55,9 +55,15 @@ float32 speed_tilt_dps
 
 bool has_auto_sin
 
+string[] track_source_namespaces
+string track_source_namespace
+bool track_source_connected
+
+
 bool has_auto_pan
 bool auto_pan_enabled
 bool sin_pan_enabled
+bool track_pan_enabled
 RangeWindow auto_pan_range_window
 bool auto_pan_sec
 
@@ -65,6 +71,7 @@ bool auto_pan_sec
 bool has_auto_tilt
 bool auto_tilt_enabled
 bool sin_tilt_enabled
+bool track_tilt_enabled
 RangeWindow auto_tilt_range_window
 float32 auto_tilt_sec
 

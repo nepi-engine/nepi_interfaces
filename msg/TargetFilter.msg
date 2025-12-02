@@ -4,36 +4,42 @@
 int32 INT_FIELD_UNSET=-999
 float32 FLOAT_FIELD_UNSET=-999.0
 
-
 string target_name
-# Target Status
-bool target_active
-bool target_saved
+string target_uid
+float32 target_confidence
 
+# 2D Data ENU Reference Frame
+int32 xmin_pixel
+int32 xmax_pixel
 
-################################
-# Detection Filters
-string detect_class
-float32 detect_threshold
+int32 ymin_pixel
+int32 ymax_pixel
 
-# Size and Motion Filters
+int32 width_pixels
+int32 height_pixels
+
+float32 area_ratio 
+float32 area_pixels
+geometry_msgs/Vector3 vel_pixels
+
+# 3D Data in ENU Reference Frame
 float32 width_meters
 float32 height_meters
 float32 depth_meters
-float32 size_sensitivity
 float32 area_meters
-float32 area_sensitivity
 float32 volume_meters
-float32 volumesensitivity
 geometry_msgs/Vector3 vel_xyz_mps
-float32 vel_xyz_sensitivity
 geometry_msgs/Vector3 center_xyz_meters
-float32 center_xyz_sensitivity
+
+# Range, Bearing, Nav, and Pose Data ENU Reference Frame
+float32 range_m
+float32 azimuth_deg
+float32 elevation_deg
+
+NavPose source_nav_pose
 
 
-
-# Color Distribution Percent Filters
-float32 color_spread_ratio
+# Color Distribution Percent 
 float32 color_black	
 float32 color_white	
 float32 color_red	
@@ -43,16 +49,17 @@ float32 color_cyan
 float32 color_magenta	
 float32 color_green	
 
-# Contour Data Filters
+# Contour Data
 int32[] contour_moments
 
-# Shape Distribution Percent Filters
+# Shape Distribution Percent
 float32 shape_triangle
 float32 shape_rectangle
 float32 shape_quadrilateral
 float32 shape_pentagon
 float32 shape_hexagon
 float32 shape_circle
+
 
 
 

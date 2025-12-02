@@ -74,6 +74,7 @@ add_message_files(FILES
     AutoStartEnabled.msg
     AxisControls.msg
     BoundingBox.msg
+    BoundingBoxes.msg
     BoundingBox3D.msg
     BoundingBoxes3D.msg
     ColorBGR.msg
@@ -108,6 +109,7 @@ add_message_files(FILES
     ImageSize.msg
     ImageWindow.msg
     ImageWindowRatios.msg
+    Localization.msg
     Message.msg
     MgrAiDetectorStatus.msg
     MgrAiModelsStatus.msg
@@ -157,11 +159,12 @@ add_message_files(FILES
     MgrSystemStatus.msg
     SystemTrigger.msg
     SystemTriggersStatus.msg
-    TargetData.msg
-    TargetInfo.msg
+    Target.msg
     Targets.msg
-    TargetLocalization.msg
-    TargetLocalizations.msg
+    TargetFilter.msg
+    TargetFilters.msg
+    TargetingStatus.msg
+    TargetingControlsStatus.msg
     TestPatternCfg.msg
     TimeUpdate.msg
     UpdateFrame3DTransform.msg

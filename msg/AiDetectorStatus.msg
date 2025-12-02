@@ -36,23 +36,20 @@ bool largest_targets_filter
 
 bool pub_image_enabled
 bool overlay_labels
-bool overlay_targeting
 bool overlay_range_bearing
 bool overlay_clf_name
 bool overlay_img_name
 
 
 ##################
-string[] selected_img_topics
 string[] image_source_topics
-string[] depth_map_topics
-string[] pointcloud_topics
+string[] selected_img_topics
 string[] image_detector_namespaces
 
-int32[] image_fov_vert_degs 
-int32[] image_fov_horz_degs 
 
 bool[] images_connected
+int32[] images_fov_vert_degs 
+int32[] images_fov_horz_degs 
 
 #################
 bool image_selected

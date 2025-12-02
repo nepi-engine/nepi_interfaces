@@ -7,3 +7,4 @@ int32 image_width
 int32 prc_height
 int32 prc_width
 BoundingBox[] bounding_boxes
+Localization[] localizations
