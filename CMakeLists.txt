@@ -116,7 +116,6 @@ add_message_files(FILES
     MgrNavPoseCompInfo.msg
     MgrNavPoseStatus.msg
     MgrNetworkStatus.msg
-    MgrTargetStatus.msg
     MgrTimeStatus.msg
     MotorControl.msg
     NavPose.msg
@@ -226,7 +225,6 @@ add_service_files(FILES
     Frame3DTransformsQuery.srv
     Frame3DTransformRegister.srv
     Frame3DTransformDelete.srv
-    TargetInfoQuery.srv
     
 )
 
