@@ -46,11 +46,14 @@ float32 brightness_ratio
 # The thresholding field indicates the 0.0 - 1.0 thresholding setting of the device
 float32 threshold_ratio
 
-# The image horz axis flip applied before 2d rotation 
-bool flip_2d
-
 # The image rotation applied in degrees (0-360)
-int32 rotation_2d_deg
+int32 rotate_2d_deg
+
+# The image horz axis flip applied after 2d rotation 
+bool flip_horz
+
+# The image vert axis flip applied after 2d rotation 
+bool flip_vert
 
 
 # The range_window field provides the start and stop range as currently configured for the device
@@ -73,9 +76,9 @@ float32 rotate_3d_ratio
 # The tilt field 0.0 - 1.0 
 float32 tilt_3d_ratio
 
-string[] enhance_options
-bool[] enhance_states
-float32[] enhance_ratios
+string[] filter_options
+bool[] filter_states
+float32[] filter_ratios
 
 ### Overlay Controls
 float32 overlay_size_ratio
