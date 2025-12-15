@@ -23,6 +23,7 @@ bool[] currently_syncd
 
 # Time since last sync message received from indexed server (seconds if no time-duration suffix)
 string[] last_ntp_sync
+bool clock_synced
 
 # Estimated clock offset from indexed server (units indicated in string)
 string[] current_offset
