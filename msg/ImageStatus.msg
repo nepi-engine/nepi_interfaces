@@ -18,6 +18,7 @@ int32 height_px
 float32 width_deg
 float32 height_deg
 
+
 # Image perspective options ['pov','top']
 string perspective
 
@@ -55,7 +56,7 @@ bool flip_horz
 # The image vert axis flip applied after 2d rotation 
 bool flip_vert
 
-
+### Render Controls
 # The range_window field provides the start and stop range as currently configured for the device
 # Each range is expressed as a multiplier on the sensor's max range (0.0 - 1.0)
 RangeWindow range_ratios
@@ -68,7 +69,8 @@ float32 pan_left_right_ratio
 float32 pan_up_down_ratio
 
 # window pixel ratios 0.0 - 1.0 x_min,x_max,y_min,y_max
-ImageWindowRatios window_ratios
+RangeWindow window_x_ratios
+RangeWindow window_y_ratios
 
 # The rotate field 0.0 - 1.0 
 float32 rotate_3d_ratio
