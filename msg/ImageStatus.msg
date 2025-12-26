@@ -65,8 +65,8 @@ RangeWindow range_ratios
 float32 zoom_ratio
 
 # The pan fields 0.0 - 1.0 
-float32 pan_left_right_ratio
-float32 pan_up_down_ratio
+float32 pan_x_ratio
+float32 pan_y_ratio
 
 # window pixel ratios 0.0 - 1.0 x_min,x_max,y_min,y_max
 RangeWindow window_x_ratios

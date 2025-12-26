@@ -19,10 +19,6 @@ bool has_tilt_3d
 bool has_filters
 string[] filter_options
 
-bool has_pixel_callback
-bool has_drag_callback
-bool has_window_callback
-
 bool has_depth_map
 string depth_map_topic
 
