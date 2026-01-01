@@ -38,6 +38,8 @@ bool manages_network
 # Current FIRST_STAGE ROOTFS partition
 string first_rootfs
 
+bool has_ab_fs
+
 # Current ACTIVE ROOTFS partition
 string active_rootfs
 float32 active_rootfs_size_mb
