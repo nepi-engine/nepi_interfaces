@@ -40,7 +40,7 @@ float32 max_range_m
 float32 resolution_ratio
 string resolution_current
 
-float32 framerate_ratio
+float32 max_framerate
 string[] data_products
 float32[] framerates
 
