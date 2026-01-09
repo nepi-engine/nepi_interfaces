@@ -8,6 +8,7 @@
 string hw_type
 string sw_desc
 bool in_container
+bool has_ab_fs
 bool has_cuda
 bool manages_ssh
 bool manages_share
