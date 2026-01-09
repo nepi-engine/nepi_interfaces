@@ -7,6 +7,7 @@ bool has_orientation
 bool has_location
 bool has_altitude
 bool has_depth
+bool has_pan_tilt
 
 bool supports_updates
 

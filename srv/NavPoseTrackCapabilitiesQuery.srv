@@ -8,6 +8,7 @@ bool has_position_pub
 bool has_orientation_pub
 bool has_altitude_pub
 bool has_depth_pub
+bool has_pan_tilt
 
 int32[] min_max_track_length
 int32[] min_max_track_sec

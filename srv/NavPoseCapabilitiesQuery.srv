@@ -8,5 +8,6 @@ bool has_position_pub
 bool has_orientation_pub
 bool has_altitude_pub
 bool has_depth_pub
+bool has_pan_tilt
 
 

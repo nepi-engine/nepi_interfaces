@@ -44,10 +44,16 @@ float32 time_altitude
 float32 altitude_m
 float32 geoid_height_meters
 
-# Depth meters from service
+# Depth meters from surface
 bool has_depth
 float32 time_depth
 float32 depth_m
+
+# Pan Tilt degrees
+bool has_pan_tilt
+float32 time_pan_tilt
+float32 pan_deg
+float32 tilt_deg
 
 
 

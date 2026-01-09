@@ -35,6 +35,7 @@ bool has_orientation
 bool has_position
 bool has_altitude
 bool has_depth
+bool has_pan_tilt
 
 
 
