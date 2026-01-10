@@ -109,6 +109,7 @@ add_message_files(FILES
     ImageSelection.msg
     ImageSize.msg
     ImageWindow.msg
+    ListIFStatus.msg
     Localization.msg
     Message.msg
     MgrAiDetectorStatus.msg
