@@ -125,6 +125,7 @@ add_message_files(FILES
     NavPoseHeading.msg
     NavPoseLocation.msg
     NavPoseOrientation.msg
+    NavPanTilt.msg
     NavPosePosition.msg
     NavPoseTrack.msg
     ObjectCount.msg
