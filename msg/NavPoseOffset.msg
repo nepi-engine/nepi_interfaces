@@ -1,6 +1,6 @@
 # This message contains a rigid navpose offset
 # Defined from source to destitation
-# Consumer should handle tranform application
+# Consumer should handle transform application
 
 # Lat Long Offsets
 float32 latitude
