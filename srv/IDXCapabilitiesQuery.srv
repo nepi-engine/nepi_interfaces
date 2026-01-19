@@ -18,13 +18,11 @@ bool has_intensity_map
 bool has_depth_map
 bool has_pointcloud
 
-string[] frame_3d_options
-
 
 
 # Data products supported by is a string of supported data products managed by node
 #SUPPORTED_DATA_PRODUCTS = ['image','color_image','bw_image',
-#                            'intensity_map','depth_map','pointcloud']
+#                            'intensity_map','depth_map','pointcloud','navpose']
 string[] data_products
 
 

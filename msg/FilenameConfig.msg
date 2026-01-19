@@ -1,7 +1,9 @@
 # This message details file name configuration for data saving
 
-# Folder and file name prefix
-string prefix
+
+
+string save_prefix
+string save_subfolder
 
 # Add Timestamp
 bool add_timestamp

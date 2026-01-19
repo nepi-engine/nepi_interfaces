@@ -2,13 +2,18 @@
 
 string data_source_description
 string data_ref_description
-string device_mount_description
 
 ### Data Info
-string frame_id
+
+string navpose_topic
+string image_topic
+string depth_map_topic
+string save_data_topic
 
 bool has_rgb
 bool has_intensity
+
+
 
 int32 point_count
 

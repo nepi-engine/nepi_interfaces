@@ -11,7 +11,6 @@ string sw_version
 
 string data_source_description
 string data_ref_description
-string device_mount_description
 
 bool has_absolute_positioning
 bool has_timed_positioning
@@ -93,7 +92,7 @@ bool is_moving
 string[] error_msgs
 
 # Transform from device native ref frame to the nepi_frame,
-nepi_interfaces/Frame3DTransform frame_3d_transform
+nepi_interfaces/Frame3DTransform navpose_frame_transform
 
 
 

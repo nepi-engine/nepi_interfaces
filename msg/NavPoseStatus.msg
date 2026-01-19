@@ -2,10 +2,13 @@
 
 string data_source_description
 string data_ref_description
-string device_mount_description
 
 ### Data Info
-string frame_3d
+string tranform_topic
+string save_data_topic
+
+string[] navpose_frame_options
+string navpose_frame
 
 string source_frame_nav
 string pub_frame_nav

@@ -120,6 +120,7 @@ add_message_files(FILES
     MgrTimeStatus.msg
     MotorControl.msg
     NavPose.msg
+    NavPoses.msg
     NavPoseAltitude.msg
     NavPoseDepth.msg
     NavPoseHeading.msg

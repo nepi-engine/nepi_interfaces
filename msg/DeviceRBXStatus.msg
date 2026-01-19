@@ -8,7 +8,6 @@ string sw_version
 
 string data_source_description
 string data_ref_description
-string device_mount_description
 
 
 # Human readable description of any current control process, set to string “None” if no active process
@@ -52,4 +51,4 @@ string last_error_message
 
 
 # Transform from device native ref frame to the nepi_frame
-nepi_interfaces/Frame3DTransform frame_3d_transform
+nepi_interfaces/Frame3DTransform navpose_frame_transform

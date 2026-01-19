@@ -4,7 +4,8 @@
 std_msgs/Header header
 
 # 3D frame data provided in
-string frame_3d
+string navpose_frame
+string navpose_description
 
 # Data frames data published in
 string frame_nav

@@ -2,13 +2,13 @@
 
 string data_source_description
 string data_ref_description
-string device_mount_description
 
 ### Data Info
-string frame_3d
 
+string navpose_topic
 string depth_map_topic
 string pointcloud_topic
+string save_data_topic
 
 string encoding
 

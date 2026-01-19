@@ -2,10 +2,11 @@
 
 string data_source_description
 string data_ref_description
-string device_mount_description
 
 ### Data Info
-string frame_3d
+string[] navpose_frame_options
+string navpose_frame
+NavPose navpose_data
 
 string encoding
 

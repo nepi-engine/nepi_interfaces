@@ -10,18 +10,17 @@ string sw_version
 
 string data_source_description
 string data_ref_description
-string device_mount_description
 
 float32 update_rate
 
-string frame_3d
+string navpose_frame
 
 
 bool has_transform
 bool supports_updates
 
 # Transform from device native ref frame to the nepi_frame,
-nepi_interfaces/Frame3DTransform frame_3d_transform
+nepi_interfaces/Frame3DTransform navpose_frame_transform
 
 # Actual data will be in the nepi standard frames 
 string source_frame_nav

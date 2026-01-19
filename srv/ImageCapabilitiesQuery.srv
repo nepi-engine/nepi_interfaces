@@ -18,13 +18,3 @@ bool has_tilt_3d
 
 bool has_filters
 string[] filter_options
-
-bool has_depth_map
-string depth_map_topic
-
-bool has_pointcloud
-string pointcloud_topic
-
-
-
-

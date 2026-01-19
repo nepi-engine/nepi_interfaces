@@ -13,7 +13,8 @@ string sw_version
 
 string data_source_description
 string data_ref_description
-string device_mount_description
+
+string navpose_topic
 
 int32 width_deg
 int32 height_deg
@@ -59,23 +60,6 @@ float32 threshold_ratio
 # The range_window field provides the start and stop range as currently configured for the device
 # Each range is expressed as a multiplier on the sensor's max range (0.0 - 1.0)
 RangeWindow range_window_ratios
-
-string[] avail_pantilt_topics
-# If Device is Pan and Tilt Mounted
-bool pantilt_mounted
-# Selected Pan Tilt Device and NavPose Topic
-string sel_pantilt_name
-string sel_pantilt_device_topic
-bool sel_pantilt_connected
-
-# Output transform into which 3D data (pointclouds...) are published
-string output_frame_3d
-
-# Transform from device native ref frame to the nepi_frame,
-# Or PanTilt center tilt axis if panTilt mounted
-nepi_interfaces/Frame3DTransform frame_3d_transform
-
-
 
 
 
