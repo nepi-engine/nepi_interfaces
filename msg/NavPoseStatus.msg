@@ -1,10 +1,9 @@
-# This message contains status information for the navigation/positioning
+# This message details all navposes status message
 
 string data_source_description
 string data_ref_description
 
 ### Data Info
-string transform_topic
 string save_data_topic
 
 string[] navpose_frame_options

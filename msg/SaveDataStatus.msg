@@ -11,7 +11,8 @@ string timezone
 # Array of data product names
 nepi_interfaces/SaveDataRate[] save_data_rates
 
-bool log_navpose_enabled
+bool log_navposes_enabled
+float32 log_navposes_rate
 
 # The save_data field indicates whether captured data is currently being saved in continuous fashion. The
 # save-data-next control does not affect this field
