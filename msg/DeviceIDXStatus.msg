@@ -15,6 +15,7 @@ string data_source_description
 string data_ref_description
 
 string navpose_topic
+string save_data_topic
 
 int32 width_deg
 int32 height_deg

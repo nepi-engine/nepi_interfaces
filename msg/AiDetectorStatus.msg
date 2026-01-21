@@ -18,6 +18,9 @@ string namespace
 bool enabled
 string state
 
+string save_data_topic
+
+
 bool detection_state
 
 float32 max_proc_rate_hz
