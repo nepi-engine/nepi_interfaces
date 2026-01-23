@@ -3,10 +3,18 @@
 string data_source_description
 string data_ref_description
 
+
+
 ### Data Info
-string[] navpose_frame_options
+string node_name
+string navpose_track_topic
+
+string save_data_topic
+
+bool has_selectable_frames
+string[] navpose_frames
 string navpose_frame
-NavPose navpose_data
+
 
 string source_frame_nav
 string pub_frame_nav

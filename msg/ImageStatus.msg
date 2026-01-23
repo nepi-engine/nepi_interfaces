@@ -5,6 +5,9 @@ string data_ref_description
 
 ### Data Info
 
+string node_name
+string image_topic
+
 string navpose_topic
 string depth_map_topic
 string pointcloud_topic

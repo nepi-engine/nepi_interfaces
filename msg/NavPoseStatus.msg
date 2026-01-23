@@ -1,10 +1,21 @@
 # This message details all navposes status message
 
+### Data Info
+string node_name
+string navpose_topic
+
+string save_data_topic
+
+string navpose_frame
+
+# The following are for navpose subscribers
+bool has_selectable_frames
+string[] navpose_frames
+
+
+# The following are for navpose sources
 string data_source_description
 string data_ref_description
-
-### Data Info
-string save_data_topic
 
 string source_frame_nav
 string pub_frame_nav
