@@ -4,8 +4,8 @@
 string save_data_topic
 
 string[] navpose_frames
+string navpose_frame
 
-float32 avg_pub_rate
 
 
 

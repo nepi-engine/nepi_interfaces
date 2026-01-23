@@ -105,6 +105,7 @@ add_message_files(FILES
     GotoPosition.msg
     HwTrigInCfg.msg
     HwTrigOutCfg.msg
+    ImageMouseEvent.msg
     ImagePixel.msg
     ImageSelection.msg
     ImageSize.msg
