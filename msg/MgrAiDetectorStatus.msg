@@ -2,6 +2,11 @@
 
 string SLEEP_SUSPEND_UNTIL_WOKEN=-1
 
+string node_name
+string ai_detector_topic
+
+string save_data_topic
+
 string name
 
 bool has_sleep

@@ -7,6 +7,12 @@ string MODEL_STATE_LISTENING=Listening
 string MODEL_STATE_RUNNING=Running
 string MODEL_STATE_SLEEPING=Sleeping
 
+string node_name
+string ai_detector_topic
+
+string save_data_topic
+
+string navpose_frame
 
 string MAX_IMG_RATE_NO_PUB=-1
 
@@ -17,8 +23,6 @@ string name
 string namespace
 bool enabled
 string state
-
-string save_data_topic
 
 
 bool detection_state
@@ -47,10 +51,11 @@ bool overlay_img_name
 ##################
 string[] image_source_topics
 string[] selected_img_topics
-string[] image_detector_namespaces
-
-
 bool[] images_connected
+string[] image_detector_topics
+
+
+
 int32[] images_fov_vert_degs 
 int32[] images_fov_horz_degs 
 
