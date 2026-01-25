@@ -24,6 +24,6 @@ bool has_pointcloud
 #SUPPORTED_DATA_PRODUCTS = ['image','color_image','bw_image',
 #                            'intensity_map','depth_map','pointcloud','navpose']
 string[] data_products
-
+string[] data_product_image_topics
 
 

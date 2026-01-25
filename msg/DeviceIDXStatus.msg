@@ -1,7 +1,4 @@
-# This message provides the Numurus IDX status, as defined in the IDX interface standard. It is generic to
-# all IDX sensor nodes in the system. The various control values reported in this message are deliberately
-# generic - each IDX sensor defines what they mean with regards to its specific data formats. They provide
-# a minimal set of tweaks to reduce complexity for operators.
+# This message provides the Numurus IDX status
 
 # Device Identifiers
 string device_name
@@ -44,6 +41,7 @@ string resolution_current
 
 float32 max_framerate
 string[] data_products
+string[] data_product_image_topics
 float32[] framerates
 
 bool auto_adjust_enabled

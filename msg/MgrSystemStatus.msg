@@ -33,6 +33,13 @@ StampedString[] info_strings
 # Warning flags
 WarningFlags warnings
 
+#################
+## Active Topics
+string[] active_topics
+
+
+#################
+## Software Info
 # System image update status and progress
 string[] sys_img_update_options
 string sys_img_update_selected
@@ -44,6 +51,9 @@ float32 sys_img_update_progress
 string sys_img_archive_status
 float32 sys_img_archive_progress
 string sys_img_archive_filename
+
+################################
+## Debug and Admin Settings
 
 bool sys_debug_enabled
 bool sys_admin_enabled

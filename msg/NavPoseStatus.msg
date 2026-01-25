@@ -4,13 +4,15 @@
 string node_name
 string navpose_topic
 
+string transform_topic
 string save_data_topic
 
-string navpose_frame
 
-# The following are for navpose subscribers
+
+# The following are for navpose connections
 bool has_selectable_frames
 string[] navpose_frames
+string navpose_frame
 
 
 # The following are for navpose sources
