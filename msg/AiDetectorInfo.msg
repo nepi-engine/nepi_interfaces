@@ -14,7 +14,7 @@ bool has_img_tiling
 
 
 string[] image_source_topics
-string[] image_detector_topics
+string[] image_pub_topics
 
 
 

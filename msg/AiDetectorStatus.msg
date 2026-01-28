@@ -12,7 +12,6 @@ string ai_detector_topic
 
 string save_data_topic
 
-string navpose_frame
 
 string MAX_IMG_RATE_NO_PUB=-1
 
@@ -52,7 +51,7 @@ bool overlay_img_name
 string[] image_source_topics
 string[] selected_img_topics
 bool[] images_connected
-string[] image_detector_topics
+string[] image_pub_topics
 
 
 
