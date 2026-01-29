@@ -113,11 +113,12 @@ add_message_files(FILES
     ListIFStatus.msg
     Localization.msg
     Message.msg
-    MgrAiDetectorStatus.msg
     MgrAiModelsStatus.msg
     MgrNavPoseCompInfo.msg
     MgrNavPoseStatus.msg
     MgrNetworkStatus.msg
+    MgrSystemStatus.msg
+    MgrSoftwareStatus.msg
     MgrTimeStatus.msg
     MotorControl.msg
     NavPose.msg
@@ -158,10 +159,8 @@ add_message_files(FILES
     StringArray.msg
     StringArrays.msg
     StringEnable.msg
-    SystemDefs.msg
     SystemState.msg
     SystemStatesStatus.msg
-    MgrSystemStatus.msg
     SystemTrigger.msg
     SystemTriggersStatus.msg
     Target.msg
@@ -189,7 +188,6 @@ add_message_files(FILES
 add_service_files(FILES
     ConvertRawTstamp.srv
     ParamsReset.srv
-    SystemDefsQuery.srv
     TimeStatusQuery.srv
     IPAddrQuery.srv
     WifiQuery.srv
@@ -217,6 +215,7 @@ add_service_files(FILES
     SetBoolState.srv
     AiModelsInfoQuery.srv
     AiDetectorInfoQuery.srv
+    SoftwareStatusQuery.srv
     SystemStatesQuery.srv
     SystemTriggersQuery.srv
     SystemStatusQuery.srv

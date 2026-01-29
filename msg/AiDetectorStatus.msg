@@ -1,28 +1,33 @@
-# Image Detection Model Status Message
+# AI Detection Status Message
 
 string MODEL_STATE_LOADING=Loading
 string MODEL_STATE_LOADED=Loaded
 string MODEL_STATE_WAITING=Waiting
 string MODEL_STATE_LISTENING=Listening
-string MODEL_STATE_RUNNING=Running
+string MODEL_STATE_RUNNING=Detecting
 string MODEL_STATE_SLEEPING=Sleeping
 
+string name
+string framework
 string node_name
-string ai_detector_topic
 
+string ai_detector_topic
 string save_data_topic
 
+bool enabled
+
+string SLEEP_SUSPEND_UNTIL_WOKEN=-1
+bool has_sleep
+bool sleep_enabled
+int32 sleep_suspend_sec
+int32 sleep_run_sec
+bool sleep_state
+
+string state_str_msg
 
 string MAX_IMG_RATE_NO_PUB=-1
 
 string ALL_IMAGES=All
-
-string name
-
-string namespace
-bool enabled
-string state
-
 
 bool detection_state
 
@@ -52,8 +57,6 @@ string[] image_source_topics
 string[] selected_img_topics
 bool[] images_connected
 string[] image_pub_topics
-
-
 
 int32[] images_fov_vert_degs 
 int32[] images_fov_horz_degs 
