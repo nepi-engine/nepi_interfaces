@@ -11,7 +11,7 @@ string name
 string framework
 string node_name
 
-string ai_detector_topic
+string ai_detector_namespace
 string save_data_topic
 
 bool enabled

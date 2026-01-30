@@ -51,9 +51,14 @@ StampedString[] info_strings
 # Warning flags
 WarningFlags warnings
 
+# Max Boot Fail Count (before rollover to inactive partition)
+uint32 max_boot_fail_count
+
 #################
 ## Active Topics
 string[] active_topics
+string[] active_topic_types
+string[] active_services
 
 
 ################################
@@ -73,6 +78,9 @@ string[] sys_admin_restricted
 #################
 ## Software Boot and File System Info
 
+# Supports AB Dual backup/recovery/update file systems
+bool has_ab_fs
+
 # Current FIRST_STAGE ROOTFS partition
 string first_rootfs
 
@@ -86,13 +94,6 @@ string active_rootfs_fw_version
 string inactive_rootfs
 float32 inactive_rootfs_size_mb
 string inactive_rootfs_fw_version
-
-# Max Boot Fail Count (before rollover to inactive partition)
-uint32 max_boot_fail_count
-
-
-# Supports AB Dual backup/recovery/update file systems
-bool has_ab_fs
 
 
 #################
