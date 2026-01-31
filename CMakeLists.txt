@@ -188,7 +188,6 @@ add_message_files(FILES
 add_service_files(FILES
     ConvertRawTstamp.srv
     ParamsReset.srv
-    SystemDefsQuery.srv
     TimeStatusQuery.srv
     IPAddrQuery.srv
     WifiQuery.srv
@@ -196,7 +195,6 @@ add_service_files(FILES
     SaveDataCapabilitiesQuery.srv
     NEPILinkStatusQuery.srv
     BandwidthUsageQuery.srv
-    SystemSoftwareStatusQuery.srv
     IDXCapabilitiesQuery.srv
     GetScriptsQuery.srv
     GetRunningScriptsQuery.srv
@@ -216,6 +214,7 @@ add_service_files(FILES
     SetBoolState.srv
     AiModelsInfoQuery.srv
     AiDetectorInfoQuery.srv
+    SoftwareStatusQuery.srv
     SystemStatesQuery.srv
     SystemTriggersQuery.srv
     SystemStatusQuery.srv
