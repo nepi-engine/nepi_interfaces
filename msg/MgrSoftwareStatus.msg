@@ -116,14 +116,18 @@ string[] active_topics
 
 
 ################################
-## Debug and Admin Settings
+## Debug, Admin, Manager, and User Settings
 
 bool sys_debug_enabled
-bool sys_admin_enabled
-string sys_admin_password
-DictString[] sys_admin_restrict_options
-string[] sys_admin_restricted
 
+bool sys_admin_enabled
+string sys_admin_password_encrypted
+
+string[] sys_managers_options
+string[] sys_managers_enabled
+
+DictString[] user_restrictions_options
+string[] user_restrictions_enabled
 
 
 
