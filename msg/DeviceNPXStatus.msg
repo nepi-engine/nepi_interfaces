@@ -11,16 +11,17 @@ string sw_version
 string data_source_description
 string data_ref_description
 
+string settings_topic
+string navpose_topic
+string save_data_topic
+string[] data_products
+string[] data_product_topics
+string[] data_product_image_topics
+
 float32 update_rate
 
+
 string navpose_frame
-
-
-bool has_transform
-bool supports_updates
-
-# Transform from device native ref frame to the nepi_frame,
-nepi_interfaces/Frame3DTransform navpose_frame_transform
 
 # Actual data will be in the nepi standard frames 
 string source_frame_nav

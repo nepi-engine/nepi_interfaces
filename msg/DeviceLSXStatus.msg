@@ -12,6 +12,13 @@ string sw_version
 string data_source_description
 string data_ref_description
 
+string settings_topic
+string navpose_topic
+string save_data_topic
+string[] data_products
+string[] data_product_topics
+string[] data_product_image_topics
+
 # user updatable device name
 string user_name
 
@@ -39,7 +46,4 @@ uint8 temp_c
 # Device reported power draw in Watts
 float32 power_w
 
-# Transform from device native ref frame to the nepi_frame,
-# Or PanTilt center tilt axis if panTilt mounted
-nepi_interfaces/Frame3DTransform navpose_frame_transform
 

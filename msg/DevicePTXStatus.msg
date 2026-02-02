@@ -12,6 +12,13 @@ string sw_version
 string data_source_description
 string data_ref_description
 
+string settings_topic
+string navpose_topic
+string save_data_topic
+string[] data_products
+string[] data_product_topics
+string[] data_product_image_topics
+
 bool has_absolute_positioning
 bool has_timed_positioning
 bool has_seperate_pan_tilt_control

@@ -1,5 +1,13 @@
 string name
 
+string settings_topic
+string navpose_topic
+string save_data_topic
+string[] data_products
+string[] data_product_topics
+string[] data_product_image_topics
+
+
 string pkg_name
 string group_name
 string node_name

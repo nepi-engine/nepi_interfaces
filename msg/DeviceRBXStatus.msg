@@ -9,6 +9,12 @@ string sw_version
 string data_source_description
 string data_ref_description
 
+string settings_topic
+string navpose_topic
+string save_data_topic
+string[] data_products
+string[] data_product_topics
+string[] data_product_image_topics
 
 # Human readable description of any current control process, set to string “None” if no active process
 string process_current
