@@ -1,5 +1,3 @@
-# This message provides the generic angle settings for 3DX nodes. The values are expressed as factors of the
-# sensor's native angular span from 0.0 (0%) to 1.0 (100%)
+# List of angles in degs
 
-float32 angle_offset
-float32 total_angle
+float32[] angles_deg

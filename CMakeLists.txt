@@ -66,7 +66,7 @@ add_message_files(FILES
     AiPoseStatus.msg
     AiSegmentorStatus.msg
     AiBoundingBoxes.msg
-    Angle3DX.msg
+    Angles.msg
     Annotation.msg
     MgrAppsStatus.msg
     AppStatus.msg
