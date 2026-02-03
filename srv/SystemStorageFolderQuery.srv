@@ -1,5 +1,5 @@
 # This service definition provides the system storage folder request and response
-# Type of folder/subdir being requested (data, logs, ai_models, automation_scripts, nepi_full_img, nepi_full_img_archive)
+# Type of folder/subdir being requested (data, logs, ai_models, scripts, nepi_images)
 string type
 ---
 # System path to requested folder
