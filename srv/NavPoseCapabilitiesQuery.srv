@@ -1,7 +1,7 @@
 # This service provides the navpose data capabilities 
 
 ---
-
+bool has_navpose_pub
 bool has_location_pub
 bool has_heading_pub
 bool has_position_pub

@@ -1,5 +1,10 @@
 # NavPose Mgr Status Message
 
+string navposes_topic
+
+string[] navpose_frames
+string[] navpose_frame_topics
+
 string[] frame_nav_options
 string frame_nav
 string[] frame_alt_options
