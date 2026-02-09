@@ -113,7 +113,6 @@ add_message_files(FILES
     Localization.msg
     Message.msg
     MgrAiModelsStatus.msg
-    MgrNavPoseCompInfo.msg
     MgrNavPoseStatus.msg
     MgrNetworkStatus.msg
     MgrSystemStatus.msg
@@ -132,6 +131,8 @@ add_message_files(FILES
     NavPosePanTilt.msg
     NavPosePosition.msg
     NavPoseTrack.msg
+    NavPoseComponent.msg
+    NavPoseSolution.msg
     ObjectCount.msg
     NavPoseOffset.msg
     PanTiltLimits.msg
@@ -171,13 +172,13 @@ add_message_files(FILES
     TestPatternCfg.msg
     TimeUpdate.msg
     UpdateFrame3DTransform.msg
-    UpdateNavPoseTopic.msg
-    UpdateOption.msg
+    UpdateNavPose.msg
     UpdateOrder.msg
     UpdateRangeWindow.msg
-    UpdateRatio.msg
-    UpdateState.msg
-    UpdateTopic.msg
+    UpdateFloat.msg
+    UpdateInt.msg
+    UpdateBool.msg
+    UpdateString.msg
     WarningFlags.msg
     NetworkWifiCredentials.msg
 
@@ -225,6 +226,7 @@ add_service_files(FILES
     MgrNavPoseCapabilitiesQuery.srv
     NavPoseCapabilitiesQuery.srv
     NavPoseQuery.srv
+    NavPosesQuery.srv
     Frame3DTransformsQuery.srv
     Frame3DTransformRegister.srv
     Frame3DTransformDelete.srv
