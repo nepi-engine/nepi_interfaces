@@ -73,7 +73,10 @@ string[] sys_managers_options
 string[] sys_managers_enabled
 
 DictString[] user_restrictions_options
-string[] user_restrictions_enabled
+string[] user_restrictions
+
+string[] sys_run_mode_options
+string sys_run_mode
 
 
 #############################################
