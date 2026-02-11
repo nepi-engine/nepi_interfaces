@@ -64,10 +64,12 @@ string[] active_services
 ################################
 ## Debug, Admin, Manager, and User Settings
 
-bool sys_debug_enabled
-
 bool sys_admin_enabled
-string sys_admin_password_encrypted
+bool sys_admin_password_valid
+bool sys_admin_mode_set
+
+bool sys_develop_enabled
+bool sys_debug_enabled
 
 string[] sys_managers_options
 string[] sys_managers_enabled
