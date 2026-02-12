@@ -75,12 +75,14 @@ bool sys_debug_enabled
 string[] sys_managers_options
 string[] sys_managers_enabled
 
-DictString[] user_restrictions_options
-string[] user_restrictions
-
 string[] sys_run_mode_options
 string sys_run_mode
 
+string[] sys_node_name_keys
+string[] sys_node_name_aliases
+
+DictString[] user_restrictions_options
+string[] user_restrictions
 
 #############################################
 ## Moving to Software Status Msg
