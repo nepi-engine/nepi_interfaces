@@ -15,6 +15,7 @@ string firmware_version
 # System Info
 string serial_number
 string hw_type
+string hw_model
 string sw_desc
 bool in_container
 bool has_cuda
