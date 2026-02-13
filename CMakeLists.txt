@@ -191,7 +191,6 @@ add_service_files(FILES
     TimeStatusQuery.srv
     IPAddrQuery.srv
     WifiQuery.srv
-    OpEnvironmentQuery.srv
     SaveDataCapabilitiesQuery.srv
     NEPILinkStatusQuery.srv
     BandwidthUsageQuery.srv
@@ -204,7 +203,6 @@ add_service_files(FILES
     SettingsCapabilitiesQuery.srv
     StopScript.srv
     GetSystemStatsQuery.srv
-    SystemStorageFolderQuery.srv
     PTXCapabilitiesQuery.srv
     RBXCapabilitiesQuery.srv
     NPXCapabilitiesQuery.srv
@@ -219,7 +217,6 @@ add_service_files(FILES
     SystemTriggersQuery.srv
     SystemStatusQuery.srv
     DebugQuery.srv
-    AdminQuery.srv
     ImageCapabilitiesQuery.srv
     DepthMapCapabilitiesQuery.srv
     PointcloudCapabilitiesQuery.srv

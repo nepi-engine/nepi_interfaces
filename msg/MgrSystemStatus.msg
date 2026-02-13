@@ -75,72 +75,24 @@ bool sys_debug_enabled
 string[] sys_managers_options
 string[] sys_managers_enabled
 
-string[] sys_run_mode_options
-string sys_run_mode
-
 string[] sys_node_name_keys
 string[] sys_node_name_aliases
 
-DictString[] user_restrictions_options
+string[] sys_run_mode_options
+string sys_run_mode
+
+string[] deploy_nodes_ordered
+string[] deploy_nodes_commands
+bool[] deploy_nodes_enabled
+
+string[] user_restrictions_options
+string[] user_restrictions_descriptions
 string[] user_restrictions
+string[] user_restricted
 
-#############################################
-## Moving to Software Status Msg
-############################################
-#################
-## Software Boot and File System Info
+string[] rui_restrictions
+string[] rui_restricted
 
-# Supports AB Dual backup/recovery/update file systems
-bool has_ab_fs
-
-# Current FIRST_STAGE ROOTFS partition
-string first_rootfs
-
-# Current ACTIVE ROOTFS partition
-string active_rootfs
-float32 active_rootfs_size_mb
-string active_rootfs_fw_version
-
-
-# Current INACTIVE ROOTFS partition
-string inactive_rootfs
-float32 inactive_rootfs_size_mb
-string inactive_rootfs_fw_version
-
-
-#################
-## Software Backup Info
-
-# System backup/archive status and progress
-string sys_img_archive_status
-float32 sys_img_archive_progress
-string sys_img_archive_filename
-
-
-#################
-## Software Install Info
-
-# System image update status and progress
-string[] sys_img_update_options
-string sys_img_update_selected
-
-# Location that is checked for a new system image
-string new_sys_img_staging
-
-# Free space on staging device
-float32 new_sys_img_staging_free_mb
-
-# System image filename
-string new_sys_img
-
-# System image filesize
-float32 new_sys_img_size_mb
-
-# System image version
-string new_sys_img_version
-
-string sys_img_update_status
-float32 sys_img_update_progress
 
 
 

@@ -1,7 +1,0 @@
-# This service definition provides the system storage folder request and response
-# Type of folder/subdir being requested (data, logs, ai_models, scripts, nepi_images)
-string type
----
-# System path to requested folder
-string folder_path
-
