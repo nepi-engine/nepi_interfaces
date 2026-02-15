@@ -15,8 +15,7 @@ string settings_topic
 string navpose_topic
 string save_data_topic
 string[] data_products
-string[] data_product_topics
-string[] data_product_image_topics
+
 
 int32 width_deg
 int32 height_deg
