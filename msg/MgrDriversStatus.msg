@@ -4,6 +4,7 @@ string[] pkg_list
 string[] name_list
 string[] type_list
 string[] group_id_list
+DriverStatus[] status_list
 
 string[] active_pkg_list
 string[] active_name_list
