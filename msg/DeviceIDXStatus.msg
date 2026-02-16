@@ -37,6 +37,8 @@ bool standby
 # Following provide the range limits in meters for the device (if available)
 float32 min_range_m
 float32 max_range_m
+float32 min_range_m_adj
+float32 max_range_m_adj
 
 # Data Controls
 float32 resolution_ratio

@@ -28,6 +28,8 @@ string perspective
 # Following provide the range limits in meters for the published data (if available)
 float32 min_range_m
 float32 max_range_m
+float32 min_range_m_adj
+float32 max_range_m_adj
 
 # Enable or Disable auto adjusting brightness, contrast, and threshold control
 bool auto_adjust_enabled
