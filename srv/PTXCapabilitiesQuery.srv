@@ -7,9 +7,6 @@ bool has_seperate_pan_tilt_control
 bool has_position_feedback
 bool has_adjustable_speed
 bool has_limit_controls
-bool has_auto_pan
-bool has_auto_tilt
-bool has_auto_sin
 bool has_homing
 bool has_set_home
 
