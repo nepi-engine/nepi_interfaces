@@ -5,6 +5,7 @@ string image_topic
 int32 image_index
 
 bool click_event
+int32 click_count
 nepi_interfaces/ImagePixel click_pixel
 bool drag_event
 nepi_interfaces/ImagePixel drag_pixel
