@@ -90,6 +90,10 @@ string[] user_restrictions_descriptions
 string[] user_restrictions
 string[] user_restricted
 
+bool rui_login_enabled
+bool rui_login_password_valid
+bool rui_login_mode_set
+
 string[] rui_restrictions
 string[] rui_restricted
 
