@@ -23,6 +23,7 @@ string license_type
 string license_link
 
 bool active_state
+bool running_state
 int32 order
 string msg_str
 
