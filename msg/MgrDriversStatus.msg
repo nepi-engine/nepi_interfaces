@@ -1,21 +1,19 @@
 #  Drivers Status Msg.  Drivers listed in current order
 
-string[] pkg_list
-string[] name_list
-string[] type_list
-string[] group_id_list
-DriverStatus[] status_list
+string[] drivers_ordered_list
+string[] drivers_ordered_name_list
+string[] drivers_ordered_type_list
+string[] drivers_ordered_group_id_list
+DriverStatus[] drivers_ordered_status_list
 
-string[] active_pkg_list
-string[] active_name_list
-string[] active_type_list
-string[] active_namespace_list
 
-string install_path
-string[] install_list
-string backup_path
-bool backup_on_remove
-string selected_driver
+string[] drivers_active_list
+string[] drivers_active_name_list
+string[] drivers_active_type_list
+
+
+
+string[] drivers_running_list
 
 bool retry_enabled
 

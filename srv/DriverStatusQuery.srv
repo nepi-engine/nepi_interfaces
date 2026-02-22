@@ -1,19 +1,21 @@
-string name
+string driver_name
 ---
-string name
+string driver_name
+
+string display_name
 string description
-string path
-string group
+
+
+string type
 string group_id
-string[] interfaces
-string options_1_name
-string[] options_1
-string set_option_1
-string options_2_name
-string[] options_2
-string set_option_2
-string discovery
-string[] other_users_list
-bool active_state
+
+string settings_topic
+
+string  license_type
+string  license_link
+
+bool enabled
+bool running
 int32 order
 string msg_str
+

@@ -1,9 +1,19 @@
-string pkg_name
-string type
-string group_id
+
+string driver_name
+
 string display_name
 string description
-bool active_state
-bool running_state
+
+
+string type
+string group_id
+
+string settings_topic
+
+string  license_type
+string  license_link
+
+bool enabled
+bool running
 int32 order
 string msg_str

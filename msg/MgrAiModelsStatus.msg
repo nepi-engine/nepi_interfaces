@@ -17,6 +17,8 @@ string[] active_ai_models_types
 string[] active_ai_models_nodes
 string[] active_ai_models_namespaces
 
+bool[] running_ai_models
+
 
 string all_namespace
 
