@@ -1,20 +1,24 @@
 # AI Detection Status Message
 
-string MODEL_STATE_LOADING=Loading
-string MODEL_STATE_LOADED=Loaded
-string MODEL_STATE_WAITING=Waiting
-string MODEL_STATE_LISTENING=Listening
-string MODEL_STATE_RUNNING=Detecting
-string MODEL_STATE_SLEEPING=Sleeping
+string STATE_LOADING=Loading
+string STATE_LOADED=Loaded
+string STATE_WAITING=Waiting
+string STATE_LISTENING=Listening
+string STATE_RUNNING=Detecting
+string STATE_SLEEPING=Sleeping
 
-string name
+string ai_detector_name
+string display_name
+string description
 string framework
-string node_name
 
-string ai_detector_namespace
+string node_name
+string namespace
+
 string save_data_topic
 
-bool enabled
+string[] available_classes
+string[] selected_classes
 
 string SLEEP_SUSPEND_UNTIL_WOKEN=-1
 bool has_sleep
@@ -23,20 +27,14 @@ int32 sleep_suspend_sec
 int32 sleep_run_sec
 bool sleep_state
 
-string state_str_msg
-
 string MAX_IMG_RATE_NO_PUB=-1
-
 string ALL_IMAGES=All
-
-bool detection_state
 
 float32 max_proc_rate_hz
 float32 max_img_rate_hz
 bool use_last_image
 
-string[] available_classes
-string[] selected_classes
+
 
 float32 threshold_filter
 float32 pixel_area_size_filter
@@ -64,6 +62,13 @@ int32[] images_fov_horz_degs
 #################
 bool image_selected
 bool image_connected
+
+
+#################
+bool enabled
+bool running
+bool detecting
+string msg_str
 
 
 ###############
