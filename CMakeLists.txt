@@ -61,7 +61,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
 add_message_files(FILES
     PanTiltAbsoluteWaypoint.msg
-    AiDetectorInfo.msg
+    AiModelStatus.msg
     AiDetectorStatus.msg
     AiPoseStatus.msg
     AiSegmentorStatus.msg
@@ -210,8 +210,8 @@ add_service_files(FILES
     AppStatusQuery.srv
     DriverStatusQuery.srv
     SetBoolState.srv
-    AiModelsInfoQuery.srv
-    AiDetectorInfoQuery.srv
+    AiModelStatusQuery.srv
+    AiDetectorStatusQuery.srv
     SoftwareStatusQuery.srv
     SystemStatesQuery.srv
     SystemTriggersQuery.srv
