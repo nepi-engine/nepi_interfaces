@@ -215,7 +215,6 @@ add_service_files(FILES
     SystemStatesQuery.srv
     SystemTriggersQuery.srv
     SystemStatusQuery.srv
-    DebugQuery.srv
     ImageCapabilitiesQuery.srv
     DepthMapCapabilitiesQuery.srv
     PointcloudCapabilitiesQuery.srv
