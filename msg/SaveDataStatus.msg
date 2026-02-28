@@ -23,9 +23,6 @@ nepi_interfaces/SaveDataRate[] save_data_rates
 bool save_all_enabled
 float32 save_all_rate
 
-bool log_navposes_enabled
-float32 log_navposes_rate
-
 # Current filename configuration
 FilenameConfig filename_config
 
