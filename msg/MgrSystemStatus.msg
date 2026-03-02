@@ -73,8 +73,9 @@ string[] sys_run_mode_options
 string sys_run_mode
 bool sys_debug_enabled
 
-string[] sys_manager_options
-string[] sys_managers_enabled
+string[] sys_managers_ordered_list
+string[] sys_managers_active_list
+string[] sys_managers_running_list
 
 string[] sys_node_name_keys
 string[] sys_node_name_aliases
