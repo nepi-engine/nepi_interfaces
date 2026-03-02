@@ -69,36 +69,23 @@ bool sys_admin_enabled
 bool sys_admin_password_valid
 bool sys_admin_mode_set
 
+string[] sys_run_mode_options
+string sys_run_mode
 bool sys_debug_enabled
 
-string[] sys_managers_options
+string[] sys_manager_options
 string[] sys_managers_enabled
 
 string[] sys_node_name_keys
 string[] sys_node_name_aliases
 
-
-
-string[] deploy_nodes_ordered
-string[] deploy_nodes_commands
-bool[] deploy_nodes_enabled
-
-string[] user_restrictions_options
-string[] user_restrictions_descriptions
-string[] user_restrictions
-string[] user_restricted
-
-string[] rui_mode_options
-string rui_mode
+string[] rui_restriction_options
+string[] rui_restrictions
+string[] rui_restricted
 
 bool rui_login_enabled
 bool rui_login_password_valid
 bool rui_login_mode_set
-
-string[] rui_restrictions
-string[] rui_restricted
-
-
 
 
 
