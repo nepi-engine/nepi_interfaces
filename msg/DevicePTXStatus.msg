@@ -78,6 +78,10 @@ bool is_moving
 
 string[] error_msgs
 
+
+bool has_calibration
+bool is_calibrating
+
 # Transform from device native ref frame to the nepi_frame,
 nepi_interfaces/Frame3DTransform navpose_frame_transform
 
