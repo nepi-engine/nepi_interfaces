@@ -1,10 +1,10 @@
-# This message provides the Numurus LSX status, as defined in the LSX interface standard. It is generic to
-# all LSX sensor nodes in the system.
+# This message provides the NEPI LSX status
 
 # Device Identifiers
 string device_name
-string device_id
-string identifier
+string device_path
+string device_node_name
+
 string serial_num
 string hw_version
 string sw_version
@@ -19,8 +19,6 @@ string[] data_products
 string[] data_product_topics
 string[] data_product_image_topics
 
-# user updatable device name
-string user_name
 
 bool standby_state
 bool on_off_state

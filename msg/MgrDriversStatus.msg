@@ -11,9 +11,15 @@ string[] drivers_active_list
 string[] drivers_active_name_list
 string[] drivers_active_type_list
 
-
-
 string[] drivers_running_list
+
+
+string[] devices_name_list
+string[] devices_alias_list
+
+string[] devices_running_name_list
+string[] devices_running_type_list
+
 
 bool retry_enabled
 

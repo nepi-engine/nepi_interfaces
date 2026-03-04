@@ -1,13 +1,17 @@
-## Pan Tilt status msg
+## PTX Pan Tilt status msg
 ## All data provided in the current reverse pan and tilt frames
 ## Reverse axis conversions are handled by the PTX IF class
 
+
 string device_name
-string device_id
-string identifier
+string device_path
+string device_node_name
+
 string serial_num
 string hw_version
 string sw_version
+
+string node_name
 
 string data_source_description
 string data_ref_description

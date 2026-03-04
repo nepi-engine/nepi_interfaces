@@ -1,6 +1,10 @@
 # This service definition provides the capabilities report for a NEPI PTX (pan/tilt) actuator
 
 ---
+string device_name
+string device_path
+string device_node_name
+
 bool has_absolute_positioning
 bool has_timed_positioning
 bool has_seperate_pan_tilt_control

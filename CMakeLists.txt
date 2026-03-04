@@ -187,6 +187,7 @@ add_message_files(FILES
 ## Generate services in the 'srv' folder
 add_service_files(FILES
     ConvertRawTstamp.srv
+    DeviceInfoQuery.srv
     TimeStatusQuery.srv
     IPAddrQuery.srv
     WifiQuery.srv

@@ -1,6 +1,10 @@
 # This service definition provides the capabilities report for a NEPI RBX driver node
 
 ---
+string device_name
+string device_path
+string device_node_name
+
 # Commanded controls for fields set to False will be ignored
 AxisControls control_support
 

@@ -1,6 +1,10 @@
 # This service definition provides the capabilities report for a NEPI IDX sensor
 
 ---
+string device_name
+string device_path
+string device_node_name
+
 bool has_standby_mode
 
 

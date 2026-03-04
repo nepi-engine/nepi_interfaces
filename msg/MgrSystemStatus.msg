@@ -77,9 +77,6 @@ string[] sys_managers_ordered_list
 string[] sys_managers_active_list
 string[] sys_managers_running_list
 
-string[] sys_node_name_keys
-string[] sys_node_name_aliases
-
 string[] rui_restriction_options
 string[] rui_restrictions
 string[] rui_restricted

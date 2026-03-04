@@ -1,9 +1,10 @@
-# This message provides the Numurus IDX status
+# This message provides the NEPI IDX status
 
 # Device Identifiers
 string device_name
-string device_id
-string identifier
+string device_path
+string device_node_name
+
 string serial_num
 string hw_version
 string sw_version
