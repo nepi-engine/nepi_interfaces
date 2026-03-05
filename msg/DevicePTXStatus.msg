@@ -11,8 +11,6 @@ string serial_num
 string hw_version
 string sw_version
 
-string node_name
-
 string data_source_description
 string data_ref_description
 
@@ -82,8 +80,6 @@ string[] error_msgs
 bool has_calibration
 bool is_calibrating
 
-# Transform from device native ref frame to the nepi_frame,
-nepi_interfaces/Frame3DTransform navpose_frame_transform
 
 
 
