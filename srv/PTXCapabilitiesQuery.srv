@@ -13,4 +13,5 @@ bool has_adjustable_speed
 bool has_limit_controls
 bool has_homing
 bool has_set_home
+bool has_calibration
 
