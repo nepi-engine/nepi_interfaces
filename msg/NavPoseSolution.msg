@@ -5,9 +5,6 @@ string description
 
 string navpose_topic
 
-# If component source topic(s) are not set, the fixed_navpose is applied
-NavPose fixed_navpose
-
 string[] components_list
 NavPoseComponent[] components_info
 

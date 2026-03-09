@@ -176,6 +176,7 @@ add_message_files(FILES
     UpdateOrder.msg
     UpdateRangeWindow.msg
     UpdateFloat.msg
+    UpdateFloats.msg
     UpdateInt.msg
     UpdateBool.msg
     UpdateString.msg

@@ -2,27 +2,37 @@
 
 string comp_name 
 
-string[] available_topics
-string[] available_topic_msgs
+string[] available_update_topics
+string[] available_update_topic_msgs
 
-# Value is updated when connected to data stream
-# or set in fixed navpose
+string[] available_init_topics
+string[] available_init_topic_msgs
+
+# Value is update topic connected or init topic connectec or init topic set to fixed
 bool has_component
 
-# If value is manually set
-bool fixed
+# Update Topic Settings
+string update_topic
+string update_topic_msg
+bool update_topic_available
+bool update_topic_connecting
+bool update_topic_connected
+float32 update_topic_avg_rate
+float32 update_topic_last_time
+Frame3DTransform update_topic_transform
 
-# If value set to topic
-string topic
-string topic_msg
-bool available
-bool connecting
-bool connected
-string connect_msg
-float32 avg_rate
-float32 last_time
-Frame3DTransform transform
+# Init Topic Settings
+string init_topic
+string init_topic_msg
+bool init_topic_available
+bool init_topic_connecting
+bool init_topic_connected
 
+float32 init_topic_avg_rate
+float32 init_topic_last_time
+Frame3DTransform init_topic_transform
 
+bool init_on_crossings
+float32[] init_crossings_list
 
 

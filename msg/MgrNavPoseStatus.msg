@@ -12,10 +12,10 @@ string frame_alt
 string[] frame_depth_options
 string frame_depth
 
+
 string[] navpose_frames
 string[] navpose_frames_topics
 NavPoseSolution[] navpose_frames_solutions
-string[] navpose_frames_str_msg
 
 
 
