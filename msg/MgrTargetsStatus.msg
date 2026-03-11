@@ -27,5 +27,5 @@ float32 target_min_dist_m
 float32 target_age_filter 
 
 # Input Transform for data from image source's native frame to the nepi_frame 
-Frame3DTransform navpose_frame_transform
+Transform navpose_frame_transform
 

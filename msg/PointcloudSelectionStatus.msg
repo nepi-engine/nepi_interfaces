@@ -20,7 +20,7 @@ string output_3d_frame
 # example: str([[x_offset,y_offset,z_offset,roll_offset,pitch_offset,yaw_offset,heading_offset],[...]])
 string transforms_list
 
-# String list of source topics associated with each Frame3DTransform
+# String list of source topics associated with each Transform
 string transforms_topic_list
 
 # Age Filter for Pointclouds in Seconds used to check before combining

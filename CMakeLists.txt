@@ -95,9 +95,8 @@ add_message_files(FILES
     DriverStatus.msg
     ErrorBounds.msg
     FilenameConfig.msg
-    Frame3DTransform.msg
-    Frame3DTransforms.msg
-    Frame3DTransformStatus.msg
+    Transform.msg
+    TransformStatus.msg
     GotoErrors.msg
     GotoLocation.msg
     GotoPose.msg
@@ -171,7 +170,7 @@ add_message_files(FILES
     TargetingControlsStatus.msg
     TestPatternCfg.msg
     TimeUpdate.msg
-    UpdateFrame3DTransform.msg
+    UpdateTransform.msg
     UpdateNavPose.msg
     UpdateOrder.msg
     UpdateRangeWindow.msg
@@ -224,9 +223,9 @@ add_service_files(FILES
     NavPoseCapabilitiesQuery.srv
     NavPoseQuery.srv
     NavPosesQuery.srv
-    Frame3DTransformsQuery.srv
-    Frame3DTransformRegister.srv
-    Frame3DTransformDelete.srv
+    TransformsQuery.srv
+    TransformRegister.srv
+    TransformDelete.srv
     
 )
 

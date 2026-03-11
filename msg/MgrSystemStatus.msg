@@ -77,13 +77,13 @@ string[] sys_managers_ordered_list
 string[] sys_managers_active_list
 string[] sys_managers_running_list
 
-string[] rui_restriction_options
-string[] rui_restrictions
-string[] rui_restricted
+string[] user_restriction_options
+string[] user_restrictions
+string[] user_restricted
 
-bool rui_login_enabled
-bool rui_login_password_valid
-bool rui_login_mode_set
+bool user_login_enabled
+bool user_login_password_valid
+bool user_login_mode_set
 
 
 

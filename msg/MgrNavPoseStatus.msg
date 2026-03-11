@@ -3,7 +3,7 @@
 string navposes_topic
 string save_data_topic
 
-float32 navposes_pub_rate
+float32 navposes_max_pub_rate
 
 string[] frame_nav_options
 string frame_nav

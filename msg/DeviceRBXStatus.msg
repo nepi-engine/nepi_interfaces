@@ -58,4 +58,4 @@ string last_error_message
 
 
 # Transform from device native ref frame to the nepi_frame
-nepi_interfaces/Frame3DTransform navpose_frame_transform
+nepi_interfaces/Transform navpose_frame_transform
