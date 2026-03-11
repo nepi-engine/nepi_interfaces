@@ -223,7 +223,7 @@ add_service_files(FILES
     NavPoseCapabilitiesQuery.srv
     NavPoseQuery.srv
     NavPosesQuery.srv
-    TransformsQuery.srv
+    TransformQuery.srv
     TransformRegister.srv
     TransformDelete.srv
     
