@@ -1,6 +1,7 @@
 # This message details all navposes status message
 
 ### Data Info
+string frame_name
 string node_name
 string navpose_topic
 string transform_topic

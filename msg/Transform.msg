@@ -11,11 +11,22 @@ string source_ref_description
 string end_ref_description
 
 # X,Y,Z translation transform vector in meters
-geometry_msgs/Vector3 translate_vector
+float32 x_m
+bool x_invert
+float32 y_m
+bool y_invert
+float32 z_m
+bool z_invert
 
 # roll,pitch,yaw rotation transform vector in degrees
-geometry_msgs/Vector3 rotate_vector
+float32 roll_deg
+bool roll_invert
+float32 pitch_deg
+bool pitch_invert
+float32 yaw_deg
+bool yaw_invert
 
 # heading transform in degrees
 float32 heading_offset
+bool heading_invert
 
