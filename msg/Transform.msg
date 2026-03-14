@@ -27,6 +27,6 @@ float32 yaw_deg
 bool yaw_invert
 
 # heading transform in degrees
-float32 heading_offset
+float32 heading_deg
 bool heading_invert
 
