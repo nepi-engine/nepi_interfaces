@@ -164,10 +164,7 @@ add_message_files(FILES
     SystemTriggersStatus.msg
     Target.msg
     Targets.msg
-    TargetFilter.msg
-    TargetFilters.msg
     TargetingStatus.msg
-    TargetingControlsStatus.msg
     TestPatternCfg.msg
     TimeUpdate.msg
     UpdateTransform.msg

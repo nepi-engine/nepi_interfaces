@@ -36,7 +36,7 @@ float32 range_m
 float32 azimuth_deg
 float32 elevation_deg
 
-NavPose source_nav_pose
+NavPose navpose
 
 # Color Distribution Percent 
 float32 color_black	

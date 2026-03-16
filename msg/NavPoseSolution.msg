@@ -3,7 +3,10 @@
 string frame_name
 string description
 
+string frame_namespace
 string navpose_topic
+string navpose_fixed_topic
+string[] navpose_component_topics
 
 string[] components_list
 NavPoseComponent[] components_info
