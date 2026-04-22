@@ -57,6 +57,7 @@ uint32 max_boot_fail_count
 
 #################
 ## Active Topics
+string[] active_nodes
 string[] active_topics
 string[] active_topic_types
 string[] active_services
