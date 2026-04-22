@@ -66,6 +66,7 @@ add_message_files(FILES
     AiPoseStatus.msg
     AiSegmentorStatus.msg
     AiBoundingBoxes.msg
+    AiTrackingStatus.msg
     Annotation.msg
     MgrAppsStatus.msg
     AppStatus.msg
@@ -166,7 +167,7 @@ add_message_files(FILES
     Targets.msg
     TargetingStatus.msg
     TestPatternCfg.msg
-    TrackingStatus.msg
+   
     TimeUpdate.msg
     UpdateTransform.msg
     UpdateNavPose.msg
