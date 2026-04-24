@@ -56,7 +56,10 @@ bool reverse_tilt_enabled
 
 
 bool has_adjustable_speed
+bool has_seperate_pan_tilt_speed
 float32 speed_ratio
+float32 speed_pan_ratio
+float32 speed_tilt_ratio
 float32 speed_pan_dps
 float32 speed_tilt_dps
 

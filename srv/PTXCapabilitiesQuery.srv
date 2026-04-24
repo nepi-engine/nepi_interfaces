@@ -10,6 +10,7 @@ bool has_timed_positioning
 bool has_seperate_pan_tilt_control
 bool has_position_feedback
 bool has_adjustable_speed
+bool has_seperate_pan_tilt_speed
 bool has_limit_controls
 bool has_homing
 bool has_set_home
