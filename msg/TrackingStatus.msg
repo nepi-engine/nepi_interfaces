@@ -6,26 +6,31 @@ string name
 string namespace
 
 string save_data_topic
+string image_topic
 
 bool enabled
 string state
 bool tracking_state
 
+##################
+float32 tracking_move_ratio
+bool link_source_process
 
 ##################
-string[] available_targeting_sources
-string selected_targeting_source
-string selected_targeting_topic
-string selected_targeting_image
-bool targeting_source_connected
+string[] available_process_topics
+string selected_process
+
+
+string[] available_source_topics
+string[] selected_sources_ordered
 
 string[] available_classes
-string[] selected_classes
+string[] selected_classes_ordered
 
 float32 threshold_filter
 
-string[] available_filters
-string[] selected_filter
+string[] available_best_filters
+string[] selected_best_filter
 
 ###############
     

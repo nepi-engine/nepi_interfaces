@@ -1,5 +1,6 @@
+# This message provides information for a single track event
 
-float64 targeting_timestamp
+float64 track_timestamp
 
 string process_name
 string process_namespace
@@ -20,5 +21,4 @@ bool has_color_data
 bool has_countour_data
 bool has_shape_data
 
-Target[] targets
-
+Target target
