@@ -6,9 +6,10 @@ int32 image_index
 
 bool click_event
 int32 click_count
-nepi_interfaces/ImagePixel click_pixel
+nepi_interfaces/ImagePixel click
 bool drag_event
-nepi_interfaces/ImagePixel drag_pixel
+nepi_interfaces/ImagePixel drag_start
+nepi_interfaces/ImagePixel drag_stop
 bool window_event
 nepi_interfaces/ImageWindow window
 
