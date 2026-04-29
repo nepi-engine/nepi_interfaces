@@ -62,9 +62,23 @@ string[] active_topics
 string[] active_topic_types
 string[] active_services
 
+## Active NavPose
+string active_navpose_frames
+
+## Active Drivers
+string[] active_drivers
+
+## Active Apps
+string[] active_apps
+
+## Active AI
+string[] active_ai_detectors
+
+
 
 ################################
 ## Debug, Admin, Manager, and User Settings
+string sys_timezone
 
 bool sys_admin_enabled
 bool sys_admin_password_valid
