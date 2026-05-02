@@ -1,4 +1,4 @@
-# Targeting Status Update Message
+# Targeting Status Message
 
 string name
 string node_name
@@ -7,6 +7,7 @@ string group
 string description
 
 string save_data_topic
+bool save_config_enabled
 
 #################
 bool enabled

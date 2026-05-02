@@ -26,6 +26,9 @@ bool has_timed_positioning
 bool has_seperate_pan_tilt_control
 bool has_position_feedback
 
+int32 move_decimal_place
+int32 report_decimal_place
+
 float32 pan_now_deg
 float32 tilt_now_deg
 

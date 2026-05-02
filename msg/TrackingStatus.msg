@@ -17,6 +17,7 @@ string msg_str
 
 ##################
 bool manages_targeting
+bool save_config_enabled
 
 string[] available_targets_topics
 string selected_targets

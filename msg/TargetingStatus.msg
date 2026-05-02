@@ -7,6 +7,7 @@ string group
 string description
 
 string save_data_topic
+bool save_config_enabled
 
 #################
 bool enabled

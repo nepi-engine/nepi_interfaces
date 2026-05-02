@@ -25,6 +25,7 @@ int32 sleep_run_sec
 bool sleep_state
 
 float32 max_proc_rate_hz
+bool save_config_enabled
 
 #################
 bool enabled
