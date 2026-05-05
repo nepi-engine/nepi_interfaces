@@ -141,6 +141,9 @@ add_message_files(FILES
     PointcloudProcessStatus.msg
     PointcloudRenderStatus.msg
     PointcloudSelectionStatus.msg
+    Predict.msg
+    PredictProcess.msg
+    PredictStatus.msg
     RangeWindow.msg
     Reset.msg
     RUISettings.msg

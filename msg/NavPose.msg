@@ -55,6 +55,13 @@ bool has_pan_tilt
 float32 time_pan_tilt
 float32 pan_deg
 float32 tilt_deg
+float32 pan_tilt_heading_deg
+float32 pan_tilt_x_m
+float32 pan_tilt_y_m
+float32 pan_tilt_z_m
+float32 pan_tilt_roll_deg
+float32 pan_tilt_pitch_deg
+float32 pan_tilt_yaw_deg
 
 
 
