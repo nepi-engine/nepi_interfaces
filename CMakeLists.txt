@@ -170,6 +170,7 @@ add_message_files(FILES
     TargetingStatus.msg
     TargetingUpdate.msg
     TestPatternCfg.msg
+    Track.msg
     TrackingStatus.msg
     TimeUpdate.msg
     UpdateTransform.msg
