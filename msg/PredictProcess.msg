@@ -6,5 +6,7 @@ float32 max_process_sec
 float32 max_process_hz
 float32 sensitivity
 float32 weight
+string[] arg_names
+float32[] arg_values
 
 
