@@ -2,6 +2,7 @@
 
 string process_name
 bool enabled
+int32 min_samples
 float32 max_process_sec
 float32 max_process_hz
 float32 sensitivity
