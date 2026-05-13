@@ -7,3 +7,5 @@ float32 timestamp
 float32 pan_deg
 float32 tilt_deg
 
+float32 pan_speed_dps
+float32 tilt_speed_dps
