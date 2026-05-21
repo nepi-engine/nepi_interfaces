@@ -1,6 +1,5 @@
 # NavPose Mgr Status Message
 
-string navposes_topic
 string save_data_topic
 
 float32 navposes_max_pub_rate

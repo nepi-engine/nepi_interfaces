@@ -2,7 +2,6 @@
 
 ---
 
-string navposes_topic
 string[] navpose_frames
 string[] navpose_frames_topics
 string[] frame_nav_options
