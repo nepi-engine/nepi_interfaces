@@ -72,14 +72,18 @@ add_message_files(FILES
     AutoManualSelection3DX.msg
     AutoStartEnabled.msg
     AxisControls.msg
+    BoolArray.msg
     BoundingBox.msg
     BoundingBoxes.msg
     BoundingBox3D.msg
     BoundingBoxes3D.msg
     ColorBGR.msg
+    Control.msg
+    ControlsStatus.msg
     DepthMapStatus.msg
     DatafileCtrl3DX.msg
     ImageStatus.msg
+    IntArray.msg
     NavPoseStatus.msg
     PointcloudStatus.msg
     IntensityMapStatus.msg
@@ -95,6 +99,7 @@ add_message_files(FILES
     DriverStatus.msg
     ErrorBounds.msg
     FilenameConfig.msg
+    FloatArray.msg
     Transform.msg
     TransformStatus.msg
     GotoErrors.msg
@@ -151,8 +156,6 @@ add_message_files(FILES
     SaveDataStatus.msg
     Setting.msg
     SettingCap.msg
-    SettingCaps.msg
-    Settings.msg
     SettingsStatus.msg
     SingleAxisTimedMove.msg
     FieldOfView.msg
@@ -179,11 +182,13 @@ add_message_files(FILES
     UpdateNavPose.msg
     UpdateOrder.msg
     UpdateRangeWindow.msg
+    UpdateFloatRange.msg
     UpdateFloat.msg
     UpdateFloats.msg
     UpdateInt.msg
     UpdateBool.msg
     UpdateString.msg
+    UpdateStringArray.msg
     WarningFlags.msg
     NetworkWifiCredentials.msg
 
