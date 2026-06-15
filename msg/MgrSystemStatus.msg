@@ -101,4 +101,9 @@ bool user_login_password_valid
 bool user_login_mode_set
 
 
+bool nepi_service_running
+bool nepi_updating_config
+string netlist_str
+
+
 
