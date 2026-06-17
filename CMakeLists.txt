@@ -155,6 +155,7 @@ add_message_files(FILES
     SaveDataRate.msg
     SaveDataStatus.msg
     Setting.msg
+    Settings.msg
     SettingCap.msg
     SettingsStatus.msg
     SingleAxisTimedMove.msg
@@ -189,6 +190,7 @@ add_message_files(FILES
     UpdateBool.msg
     UpdateString.msg
     UpdateStringArray.msg
+    UpdateStringDict.msg
     WarningFlags.msg
     NetworkWifiCredentials.msg
 
