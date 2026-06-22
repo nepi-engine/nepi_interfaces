@@ -23,6 +23,7 @@ string[] data_product_image_topics
 
 bool has_absolute_positioning
 bool has_timed_positioning
+bool has_timed_speed_positioning
 bool has_seperate_pan_tilt_control
 bool has_position_feedback
 

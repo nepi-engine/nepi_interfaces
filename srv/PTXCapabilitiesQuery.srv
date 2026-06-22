@@ -7,6 +7,7 @@ string device_node_name
 
 bool has_absolute_positioning
 bool has_timed_positioning
+bool has_timed_speed_positioning
 bool has_seperate_pan_tilt_control
 bool has_position_feedback
 bool has_adjustable_speed
