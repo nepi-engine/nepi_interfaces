@@ -159,6 +159,7 @@ add_message_files(FILES
     SettingCap.msg
     SettingsStatus.msg
     SingleAxisTimedMove.msg
+    SingleAxisTimedSpeedMove.msg
     FieldOfView.msg
     SerialDevice.msg
     StampedString.msg
