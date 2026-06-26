@@ -4,6 +4,9 @@
 int32 INT_FIELD_UNSET=-999
 float32 FLOAT_FIELD_UNSET=-999.0
 
+
+float64 timestamp
+
 string target_name
 string target_uid
 float32 target_confidence
