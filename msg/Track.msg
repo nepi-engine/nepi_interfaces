@@ -1,6 +1,6 @@
 # This message provides information for a single track event
 
-float64 track_timestamp
+float64 timestamp
 
 string process_name
 string process_namespace
