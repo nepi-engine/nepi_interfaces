@@ -4,12 +4,8 @@
 int32 INT_FIELD_UNSET=-999
 float32 FLOAT_FIELD_UNSET=-999.0
 
-<<<<<<< HEAD
 # Epoch seconds of the source image this target was detected in
-=======
-
->>>>>>> a76d4201bcd64b4df0f4217497d71a3cac99c4a8
-float64 timestamp
+float32 timestamp
 
 string target_name
 string target_uid
