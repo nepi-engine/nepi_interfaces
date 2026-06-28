@@ -1,5 +1,5 @@
 
-float64 targeting_timestamp
+float64 timestamp
 
 string process_name
 string process_namespace
