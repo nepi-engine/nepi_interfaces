@@ -2,6 +2,9 @@
 
 string save_data_topic
 
+
+bool sync_transforms
+bool apply_transforms
 float32 navposes_max_pub_rate
 
 string[] frame_nav_options
