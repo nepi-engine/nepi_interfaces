@@ -18,6 +18,8 @@ bool has_fixed
 bool has_pan_tilt
 bool pan_tilt_adjusted
 
+bool apply_transforms
+
 float32 max_pub_rate
 float32 avg_pub_rate
 
