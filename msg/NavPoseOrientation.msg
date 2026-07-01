@@ -7,3 +7,8 @@ float32 timestamp
 float32 roll_deg
 float32 pitch_deg
 float32 yaw_deg
+
+# Angular rates in 'ENU' frame, degrees per second
+float32 roll_deg_per_sec
+float32 pitch_deg_per_sec
+float32 yaw_deg_per_sec

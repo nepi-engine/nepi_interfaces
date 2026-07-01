@@ -17,12 +17,16 @@ bool has_location
 float32 time_location
 float32 latitude
 float32 longitude
+# Speed over ground, meters per second
+float32 location_m_per_sec
 
 
 # Heading in degrees true north
 bool has_heading
 float32 time_heading
 float32 heading_deg
+# Ground speed in the heading direction, meters per second
+float32 heading_m_per_sec
 
 # Orientation Degrees in native frame ENU  (roll,pitch,yaw) right-hand
 # with axises defined as x forward, y left, and z up
@@ -31,6 +35,10 @@ float32 time_orientation
 float32 roll_deg
 float32 pitch_deg
 float32 yaw_deg
+# Angular rates degrees per second in native frame ENU
+float32 roll_deg_per_sec
+float32 pitch_deg_per_sec
+float32 yaw_deg_per_sec
 
 # Relative Position meters in native frame ENU (x,y,z) with x forward, y left, and z up
 bool has_position
@@ -38,17 +46,25 @@ float32 time_position
 float32 x_m
 float32 y_m
 float32 z_m
+# Linear velocity meters per second in native frame ENU
+float32 x_m_per_sec
+float32 y_m_per_sec
+float32 z_m_per_sec
 
 # Altitude meters in WGS84 frame
 bool has_altitude
 float32 time_altitude
 float32 altitude_m
 float32 geoid_height_meters
+# Vertical rate (altitude change), meters per second
+float32 altitude_m_per_sec
 
 # Depth meters from surface
 bool has_depth
 float32 time_depth
 float32 depth_m
+# Depth rate (depth change), meters per second
+float32 depth_m_per_sec
 
 # Pan Tilt degrees
 bool has_pan_tilt

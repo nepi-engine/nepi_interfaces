@@ -7,3 +7,6 @@ float32 timestamp
 float32 latitude
 float32 longitude
 
+# Speed over ground, meters per second
+float32 location_m_per_sec
+
