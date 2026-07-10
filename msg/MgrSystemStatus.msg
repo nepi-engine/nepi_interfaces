@@ -96,13 +96,18 @@ string[] user_restriction_options
 string[] user_restrictions
 string[] user_restricted
 
+string[] supported_device_types
+string[] supported_device_descriptions
+
 bool user_login_enabled
 bool user_login_password_valid
 bool user_login_mode_set
 
 
 bool nepi_service_running
+bool nepi_update_requested
 bool nepi_updating_config
+string nepi_update_msg
 string netlist_str
 
 
