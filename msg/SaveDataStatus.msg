@@ -12,7 +12,7 @@ string save_subfolder
 bool save_data_utc
 string timezone
 
-bool saving_disabled
+bool disabled
 
 # The save_data field indicates whether captured data is currently being saved in continuous fashion. The
 # save-data-next control does not affect this field
