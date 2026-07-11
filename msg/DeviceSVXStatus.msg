@@ -1,0 +1,93 @@
+## SVX Servo status msg
+## All data provided in the current reverse servo frames
+## Reverse axis conversions are handled by the SVX IF class
+
+
+string device_name
+string device_path
+string device_node_name
+
+string serial_num
+string hw_version
+string sw_version
+
+string data_source_description
+string data_ref_description
+
+string settings_topic
+string navpose_topic
+string save_data_topic
+string[] data_products
+string[] data_product_topics
+string[] data_product_image_topics
+
+bool has_absolute_positioning
+bool has_timed_positioning
+bool has_timed_speed_positioning
+bool has_seperate_servo_control
+bool has_position_feedback
+
+int32 move_decimal_place
+int32 report_decimal_place
+
+float32 pan_now_deg
+float32 tilt_now_deg
+
+float32 pan_goal_deg
+float32 tilt_goal_deg
+
+float32 pan_now_ratio
+float32 tilt_now_ratio
+
+float32 pan_goal_ratio
+float32 tilt_goal_ratio
+
+
+bool has_limit_controls
+float32 pan_min_hardstop_deg
+float32 pan_max_hardstop_deg
+float32 tilt_min_hardstop_deg
+float32 tilt_max_hardstop_deg
+
+float32 pan_min_softstop_deg
+float32 pan_max_softstop_deg
+float32 tilt_min_softstop_deg
+float32 tilt_max_softstop_deg
+
+
+bool reverse_pan_enabled
+bool reverse_tilt_enabled
+
+
+bool has_adjustable_speed
+bool has_seperate_servo_speed
+float32 speed_max_dps
+float32 speed_ratio
+float32 speed_pan_ratio
+float32 speed_tilt_ratio
+float32 speed_pan_dps
+float32 speed_tilt_dps
+
+bool has_homing
+bool has_set_home
+float32 pan_home_pos_deg
+float32 tilt_home_pos_deg
+
+
+# Distances from servo base center mounting point
+# to tilt axis center location
+float32 x_from_base_center
+float32 y_from_base_center
+float32 z_from_base_center
+
+bool is_moving
+
+string[] error_msgs
+
+
+bool has_calibration
+bool is_calibrating
+
+
+
+

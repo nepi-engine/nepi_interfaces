@@ -93,6 +93,7 @@ add_message_files(FILES
     DeviceLSXStatus.msg
     DeviceNPXStatus.msg
     DevicePTXStatus.msg
+    DeviceSVXStatus.msg
     DeviceRBXInfo.msg
     DeviceRBXStatus.msg
     MgrDriversStatus.msg
@@ -133,6 +134,7 @@ add_message_files(FILES
     NavPoseLocation.msg
     NavPoseOrientation.msg
     NavPosePanTilt.msg
+    NavPoseServo.msg
     NavPosePosition.msg
     NavPoseTrack.msg
     NavPoseComponent.msg
@@ -140,8 +142,10 @@ add_message_files(FILES
     ObjectCount.msg
     NavPoseOffset.msg
     PanTiltLimits.msg
+    ServoLimits.msg
     PanTiltOffsets.msg
     PanTiltPosition.msg
+    ServoPosition.msg
     PeriodicSwTrig.msg
     PointcloudProcessStatus.msg
     PointcloudRenderStatus.msg
@@ -217,6 +221,7 @@ add_service_files(FILES
     StopScript.srv
     GetSystemStatsQuery.srv
     PTXCapabilitiesQuery.srv
+    SVXCapabilitiesQuery.srv
     RBXCapabilitiesQuery.srv
     NPXCapabilitiesQuery.srv
     LSXCapabilitiesQuery.srv
