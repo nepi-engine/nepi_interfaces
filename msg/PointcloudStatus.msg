@@ -28,6 +28,12 @@ float32 height_m
 float32 depth_m
 
 
+### Process Controls
+nepi_interfaces/PointcloudProcessStatus process_status
+
+### Render Controls
+nepi_interfaces/PointcloudRenderStatus render_status
+
 
 ### Data Stats
 
