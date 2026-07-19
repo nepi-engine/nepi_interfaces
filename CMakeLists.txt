@@ -80,6 +80,7 @@ add_message_files(FILES
     ColorBGR.msg
     Control.msg
     ControlsStatus.msg
+    ConnectIFStatus.msg
     DepthMapStatus.msg
     DatafileCtrl3DX.msg
     ImageStatus.msg
