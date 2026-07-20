@@ -34,16 +34,16 @@ bool state
 string msg_str
 
 ##################
-string[] available_image_topics
-string[] selected_images
-bool[] images_connected
+string[] available_source_topics
+string[] selected_sources
+bool[] sources_connected
 
-bool[] images_have_range
-float32[] images_fov_horz_degs 
-float32[] images_fov_vert_degs 
+bool[] sources_have_range
+float32[] sources_fov_horz_degs 
+float32[] sources_fov_vert_degs 
 
-bool image_selected
-bool image_connected
+bool source_selected
+bool source_connected
 
 #################
 
