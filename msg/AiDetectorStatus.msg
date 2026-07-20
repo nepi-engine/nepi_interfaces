@@ -42,8 +42,6 @@ bool[] images_have_range
 float32[] images_fov_horz_degs 
 float32[] images_fov_vert_degs 
 
-
-
 bool image_selected
 bool image_connected
 
