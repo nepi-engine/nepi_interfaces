@@ -12,5 +12,8 @@ nepi_interfaces/ImagePixel drag_start
 nepi_interfaces/ImagePixel drag_stop
 bool window_event
 nepi_interfaces/ImageWindow window
+bool scroll_event
+nepi_interfaces/ImagePixel scroll
+float32 scroll_amount
 
 nepi_interfaces/ImageStatus image_status_msg
