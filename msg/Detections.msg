@@ -1,4 +1,4 @@
-# This message provides data for a list of targets from a single source
+# This message provides data for a list of detections from a single source
 
 string process_name
 string process_namespace
@@ -9,5 +9,6 @@ float64 source_timestamp
 
 string navpose_frame
 NavPose navpose_msg
-Target[] targets
+
+nepi_iterfaces/Detection[] detections
 

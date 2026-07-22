@@ -73,10 +73,8 @@ add_message_files(FILES
     AutoStartEnabled.msg
     AxisControls.msg
     BoolArray.msg
-    BoundingBox.msg
-    BoundingBoxes.msg
+    BoundingBox2D.msg
     BoundingBox3D.msg
-    BoundingBoxes3D.msg
     ColorBGR.msg
     Control.msg
     ControlsStatus.msg
@@ -88,6 +86,9 @@ add_message_files(FILES
     NavPoseStatus.msg
     PointcloudStatus.msg
     IntensityMapStatus.msg
+    Detection.msg
+    Detections.msg
+    DetectionStatus.msg
     DictString.msg
     DictStringEntry.msg
     DeviceIDXStatus.msg
@@ -143,10 +144,8 @@ add_message_files(FILES
     ObjectCount.msg
     NavPoseOffset.msg
     PanTiltLimits.msg
-    ServoLimits.msg
     PanTiltOffsets.msg
     PanTiltPosition.msg
-    ServoPosition.msg
     PeriodicSwTrig.msg
     PointcloudProcessStatus.msg
     PointcloudRenderStatus.msg
@@ -154,6 +153,7 @@ add_message_files(FILES
     Predict.msg
     PredictProcess.msg
     PredictStatus.msg
+    ProcessStatus.msg
     RangeWindow.msg
     Reset.msg
     RUISettings.msg
@@ -163,6 +163,8 @@ add_message_files(FILES
     Settings.msg
     SettingCap.msg
     SettingsStatus.msg
+    ServoLimits.msg
+    ServoPosition.msg
     SingleAxisTimedMove.msg
     SingleAxisTimedSpeedMove.msg
     FieldOfView.msg
@@ -178,7 +180,6 @@ add_message_files(FILES
     Target.msg
     Targets.msg
     TargetingStatus.msg
-    TargetingUpdate.msg
     TestPatternCfg.msg
     TimeSeries.msg
     TimeSeriesStatus.msg
