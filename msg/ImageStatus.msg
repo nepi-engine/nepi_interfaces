@@ -81,8 +81,11 @@ RangeWindow window_y_ratios
 # The rotate field 0.0 - 1.0 
 float32 rotate_3d_ratio
 
-# The tilt field 0.0 - 1.0 
+# The tilt field 0.0 - 1.0
 float32 tilt_3d_ratio
+
+# Enable/disable 3D render controls (mouse drag/window interaction from the image viewer)
+bool render_3d_controls_enabled
 
 string[] filter_options
 bool[] filter_states
