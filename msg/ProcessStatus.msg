@@ -47,7 +47,7 @@ bool source_connected
 ###############
 # Process Image Controls
 ###############
-has_imaging
+bool has_imaging
 float32 max_image_pub_rate_hz
 bool imaging_enabled
 bool use_last_image
