@@ -18,6 +18,7 @@ int32 ymax_pixel
 int32 width_pixels
 int32 height_pixels
 float32 area_pixels
+float32 area_ratio
 geometry_msgs/Vector3 vel_pixels
 
 # Position Data ENU Reference Frame

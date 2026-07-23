@@ -60,14 +60,8 @@ find_package(catkin REQUIRED COMPONENTS
 
 ## Generate messages in the 'msg' folder
 add_message_files(FILES
-    PanTiltAbsoluteWaypoint.msg
     AiModelStatus.msg
-    AiDetectorStatus.msg
-    AiPoseStatus.msg
-    AiSegmentorStatus.msg
-    AiBoundingBoxes.msg
     Annotation.msg
-    MgrAppsStatus.msg
     AppStatus.msg
     AutoManualSelection3DX.msg
     AutoStartEnabled.msg
@@ -86,9 +80,8 @@ add_message_files(FILES
     NavPoseStatus.msg
     PointcloudStatus.msg
     IntensityMapStatus.msg
-    Detection.msg
     Detections.msg
-    DetectionStatus.msg
+    DetectorStatus.msg
     DictString.msg
     DictStringEntry.msg
     DeviceIDXStatus.msg
@@ -98,7 +91,6 @@ add_message_files(FILES
     DeviceSVXStatus.msg
     DeviceRBXInfo.msg
     DeviceRBXStatus.msg
-    MgrDriversStatus.msg
     DriverStatus.msg
     ErrorBounds.msg
     FilenameConfig.msg
@@ -119,7 +111,9 @@ add_message_files(FILES
     SelectorStatus.msg
     Localization.msg
     Message.msg
+    MgrAppsStatus.msg
     MgrAiModelsStatus.msg
+    MgrDriversStatus.msg
     MgrNavPoseStatus.msg
     MgrNetworkStatus.msg
     MgrSystemStatus.msg
@@ -231,7 +225,9 @@ add_service_files(FILES
     DriverStatusQuery.srv
     SetBoolState.srv
     AiModelStatusQuery.srv
-    AiDetectorStatusQuery.srv
+    DetectorStatusQuery.srv
+    TargetingStatusQuery.srv
+    TrackingStatusQuery.srv
     SoftwareStatusQuery.srv
     SystemStatesQuery.srv
     SystemTriggersQuery.srv

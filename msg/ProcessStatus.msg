@@ -48,8 +48,8 @@ bool source_connected
 # Process Image Controls
 ###############
 bool has_imaging
-float32 max_image_pub_rate_hz
 bool imaging_enabled
+float32 max_image_pub_rate_hz
 bool use_last_image
 string imaging_if_api
 string imaging_if_class
@@ -61,8 +61,8 @@ string[] imaging_pub_topics
 # Process Stats
 ###############
 
-float32[] avg_source_latencies
-float32[] avg_source_rates
+float32 avg_source_latency
+float32 avg_source_rate
 
 float32 avg_preprocess_latency
 float32 avg_preprocess_rate
@@ -75,6 +75,6 @@ float32 max_process_rate
 ###############
 # Display Controls
 ###############
-show_selector = True
-show_controls = True
-show_data = True
+bool show_selector
+bool show_controls
+bool show_data
