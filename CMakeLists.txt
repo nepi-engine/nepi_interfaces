@@ -60,23 +60,15 @@ find_package(catkin REQUIRED COMPONENTS
 
 ## Generate messages in the 'msg' folder
 add_message_files(FILES
-    PanTiltAbsoluteWaypoint.msg
     AiModelStatus.msg
-    AiDetectorStatus.msg
-    AiPoseStatus.msg
-    AiSegmentorStatus.msg
-    AiBoundingBoxes.msg
     Annotation.msg
-    MgrAppsStatus.msg
     AppStatus.msg
     AutoManualSelection3DX.msg
     AutoStartEnabled.msg
     AxisControls.msg
     BoolArray.msg
-    BoundingBox.msg
-    BoundingBoxes.msg
+    BoundingBox2D.msg
     BoundingBox3D.msg
-    BoundingBoxes3D.msg
     ColorBGR.msg
     Control.msg
     ControlsStatus.msg
@@ -88,6 +80,8 @@ add_message_files(FILES
     NavPoseStatus.msg
     PointcloudStatus.msg
     IntensityMapStatus.msg
+    Detections.msg
+    DetectorStatus.msg
     DictString.msg
     DictStringEntry.msg
     DeviceIDXStatus.msg
@@ -97,7 +91,6 @@ add_message_files(FILES
     DeviceSVXStatus.msg
     DeviceRBXInfo.msg
     DeviceRBXStatus.msg
-    MgrDriversStatus.msg
     DriverStatus.msg
     ErrorBounds.msg
     FilenameConfig.msg
@@ -118,7 +111,9 @@ add_message_files(FILES
     SelectorStatus.msg
     Localization.msg
     Message.msg
+    MgrAppsStatus.msg
     MgrAiModelsStatus.msg
+    MgrDriversStatus.msg
     MgrNavPoseStatus.msg
     MgrNetworkStatus.msg
     MgrSystemStatus.msg
@@ -146,10 +141,8 @@ add_message_files(FILES
     ObjectCount.msg
     NavPoseOffset.msg
     PanTiltLimits.msg
-    ServoLimits.msg
     PanTiltOffsets.msg
     PanTiltPosition.msg
-    ServoPosition.msg
     PeriodicSwTrig.msg
     PointcloudProcessStatus.msg
     PointcloudRenderStatus.msg
@@ -157,6 +150,7 @@ add_message_files(FILES
     Predict.msg
     PredictProcess.msg
     PredictStatus.msg
+    ProcessStatus.msg
     RangeWindow.msg
     Reset.msg
     RUISettings.msg
@@ -166,6 +160,8 @@ add_message_files(FILES
     Settings.msg
     SettingCap.msg
     SettingsStatus.msg
+    ServoLimits.msg
+    ServoPosition.msg
     SingleAxisTimedMove.msg
     SingleAxisTimedSpeedMove.msg
     FieldOfView.msg
@@ -181,7 +177,6 @@ add_message_files(FILES
     Target.msg
     Targets.msg
     TargetingStatus.msg
-    TargetingUpdate.msg
     TestPatternCfg.msg
     TimeSeries.msg
     TimeSeriesStatus.msg
@@ -233,7 +228,9 @@ add_service_files(FILES
     DriverStatusQuery.srv
     SetBoolState.srv
     AiModelStatusQuery.srv
-    AiDetectorStatusQuery.srv
+    DetectorStatusQuery.srv
+    TargetingStatusQuery.srv
+    TrackingStatusQuery.srv
     SoftwareStatusQuery.srv
     SystemStatesQuery.srv
     SystemTriggersQuery.srv

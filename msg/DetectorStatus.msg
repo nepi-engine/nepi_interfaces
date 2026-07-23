@@ -1,4 +1,4 @@
-# Process Targeting Status Message
+# Process Detection Status Message
 
 nepi_interfaces/ProcessStatus process_status
 

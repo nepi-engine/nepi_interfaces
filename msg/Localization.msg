@@ -1,7 +1,7 @@
 string name
 int16 id
 string uid
-float64 probability
+float64 confidence
 
 # Range, Bearing, Nav, and Pose Data ENU Reference Frame
 float32 range_m
