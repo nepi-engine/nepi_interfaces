@@ -124,7 +124,10 @@ add_message_files(FILES
     MgrSystemStatus.msg
     MgrSoftwareStatus.msg
     MgrTimeStatus.msg
+    MotorCommand.msg
     MotorControl.msg
+    MotorStatus.msg
+    MotorsStatus.msg
     NavPose.msg
     NavPoseStatus.msg
     NavPoses.msg
