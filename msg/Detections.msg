@@ -12,6 +12,5 @@ float64 source_timestamp
 string navpose_frame
 nepi_interfaces/NavPose navpose_msg
 
-nepi_interfaces/BoundingBox2D[] bounding_boxes
-nepi_interfaces/Localization[] localizations
+nepi_interfaces/Detection[] detections
 

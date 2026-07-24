@@ -80,6 +80,7 @@ add_message_files(FILES
     NavPoseStatus.msg
     PointcloudStatus.msg
     IntensityMapStatus.msg
+    Detection.msg
     Detections.msg
     DetectorStatus.msg
     DictString.msg
