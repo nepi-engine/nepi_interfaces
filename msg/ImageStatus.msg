@@ -78,11 +78,10 @@ float32 pan_y_ratio
 RangeWindow window_x_ratios
 RangeWindow window_y_ratios
 
-# The rotate field 0.0 - 1.0 
+# The tilt and rotate ratio field 0.0 - 1.0 
 float32 rotate_3d_ratio
-
-# The tilt field 0.0 - 1.0 
 float32 tilt_3d_ratio
+bool render_3d_controls_enabled
 
 # Live adjustments
 float32 live_adjust_rotate_ratio
