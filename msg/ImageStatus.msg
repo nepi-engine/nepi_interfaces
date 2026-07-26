@@ -106,11 +106,11 @@ bool overlay_pose
 string[] base_overlay_list
 string[] add_overlay_list
 bool overlay_crosshairs
+int32 num_crosshairs
 bool overlay_crosshair_names
 bool overlay_crosshair_pixels
-bool overlay_crosshair_degs
+bool overlay_crosshair_degrees
 bool click_crosshair_enabled
-int32 num_crosshairs
 nepi_interfaces/ImageCrosshair[] crosshairs
 
 
