@@ -81,11 +81,18 @@ RangeWindow window_y_ratios
 # The rotate field 0.0 - 1.0 
 float32 rotate_3d_ratio
 
-# The tilt field 0.0 - 1.0
+# The tilt field 0.0 - 1.0 
 float32 tilt_3d_ratio
 
-# Enable/disable 3D render controls (mouse drag/window interaction from the image viewer)
-bool render_3d_controls_enabled
+# Live adjustments
+float32 live_adjust_rotate_ratio
+float32 live_adjust_rotate_deg
+float32 live_adjust_x_ratio
+float32 live_adjust_x_pixels
+float32 live_adjust_x_degs
+float32 live_adjust_y_ratio
+float32 live_adjust_y_pixels
+float32 live_adjust_y_degs
 
 string[] filter_options
 bool[] filter_states
@@ -99,6 +106,14 @@ bool overlay_nav
 bool overlay_pose
 string[] base_overlay_list
 string[] add_overlay_list
+bool overlay_crosshairs
+bool overlay_crosshair_names
+bool overlay_crosshair_pixels
+bool overlay_crosshair_degs
+bool click_crosshair_enabled
+int32 num_crosshairs
+nepi_interfaces/ImageCrosshair[] crosshairs
+
 
 ### Data Stats
 float32 get_latency_time

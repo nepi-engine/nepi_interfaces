@@ -39,7 +39,6 @@ string[] available_source_topics
 string[] selected_sources
 bool[] sources_connected
 string[] sources_pub_namespaces
-nepi_interfaces/ImageStatus[] sources_status_msgs
 
 bool source_selected
 bool source_connected

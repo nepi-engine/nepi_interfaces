@@ -75,14 +75,10 @@ add_message_files(FILES
     ConnectIFStatus.msg
     DepthMapStatus.msg
     DatafileCtrl3DX.msg
-    ImageStatus.msg
     IntArray.msg
     NavPoseStatus.msg
     PointcloudStatus.msg
     IntensityMapStatus.msg
-    Detection.msg
-    Detections.msg
-    DetectorStatus.msg
     DictString.msg
     DictStringEntry.msg
     DeviceIDXStatus.msg
@@ -104,11 +100,17 @@ add_message_files(FILES
     GotoPosition.msg
     HwTrigInCfg.msg
     HwTrigOutCfg.msg
-    ImageMouseEvent.msg
+    ImageCrosshair.msg
     ImagePixel.msg
+    ImageDegrees.msg
     ImageSelection.msg
     ImageSize.msg
     ImageWindow.msg
+    ImageStatus.msg
+    ImageMouseEvent.msg
+    Detection.msg
+    Detections.msg
+    DetectorStatus.msg
     SelectorStatus.msg
     Localization.msg
     Message.msg
