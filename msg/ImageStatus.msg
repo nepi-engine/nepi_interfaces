@@ -105,15 +105,18 @@ bool overlay_nav
 bool overlay_pose
 string[] base_overlay_list
 string[] add_overlay_list
+
+
+float32 crosshairs_size_ratio
 bool overlay_crosshairs
 int32 num_crosshairs
 bool overlay_crosshair_names
 bool overlay_crosshair_pixels
 bool overlay_crosshair_degrees
 bool click_crosshair_enabled
-int32 click_crosshair_r
-int32 click_crosshair_g
-int32 click_crosshair_b
+int32 crosshairs_color_r
+int32 crosshairs_color_g
+int32 crosshairs_color_b
 nepi_interfaces/ImageCrosshair[] crosshairs
 
 
