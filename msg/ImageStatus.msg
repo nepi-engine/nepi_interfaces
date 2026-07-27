@@ -111,6 +111,9 @@ bool overlay_crosshair_names
 bool overlay_crosshair_pixels
 bool overlay_crosshair_degrees
 bool click_crosshair_enabled
+int32 click_crosshair_r
+int32 click_crosshair_g
+int32 click_crosshair_b
 nepi_interfaces/ImageCrosshair[] crosshairs
 
 
