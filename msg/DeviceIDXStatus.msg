@@ -17,7 +17,7 @@ string navpose_topic
 string save_data_topic
 string[] data_products
 
-bool disabled
+bool device_disabled
 
 int32 width_deg
 int32 height_deg
