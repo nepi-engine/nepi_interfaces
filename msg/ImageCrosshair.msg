@@ -1,6 +1,7 @@
 # Crosshair data
 
 string name
+string msg_str
 
 # Ratio image min to max 
 float32 x_ratio

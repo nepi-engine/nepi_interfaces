@@ -108,11 +108,14 @@ string[] add_overlay_list
 
 
 float32 crosshairs_size_ratio
+float32 crosshairs_thickness_ratio
+float32 crosshairs_text_ratio
 bool overlay_crosshairs
 int32 num_crosshairs
 bool overlay_crosshair_names
 bool overlay_crosshair_pixels
 bool overlay_crosshair_degrees
+bool overlay_crosshair_messages
 bool click_crosshair_enabled
 int32 crosshairs_color_r
 int32 crosshairs_color_g
