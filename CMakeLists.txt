@@ -108,6 +108,8 @@ add_message_files(FILES
     ImageWindow.msg
     ImageStatus.msg
     ImageMouseEvent.msg
+    Datum.msg
+    DataStatus.msg
     Detection.msg
     Detections.msg
     DetectorStatus.msg
@@ -193,7 +195,9 @@ add_message_files(FILES
     UpdateFloat.msg
     UpdateFloats.msg
     UpdateInt.msg
+    UpdateInts.msg
     UpdateBool.msg
+    UpdateBools.msg
     UpdateString.msg
     UpdateStringArray.msg
     UpdateStringDict.msg
