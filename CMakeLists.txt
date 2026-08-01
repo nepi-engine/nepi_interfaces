@@ -190,7 +190,6 @@ add_message_files(FILES
     UpdateNavPose.msg
     UpdateOrder.msg
     UpdateRangeWindow.msg
-    UpdateFloatRange.msg
     UpdateFloat.msg
     UpdateFloats.msg
     UpdateInt.msg
@@ -198,6 +197,7 @@ add_message_files(FILES
     UpdateString.msg
     UpdateStringArray.msg
     UpdateStringDict.msg
+    UpdateTrigger.msg
     WarningFlags.msg
     NetworkWifiCredentials.msg
 

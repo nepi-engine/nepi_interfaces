@@ -1,9 +1,16 @@
-# This message type is used for sending control
-string node_name
-string controls_topic
-string save_data_topic
+# Controls Status Message
 
+string name
+string display_name
+string description
+bool show_controls
+bool has_show_control
 
+#######################
+# Controls Info
+#######################
 string[] controls_name_list
-Control[] controls_msg_list
+string[] controls_type_list
+nepi_ineterfaces/Control[] controls_msg_list
+bool[] controls_hidden_list
 
