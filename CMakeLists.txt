@@ -73,6 +73,8 @@ add_message_files(FILES
     Control.msg
     ControlsStatus.msg
     ConnectIFStatus.msg
+    Datum.msg
+    DataStatus.msg
     DepthMapStatus.msg
     DatafileCtrl3DX.msg
     IntArray.msg
