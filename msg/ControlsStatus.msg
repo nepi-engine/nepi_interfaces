@@ -5,6 +5,7 @@ string display_name
 string description
 bool show_controls
 bool has_show_control
+bool hidden
 
 #######################
 # Controls Info
