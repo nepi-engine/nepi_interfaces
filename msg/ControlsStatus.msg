@@ -11,6 +11,6 @@ bool has_show_control
 #######################
 string[] controls_name_list
 string[] controls_type_list
-nepi_ineterfaces/Control[] controls_msg_list
+nepi_interfaces/Control[] controls_msg_list
 bool[] controls_hidden_list
 
