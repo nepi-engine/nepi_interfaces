@@ -35,6 +35,8 @@ float32 max_process_rate_hz
 # Process Connections
 #################
 bool multi_source_enabled
+bool auto_select_enabled
+bool auto_select_active
 string[] available_source_topics
 string[] selected_sources
 bool[] sources_connected
