@@ -77,4 +77,8 @@ float32[] factory_floats
 float32[] default_floats
 float32[] set_floats
 
+bool factory_bool
+bool default_bool
+bool set_bool
+
 
