@@ -178,9 +178,9 @@ add_message_files(FILES
     StringArrays.msg
     StringEnable.msg
     SystemState.msg
+    SystemStates.msg
     SystemStatesStatus.msg
     SystemTrigger.msg
-    SystemTriggersStatus.msg
     Target.msg
     Targets.msg
     TargetingStatus.msg
@@ -242,7 +242,6 @@ add_service_files(FILES
     TrackingStatusQuery.srv
     SoftwareStatusQuery.srv
     SystemStatesQuery.srv
-    SystemTriggersQuery.srv
     SystemStatusQuery.srv
     ImageCapabilitiesQuery.srv
     DepthMapCapabilitiesQuery.srv
