@@ -42,7 +42,10 @@ string[] auto_adjust_controls
 float32 resolution_ratio
 string resolution_current
 
-
+bool aspect_adjustment_disabled
+bool aspect_adjust_enabled
+string[] aspect_ratio_options
+string aspect_ratio_selected
 
 # The contrast field indicates the 0.0 - 1.0 contrast setting of the device
 float32 contrast_ratio
@@ -84,6 +87,8 @@ float32 tilt_3d_ratio
 bool render_3d_controls_enabled
 
 # Live adjustments
+bool live_adjustments_disabled
+bool live_adjust_enabled
 float32 live_adjust_rotate_ratio
 float32 live_adjust_rotate_deg
 float32 live_adjust_x_ratio
@@ -97,31 +102,60 @@ string[] filter_options
 bool[] filter_states
 float32[] filter_ratios
 
+
 ### Overlay Controls
-float32 overlay_size_ratio
-bool overlay_img_name
-bool overlay_date_time
-bool overlay_nav
-bool overlay_pose
-string[] base_overlay_list
-string[] add_overlay_list
+bool overlay_text_enabled
+bool click_text_enabled
+float32 overlay_text_size_ratio
+float32 overlay_text_horz_ratio
+float32 overlay_text_vert_ratio
+float32 overlay_text_transparency_ratio
+int32 overlay_text_color_r
+int32 overlay_text_color_g
+int32 overlay_text_color_b
+bool overlay_text_source_name
+bool overlay_text_date_time
+bool overlay_text_nav
+bool overlay_text_pose
+string[] base_overlay_text_list
+string[] add_overlay_text_list
 
 
+bool crosshairs_enabled
+bool click_crosshair_enabled
 float32 crosshairs_size_ratio
 float32 crosshairs_thickness_ratio
 float32 crosshairs_text_ratio
-bool overlay_crosshairs
+float32 crosshairs_transparency_ratio
+int32 crosshairs_color_r
+int32 crosshairs_color_g
+int32 crosshairs_color_b
 int32 num_crosshairs
 bool overlay_crosshair_names
 bool overlay_crosshair_pixels
 bool overlay_crosshair_degrees
 bool overlay_crosshair_messages
-bool click_crosshair_enabled
-int32 crosshairs_color_r
-int32 crosshairs_color_g
-int32 crosshairs_color_b
 nepi_interfaces/ImageCrosshair[] crosshairs
 
+bool targets_enabled
+bool click_target_enabled
+float32 targets_size_ratio
+float32 targets_thickness_ratio
+float32 targets_text_ratio
+float32 targets_transparency_ratio
+int32 targets_color_r
+int32 targets_color_g
+int32 targets_color_b
+int32 num_targets
+bool overlay_target_names
+bool overlay_target_pixels
+bool overlay_target_degrees
+bool overlay_target_messages
+nepi_interfaces/ImageTarget[] targets
+
+### HTTP Stream Settings
+bool stream_compression_enabled
+float32 stream_compression_ratio
 
 ### Data Stats
 float32 get_latency_time
