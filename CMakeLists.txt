@@ -110,7 +110,7 @@ add_message_files(FILES
     ImageWindow.msg
     ImageStatus.msg
     ImageMouseEvent.msg
-    ImageTarge.msg
+    ImageTarget.msg
     Detection.msg
     Detections.msg
     DetectorStatus.msg
