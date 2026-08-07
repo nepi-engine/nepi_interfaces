@@ -44,8 +44,11 @@ string resolution_current
 
 bool aspect_adjustment_disabled
 bool aspect_adjust_enabled
-string[] aspect_ratio_options
-string aspect_ratio_selected
+float32 aspect_ratio_set
+
+float32 aspect_ratio
+string aspect_ratio_str
+
 
 # The contrast field indicates the 0.0 - 1.0 contrast setting of the device
 float32 contrast_ratio
