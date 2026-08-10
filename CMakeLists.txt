@@ -159,6 +159,8 @@ add_message_files(FILES
     ProcessStatus.msg
     RangeWindow.msg
     Reset.msg
+    Result.msg
+    ResultsStatus.msg
     RUISettings.msg
     SaveDataRate.msg
     SaveDataStatus.msg

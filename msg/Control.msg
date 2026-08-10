@@ -1,4 +1,4 @@
-# This message type is used for sending control updates
+# Process Control Message
 
 
 

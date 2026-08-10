@@ -1,6 +1,6 @@
-# Data Status Message
+# Results Status Message
 
-float32 timestamp
+string timestamp
 
 string name
 string display_name

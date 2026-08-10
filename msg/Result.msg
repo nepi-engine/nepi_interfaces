@@ -1,5 +1,4 @@
-# This message type is used for a single data entry
-
+# This message type is used for single result
 
 float32 timestamp
 

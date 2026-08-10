@@ -30,6 +30,9 @@ string msg_str
 # Process Controls
 #################
 float32 max_process_rate_hz
+string[] available_processes
+string selected_process
+nepi_interfaces/ControlsStatus process_controls
 
 #################
 # Process Connections
@@ -48,12 +51,11 @@ bool source_connected
 ###############
 # Process Image Controls
 ###############
-bool has_imaging
-bool imaging_enabled
+bool has_image_pub
+string image_pub_name
+bool image_pub_enabled
 float32 max_image_pub_rate_hz
 bool use_last_image
-string imaging_if_api
-string imaging_if_class
 
 string[] imaging_source_topics
 string[] imaging_pub_topics
@@ -79,3 +81,4 @@ float32 max_process_rate
 bool show_selector
 bool show_controls
 bool show_data
+bool show_results
