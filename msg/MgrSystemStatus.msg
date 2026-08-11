@@ -111,6 +111,6 @@ string nepi_update_msg
 string netlist_str
 
 bool internet_connected
-string data_time_str
+string date_time_str
 
 
