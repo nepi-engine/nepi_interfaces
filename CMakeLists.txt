@@ -191,6 +191,7 @@ add_message_files(FILES
     Track.msg
     TrackingStatus.msg
     TimeUpdate.msg
+    UpdateControl.msg
     UpdateTransform.msg
     UpdateNavPose.msg
     UpdateOrder.msg

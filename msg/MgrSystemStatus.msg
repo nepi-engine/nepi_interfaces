@@ -110,5 +110,7 @@ bool nepi_updating_config
 string nepi_update_msg
 string netlist_str
 
+bool internet_connected
+string data_time_str
 
 
