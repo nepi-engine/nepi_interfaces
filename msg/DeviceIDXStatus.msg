@@ -19,8 +19,10 @@ string[] data_products
 
 bool device_disabled
 
+# Degrees Current Info ENU
 int32 width_deg
 int32 height_deg
+float32 aspect_ratio_deg
 
 # Image perspective options ['pov','top']
 string perspective

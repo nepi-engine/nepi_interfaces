@@ -16,9 +16,15 @@ string transform_topic
 
 string encoding
 
+# Published Image Pixel Info
 int32 width_px
 int32 height_px
 
+# Published Image Degrees Info ENU
+float32 width_start_deg
+float32 width_stop_deg
+float32 height_start_deg
+float32 height_stop_deg
 float32 width_deg
 float32 height_deg
 
