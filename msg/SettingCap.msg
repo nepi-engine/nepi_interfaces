@@ -5,7 +5,7 @@ string type_str
 
 # Setting Key Name string
 string name_str
-
+bool disabled
 
 # Settings Options List based on type
 #"Menu" -> ["MenuOptionString:Ind",...]
