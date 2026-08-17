@@ -1,19 +1,20 @@
 # This service definition provides the capabilities report for a NEPI SVX (servo) actuator
+# One SVX device = one servo
 
 ---
 string device_name
 string device_path
 string device_node_name
 
-bool has_absolute_positioning
-bool has_timed_positioning
-bool has_timed_speed_positioning
-bool has_seperate_servo_control
-bool has_position_feedback
-bool has_adjustable_speed
-bool has_seperate_servo_speed
-bool has_limit_controls
-bool has_homing
-bool has_set_home
-bool has_calibration
+uint8 mode
 
+bool has_absolute_positioning   # set by gotoPositionCb
+bool has_adjustable_speed       # set by setSpeedRatioCb + getSpeedRatioCb
+bool has_limit_control          # set by getSoftLimitsCb
+bool has_homing                 # set by goHomeCb
+bool has_set_home               # set by setHomePositionHereCb
+bool has_spin_control           # if servo is continuous
+bool has_goto_control
+bool has_stop_control
+
+float32 max_speed_dps

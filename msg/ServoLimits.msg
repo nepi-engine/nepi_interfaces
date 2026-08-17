@@ -1,5 +1,4 @@
-## servo limits msg
-float32 min_pan_deg
-float32 max_pan_deg
-float32 min_tilt_deg
-float32 max_tilt_deg
+## SVX servo soft limits msg
+## One SVX device = one servo; single axis in degrees
+float32 min_deg
+float32 max_deg

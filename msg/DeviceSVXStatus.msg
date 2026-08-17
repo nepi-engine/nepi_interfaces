@@ -1,8 +1,10 @@
 ## SVX Servo status msg
-## All data provided in the current reverse servo frames
-## Reverse axis conversions are handled by the SVX IF class
+## One SVX device = one servo
+## Open loop: position is reported as the last commanded value; nothing is measured.
+## Reverse axis conversion is handled by the SVX IF class
 
 
+# Device identity - displayed in UI, used to distinguish devices
 string device_name
 string device_path
 string device_node_name
@@ -14,80 +16,55 @@ string sw_version
 string data_source_description
 string data_ref_description
 
+
+# Where to find this device's other interfaces
 string settings_topic
-string navpose_topic
 string save_data_topic
-string[] data_products
-string[] data_product_topics
-string[] data_product_image_topics
 
+
+# Which controls the UI should draw
 bool has_absolute_positioning
-bool has_timed_positioning
-bool has_timed_speed_positioning
-bool has_seperate_servo_control
-bool has_position_feedback
+bool has_adjustable_speed
+bool has_limit_controls
+bool has_homing
+bool has_set_home
+bool has_spin
 
+
+# Rounding for commands sent and values displayed
 int32 move_decimal_place
 int32 report_decimal_place
 
-float32 pan_now_deg
-float32 tilt_now_deg
 
-float32 pan_goal_deg
-float32 tilt_goal_deg
-
-float32 pan_now_ratio
-float32 tilt_now_ratio
-
-float32 pan_goal_ratio
-float32 tilt_goal_ratio
+# Where the servo is and where it was told to go.
+# Reported as last commanded value - open loop, nothing is measured.
+float32 position_now_deg
+float32 position_goal_deg
+float32 position_now_ratio
+float32 position_goal_ratio
 
 
-bool has_limit_controls
-float32 pan_min_hardstop_deg
-float32 pan_max_hardstop_deg
-float32 tilt_min_hardstop_deg
-float32 tilt_max_hardstop_deg
-
-float32 pan_min_softstop_deg
-float32 pan_max_softstop_deg
-float32 tilt_min_softstop_deg
-float32 tilt_max_softstop_deg
+# Bounds of the position slider in the UI, and the range the IF clamps to
+float32 min_softstop_deg
+float32 max_softstop_deg
 
 
-bool reverse_pan_enabled
-bool reverse_tilt_enabled
+# Whether the axis is inverted
+bool reverse_enabled
 
 
-bool has_adjustable_speed
-bool has_seperate_servo_speed
+# Spin direction
+int32 spin_direction
+bool is_spinning
+
+
+# speed_ratio is the 0.0-1.0 dial the user sets.
+# speed_max_dps is what 1.0 means in deg/sec, so the UI can show real units.
 float32 speed_max_dps
 float32 speed_ratio
-float32 speed_pan_ratio
-float32 speed_tilt_ratio
-float32 speed_pan_dps
-float32 speed_tilt_dps
 
-bool has_homing
-bool has_set_home
-float32 pan_home_pos_deg
-float32 tilt_home_pos_deg
+float32 home_pos_deg
 
 
-# Distances from servo base center mounting point
-# to tilt axis center location
-float32 x_from_base_center
-float32 y_from_base_center
-float32 z_from_base_center
-
-bool is_moving
-
+# Surfaces driver faults to the UI
 string[] error_msgs
-
-
-bool has_calibration
-bool is_calibrating
-
-
-
-
