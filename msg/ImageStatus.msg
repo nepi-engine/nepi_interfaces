@@ -91,6 +91,7 @@ RangeWindow window_x_ratios
 RangeWindow window_y_ratios
 
 # The tilt and rotate ratio field 0.0 - 1.0 
+float32 zoom_3d_ratio
 float32 rotate_3d_ratio
 float32 tilt_3d_ratio
 bool render_3d_controls_enabled

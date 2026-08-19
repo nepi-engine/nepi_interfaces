@@ -150,9 +150,6 @@ add_message_files(FILES
     PanTiltOffsets.msg
     PanTiltPosition.msg
     PeriodicSwTrig.msg
-    PointcloudProcessStatus.msg
-    PointcloudRenderStatus.msg
-    PointcloudSelectionStatus.msg
     Predict.msg
     PredictProcess.msg
     PredictStatus.msg

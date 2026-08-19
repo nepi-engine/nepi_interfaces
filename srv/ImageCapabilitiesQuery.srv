@@ -13,8 +13,10 @@ bool has_range
 bool has_zoom
 bool has_pan
 bool has_window
+bool has_zoom_3d
 bool has_rotate_3d
 bool has_tilt_3d
+bool has_camera_3d
 
 bool has_filters
 string[] filter_options
