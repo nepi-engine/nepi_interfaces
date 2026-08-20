@@ -96,6 +96,14 @@ float32 rotate_3d_ratio
 float32 tilt_3d_ratio
 bool render_3d_controls_enabled
 
+# The 3d render camera field of view applied in degrees (30-100)
+int32 camera_fov
+
+# The 3d render camera look-at target, eye position, and up vector
+geometry_msgs/Vector3 camera_view
+geometry_msgs/Vector3 camera_position
+geometry_msgs/Vector3 camera_rotation
+
 # Live adjustments
 bool live_adjustments_disabled
 bool live_adjust_enabled
