@@ -74,5 +74,8 @@ bool publishing
 
 bool img_pub_enabled
 
+# Pointcloud image rendering enabled
+bool render_enable
+
 
 
