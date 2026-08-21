@@ -42,8 +42,15 @@ GotoErrors errors_prev
 # Updated after ready status goes from busy to ready value
 bool cmd_success
 
-# Manual and Autonomous Control Ready States
+# Manual, Teleop and Autonomous Control Ready States.
+# Each reports whether the driver will currently ACT on a command of that kind,
+# live and continuously, rather than only rejecting one after the fact. What
+# "ready" means is the driver's own decision (a rover's criteria -- bridge
+# connected, teleop enabled -- look nothing like a drone's armed/GUIDED/
+# airborne), so a client displays these rather than inferring readiness itself.
+# A driver that supplies no readiness function for a mode reports False.
 bool manual_control_mode_ready
+bool teleop_control_mode_ready
 bool autonomous_control_mode_ready
 
 # Current Motor Controls string for Manual motor control mode. Returns a string "[['motor_index','motor_speed_ratio'],...]
