@@ -94,6 +94,20 @@ RangeWindow window_y_ratios
 float32 zoom_3d_ratio
 float32 rotate_3d_ratio
 float32 tilt_3d_ratio
+
+# Camera Field of View
+int32 camera_fov
+
+# Camera View in meters (x,y,z)
+geometry_msgs/Vector3 camera_view
+
+# Camera Position in meters (x,y,z)
+geometry_msgs/Vector3 camera_position
+
+# Camera Rotation -1,0,1 options for (x,y,z)
+geometry_msgs/Vector3 camera_rotation
+
+
 bool render_3d_controls_enabled
 
 # Live adjustments
