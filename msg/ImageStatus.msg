@@ -96,6 +96,7 @@ float32 rotate_3d_ratio
 float32 tilt_3d_ratio
 
 # Camera Field of View
+# Camera field of view applied in degrees (30-100)
 int32 camera_fov
 
 # Camera View in meters (x,y,z)
@@ -110,8 +111,7 @@ geometry_msgs/Vector3 camera_rotation
 
 bool render_3d_controls_enabled
 
-# The 3d render camera field of view applied in degrees (30-100)
-int32 camera_fov
+
 
 # The 3d render camera look-at target, eye position, and up vector
 geometry_msgs/Vector3 camera_view
