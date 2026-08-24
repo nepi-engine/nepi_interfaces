@@ -7,3 +7,6 @@ string[] available_classes
 string[] selected_class
 
 float32 threshold_filter
+
+# Updated every second
+bool tracking_state
