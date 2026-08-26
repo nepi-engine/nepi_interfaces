@@ -33,6 +33,7 @@ float32 max_process_rate_hz
 string[] available_processes
 string selected_process
 nepi_interfaces/ControlsStatus process_controls
+nepi_interfaces/DataStatus process_data
 
 #################
 # Process Connections
