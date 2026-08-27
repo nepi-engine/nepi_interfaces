@@ -1,4 +1,4 @@
-# Process Detection Status Message
+# Process Process Status Message
 
 string STATE_LOADING=Loading
 string STATE_LOADED=Loaded
@@ -44,7 +44,7 @@ bool has_process_data
 nepi_interfaces/DataStatus process_data
 
 bool has_process_results
-nepi_interfaces/DataStatus process_data
+nepi_interfaces/DataStatus process_results
 
 #################
 # Process Source Connections
@@ -64,10 +64,10 @@ bool source_connected
 ###############
 # Process Image Controls
 ###############
+bool has_image_pub
 bool manages_image_pub
 bool manages_image_pub_rate
 float32 max_image_pub_rate_hz
-bool has_image_pub
 string image_pub_name
 bool image_pub_enabled
 
