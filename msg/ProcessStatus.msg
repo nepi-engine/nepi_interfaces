@@ -44,7 +44,7 @@ bool has_process_data
 nepi_interfaces/DataStatus process_data
 
 bool has_process_results
-nepi_interfaces/DataStatus process_data
+nepi_interfaces/ResultsStatus process_results
 
 #################
 # Process Source Connections
