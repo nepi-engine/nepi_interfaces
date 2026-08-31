@@ -2,6 +2,7 @@
 
 string STATE_LOADING=Loading
 string STATE_LOADED=Loaded
+string STATE_WAITING=Ready
 string STATE_WAITING=Waiting
 string STATE_LISTENING=Listening
 string STATE_PROCESSING=Processing
@@ -29,10 +30,10 @@ string msg_str
 # Process Settings
 #################
 
-bool manages_processes
 bool manages_process_rate
 float32 max_process_rate_hz
 
+bool has_process_reload
 string[] available_processes
 string selected_process
 bool process_ready
@@ -40,11 +41,11 @@ bool process_ready
 bool has_process_controls
 nepi_interfaces/ControlsStatus process_controls
 
-bool has_process_data
-nepi_interfaces/DataStatus process_data
+bool has_results
+nepi_interfaces/DataStatus results
 
-bool has_process_results
-string process_results_namespace
+bool has_results_pub
+string results_pub_namespace
 
 
 #################
@@ -95,8 +96,9 @@ float32 max_process_rate
 ###############
 # Display Controls
 ###############
-bool show_selector
 bool show_rates
+bool show_selector
+bool show_process
 bool show_controls
 bool show_data
 bool show_results

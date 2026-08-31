@@ -154,6 +154,8 @@ add_message_files(FILES
     PredictProcess.msg
     PredictStatus.msg
     ProcessStatus.msg
+    ProcessResultsHeader.msg
+    ProcessResultsTrack.msg
     RangeWindow.msg
     Reset.msg
     Result.msg
@@ -185,8 +187,6 @@ add_message_files(FILES
     TestPatternCfg.msg
     TimeSeries.msg
     TimeSeriesStatus.msg
-    Track.msg
-    TrackingStatus.msg
     TimeUpdate.msg
     UpdateControl.msg
     UpdateTransform.msg
