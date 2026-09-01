@@ -233,7 +233,6 @@ add_service_files(FILES
     AiModelStatusQuery.srv
     DetectorStatusQuery.srv
     TargetingStatusQuery.srv
-    TrackingStatusQuery.srv
     SoftwareStatusQuery.srv
     SystemStatesQuery.srv
     SystemStatusQuery.srv
