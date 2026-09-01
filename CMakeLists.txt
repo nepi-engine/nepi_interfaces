@@ -163,10 +163,6 @@ add_message_files(FILES
     RUISettings.msg
     SaveDataRate.msg
     SaveDataStatus.msg
-    Setting.msg
-    Settings.msg
-    SettingCap.msg
-    SettingsStatus.msg
     ServoLimits.msg
     ServoPosition.msg
     SingleAxisTimedMove.msg
@@ -224,7 +220,6 @@ add_service_files(FILES
     GetScriptStatusQuery.srv
     LaunchScript.srv
     SetScriptEnabled.srv
-    SettingsCapabilitiesQuery.srv
     StopScript.srv
     GetSystemStatsQuery.srv
     PTXCapabilitiesQuery.srv

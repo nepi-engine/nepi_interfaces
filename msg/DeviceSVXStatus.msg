@@ -60,8 +60,14 @@ bool is_spinning
 
 # speed_ratio is the 0.0-1.0 dial the user sets.
 # speed_max_dps is what 1.0 means in deg/sec, so the UI can show real units.
+# speed_now_dps is speed_ratio * speed_max_dps, the commanded speed in real units.
+# Mirrors speed_pan_dps and speed_tilt_dps in DevicePTXStatus.
+# set_max_dps_disabled is True when the driver supplies no speed max setter,
+# so the UI must not offer the max speed input.
+bool set_max_dps_disabled
 float32 speed_max_dps
 float32 speed_ratio
+float32 speed_now_dps
 
 float32 home_pos_deg
 

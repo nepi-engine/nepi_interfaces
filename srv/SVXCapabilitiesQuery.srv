@@ -17,4 +17,5 @@ bool has_spin_control           # if servo is continuous
 bool has_goto_control
 bool has_stop_control
 
+bool set_max_dps_disabled       # set when setSpeedMaxCb is None
 float32 max_speed_dps
