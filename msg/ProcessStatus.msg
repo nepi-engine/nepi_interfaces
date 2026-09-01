@@ -38,8 +38,8 @@ string[] available_processes
 string selected_process
 bool process_ready
 
-bool has_process_controls
-nepi_interfaces/ControlsStatus process_controls
+bool has_controls
+nepi_interfaces/ControlsStatus controls
 
 bool has_results
 nepi_interfaces/DataStatus results
@@ -96,6 +96,7 @@ float32 max_process_rate
 ###############
 # Display Controls
 ###############
+bool show_enable
 bool show_rates
 bool show_selector
 bool show_process
