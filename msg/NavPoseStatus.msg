@@ -6,6 +6,7 @@ string node_name
 string navpose_topic
 string transform_topic
 string save_data_topic
+string config_topic
 
 string data_source_description
 string data_ref_description

@@ -16,7 +16,7 @@ string namespace
 
 string[] data_products
 string save_data_topic
-bool has_config
+bool config_topic
 
 #################
 # Process State

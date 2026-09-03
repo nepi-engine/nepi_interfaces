@@ -2,6 +2,7 @@
 
 string node_name
 string save_data_topic
+string config_topic
 
 string data_dir
 

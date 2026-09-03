@@ -1,4 +1,4 @@
-# Controls Status Message
+# Settings Status Message
 
 string name
 string display_name

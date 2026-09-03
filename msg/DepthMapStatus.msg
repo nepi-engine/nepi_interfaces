@@ -12,6 +12,7 @@ string navpose_topic
 string image_topic
 string pointcloud_topic
 string save_data_topic
+string config_topic
 
 string encoding
 

@@ -12,6 +12,7 @@ string navpose_topic
 string image_topic
 string depth_map_topic
 string save_data_topic
+string config_topic
 
 bool has_rgb
 bool has_intensity

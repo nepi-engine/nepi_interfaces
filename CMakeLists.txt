@@ -165,6 +165,7 @@ add_message_files(FILES
     SaveDataStatus.msg
     ServoLimits.msg
     ServoPosition.msg
+    SettingsStatus.msg
     SingleAxisTimedMove.msg
     SingleAxisTimedSpeedMove.msg
     FieldOfView.msg

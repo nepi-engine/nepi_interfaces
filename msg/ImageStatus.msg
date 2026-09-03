@@ -13,6 +13,7 @@ string depth_map_topic
 string pointcloud_topic
 string save_data_topic
 string transform_topic
+string config_topic
 
 string encoding
 
