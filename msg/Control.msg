@@ -7,7 +7,12 @@ string name
 string display_name
 string description
 
-# Control Type string options "Menu","Selection","Selections","String","Bool","Int","Float","FloatSlider","FloatSliders"
+# Control Type string options "Menu","Selection","Discrete","Selections","SelectionsDD","Trigger","String","Bool","Int","Float","FloatSlider","FloatSliders"
+# This list had drifted: "Discrete" and "Trigger" were both live types missing
+# from it. nepi_controls.CONTROL_TYPES is the authoritative list -- keep this
+# comment in step with it.
+# "Discrete" is an alias of "Selection"; "SelectionsDD" is "Selections" drawn as
+# a dropdown. Both aliases share their partner's value fields exactly.
 string type
 
 # Hidden in RUI
@@ -24,6 +29,7 @@ int32 round_display
 #"Menu" -> ["MenuOptionString",...]
 #"Selection" -> ["SelectionOptionString", ...]
 #"Selections" -> ["SelectionsOptionString", ...]
+#"SelectionsDD" -> ["SelectionsOptionString", ...]  (identical to "Selections")
 #"String" -> [] (No options support)
 #'Trigger' -  [] (No options support)
 #"Bool" -> [] (No options support)
@@ -43,7 +49,8 @@ float32[] float_bounds
 ######################################
 #"Menu" -> # (index to menu option string)
 #"Selection" -> "String"
-#"Selections" -> "String[]"
+#"Selections" -> "String[]"          (in set_strings, NOT set_string)
+#"SelectionsDD" -> "String[]"        (in set_strings, NOT set_string)
 #"Trigger" -> #.# (last trigger time)
 #"String" -> "String"
 #"Bool" -> True" or False
