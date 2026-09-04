@@ -16,7 +16,7 @@ string namespace
 
 string[] data_products
 string save_data_topic
-bool config_topic
+string config_topic
 
 #################
 # Process State
@@ -104,3 +104,4 @@ bool show_controls
 bool show_data
 bool show_results
 bool show_stats
+
