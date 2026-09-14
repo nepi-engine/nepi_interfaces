@@ -101,6 +101,7 @@ add_message_files(FILES
     GotoLocation.msg
     GotoPose.msg
     GotoPosition.msg
+    GotoVelocity.msg
     HwTrigInCfg.msg
     HwTrigOutCfg.msg
     ImageCrosshair.msg
