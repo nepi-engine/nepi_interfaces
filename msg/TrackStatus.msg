@@ -1,6 +1,6 @@
 # This message provides information for a single tracked target
 
-nepi_interfaces/ProcessResultsHeader results_header
+nepi_interfaces/DataHeader results_header
 
 float32 timestamp
 string name
