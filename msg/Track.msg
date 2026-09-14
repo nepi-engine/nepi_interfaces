@@ -8,6 +8,9 @@ int16 id
 string uid
 float32 confidence
 
+string navpose_frame
+NavPose navpose_msg
+
 # Constants to indicate unset fields
 int32 INT_FIELD_UNSET=-999
 float32 FLOAT_FIELD_UNSET=-999.0
