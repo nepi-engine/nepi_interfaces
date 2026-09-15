@@ -44,22 +44,11 @@ nepi_interfaces/DataStatus states
 bool has_controls
 nepi_interfaces/ControlsStatus controls
 
-string[] connected_source_topics
-
 bool has_results
 nepi_interfaces/DataStatus results
 
 bool has_results_pub
-string results_pub_namespace
-
-bool has_image_pub
-bool image_pub_enabled
-string image_pub_name
-string[] image_source_topics
-string[] image_pub_topics
-
-
-
+string results_pub_topic
 
 
 ###############
@@ -83,12 +72,6 @@ float32 max_process_rate
 #################
 
 ##########
-# Process
-bool manages_processing
-float32[] min_max_process_rates
-float32 max_process_rate_hz
-
-##########
 # Sources
 bool manages_sources
 bool multi_source_enabled
@@ -97,20 +80,31 @@ bool auto_select_active
 string[] available_source_topics
 string[] selected_sources
 bool[] sources_connected
+string[] connected_source_topics
 string[] sources_pub_namespaces
 
 bool source_selected
 bool source_connected
 
 ##########
-# Imaging
-bool manages_imaging
-float32[] min_max_image_pub_rates
-float32 max_image_pub_rate_hz
+# Process Rates
+bool has_process_rate
+float32[] min_max_process_rates
+float32 set_process_rate
 
+##########
+# Imaging
+
+bool has_image_pub
+string image_pub_name
+bool image_pub_enabled
+string[] image_source_topics
+string[] image_pub_topics
 bool use_last_image
 
-
+bool has_image_rate
+float32[] min_max_image_rates
+float32 set_image_rate
 
 
 ###############
