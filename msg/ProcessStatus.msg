@@ -100,6 +100,8 @@ string image_pub_name
 bool image_pub_enabled
 string[] image_source_topics
 string[] image_pub_topics
+
+bool has_use_last_image
 bool use_last_image
 
 bool has_image_rate
