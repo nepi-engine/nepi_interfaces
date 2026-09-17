@@ -113,9 +113,6 @@ add_message_files(FILES
     ImageStatus.msg
     ImageMouseEvent.msg
     ImageTarget.msg
-    Detection.msg
-    Detections.msg
-    DetectorStatus.msg
     SelectorStatus.msg
     Localization.msg
     Message.msg
@@ -183,7 +180,6 @@ add_message_files(FILES
     TargetsStatus.msg
     Track.msg
     TrackStatus.msg
-    TargetingStatus.msg
     TestPatternCfg.msg
     TimeSeries.msg
     TimeSeriesStatus.msg
@@ -235,8 +231,6 @@ add_service_files(FILES
     DriverStatusQuery.srv
     SetBoolState.srv
     AiModelStatusQuery.srv
-    DetectorStatusQuery.srv
-    TargetingStatusQuery.srv
     SoftwareStatusQuery.srv
     SystemStatesQuery.srv
     SystemStatusQuery.srv
