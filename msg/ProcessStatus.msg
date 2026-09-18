@@ -14,10 +14,7 @@ string description
 string node_name
 string namespace
 
-string save_data_topic
-string config_topic
 
-string[] data_products
 
 #################
 # Process States
@@ -33,47 +30,12 @@ string msg_str
 # Process Settings
 #################
 
-bool has_process_reload
-string[] available_processes
-string selected_process
-bool process_ready
-
-bool has_states
-nepi_interfaces/DataStatus states
-
-bool has_controls
-nepi_interfaces/ControlsStatus controls
-
-bool has_results
-nepi_interfaces/DataStatus results
-
-bool has_results_pub
-string results_pub_topic
 
 
-###############
-# Process Stats
-###############
-
-float32 avg_source_latency
-float32 avg_source_rate
-
-float32 avg_preprocess_latency
-float32 avg_preprocess_rate
-    
-float32 avg_process_latency
-float32 avg_process_rate
-
-float32 max_process_rate
-
-
-#################
-# Management Settings
-#################
 
 ##########
 # Sources
-bool manages_sources
+bool has_sources
 bool multi_source_enabled
 bool auto_select_enabled
 bool auto_select_active
@@ -86,11 +48,36 @@ string[] sources_pub_namespaces
 bool source_selected
 bool source_connected
 
+
 ##########
-# Process Rates
+# Process
+string[] available_processes
+string selected_process
+bool process_ready
+
+bool has_process_enable
+bool has_process_reload
 bool has_process_rate
 float32[] min_max_process_rates
 float32 set_process_rate
+
+##########
+# Controls
+bool has_controls
+nepi_interfaces/ControlsStatus controls
+
+##########
+# States
+bool has_states
+nepi_interfaces/DataStatus states
+
+##########
+# Results
+bool has_results
+nepi_interfaces/DataStatus results
+
+bool has_results_pub
+string results_pub_topic
 
 ##########
 # Imaging
@@ -108,17 +95,46 @@ bool has_image_rate
 float32[] min_max_image_rates
 float32 set_image_rate
 
+##########
+# Save Data
+bool has_save_data
+string save_data_topic
+string[] data_products
+
+##########
+# Config
+bool has_config
+string config_topic
+
+###############
+# Process Stats
+###############
+
+float32 avg_source_latency
+float32 avg_source_rate
+
+float32 avg_preprocess_latency
+float32 avg_preprocess_rate
+    
+float32 avg_process_latency
+float32 avg_process_rate
+
+float32 max_process_rate
+
 
 ###############
 # Display Controls
 ###############
+bool show_sources
 bool show_enable
 bool show_states
 bool show_rates
-bool show_selector
 bool show_process
+bool show_reload
 bool show_controls
 bool show_data
 bool show_results
 bool show_stats
+bool show_image
 bool show_save_data
+bool show_config
