@@ -153,6 +153,7 @@ add_message_files(FILES
     PredictProcess.msg
     PredictStatus.msg
     ProcessStatus.msg
+    ProcessConnectStatus.msg
     RangeWindow.msg
     Reset.msg
     Result.msg

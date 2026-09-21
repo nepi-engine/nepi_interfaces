@@ -2,13 +2,12 @@
 
 nepi_interfaces/DataHeader data_header
 
-float32 timestamp
+float64 timestamp
 string name
 int16 id
 string uid
 float32 confidence
 
-string navpose_frame
 NavPose navpose_msg
 
 # Constants to indicate unset fields

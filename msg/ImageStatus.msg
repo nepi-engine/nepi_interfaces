@@ -1,19 +1,34 @@
 # This is the status message for image publishers
 
+
+float64 timestamp
+string node_name
 string data_source_description
 string data_ref_description
 
-### Data Info
+##########
+# Topics
+##########
+nepi_interfaces/DataStatus Topics
 
-string node_name
 string image_topic
-
-string navpose_topic
 string depth_map_topic
 string pointcloud_topic
 string save_data_topic
 string transform_topic
+string navpose_topic
 string config_topic
+
+##########
+# Navpose
+##########
+nepi_interfaces/NavPose navpose_msg
+
+
+##########
+# Info
+##########
+nepi_interfaces/DataStatus info
 
 string encoding
 
@@ -39,12 +54,24 @@ float32 max_range_m
 float32 min_range_m_adj
 float32 max_range_m_adj
 
+
+##########
+# Custom Option Controls
+##########
+bool has_options
+string  controls_options_topic
+
+
+##########
+# Config Controls
+##########
+string  controls_config_topic
+
 # Enable or Disable auto adjusting brightness, contrast, and threshold control
 bool auto_adjust_enabled
 float32 auto_adjust_ratio
 string[] auto_adjust_controls
 
-### Data Controls
 # The resolution field indicates the 0.0 - 1.0 brightness setting of the device
 float32 resolution_ratio
 string resolution_current
@@ -75,7 +102,12 @@ bool flip_horz
 # The image vert axis flip applied after 2d rotation 
 bool flip_vert
 
+
+##########
 ### Render Controls
+##########
+string  controls_render_topic
+
 # The range_window field provides the start and stop range as currently configured for the device
 # Each range is expressed as a multiplier on the sensor's max range (0.0 - 1.0)
 RangeWindow range_ratios
@@ -122,8 +154,11 @@ string[] filter_options
 bool[] filter_states
 float32[] filter_ratios
 
+##########
+### Overlay Text Controls
+##########
+string  controls_text_topic
 
-### Overlay Controls
 bool overlay_text_enabled
 bool click_text_enabled
 float32 overlay_text_size_ratio
@@ -139,6 +174,11 @@ bool overlay_text_nav
 bool overlay_text_pose
 string[] base_overlay_text_list
 string[] add_overlay_text_list
+
+##########
+### Overlay Crosshairs Controls
+##########
+string  controls_crosshairs_topic
 
 
 bool crosshairs_enabled
@@ -157,6 +197,11 @@ bool overlay_crosshair_degrees
 bool overlay_crosshair_messages
 nepi_interfaces/ImageCrosshair[] crosshairs
 
+##########
+### Overlay Targets Controls and Data
+##########
+string  controls_targets_topic
+
 bool targets_enabled
 bool click_target_enabled
 float32 targets_size_ratio
@@ -173,17 +218,24 @@ bool overlay_target_degrees
 bool overlay_target_messages
 nepi_interfaces/ImageTarget[] targets
 
+
+##########
+### Streaming Controls
+##########
+string  controls_streaming_topic
+
 ### HTTP Stream Settings
 bool stream_compression_enabled
 float32 stream_compression_ratio
 
+
+##########
 ### Data Stats
+##########
+bool publishing
 float32 get_latency_time
 float32 pub_latency_time
 float32 process_time
 float32 avg_pub_rate
 float32 last_pub_sec
-
-bool publishing
-
 
