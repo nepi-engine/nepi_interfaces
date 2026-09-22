@@ -62,6 +62,10 @@ float32[] min_max_process_rates
 float32 set_process_rate
 
 ##########
+# Configs
+nepi_interfaces/ControlsStatus configs
+
+##########
 # Controls
 bool has_controls
 nepi_interfaces/ControlsStatus controls
