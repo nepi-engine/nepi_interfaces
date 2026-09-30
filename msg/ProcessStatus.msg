@@ -99,7 +99,11 @@ bool has_image_rate
 float32[] min_max_image_rates
 float32 set_image_rate
 
-
+##########
+# Save Data
+bool has_save_data
+string save_data_topic
+string[] data_products
 
 ##########
 # Config
