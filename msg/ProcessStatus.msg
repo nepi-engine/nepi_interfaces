@@ -27,7 +27,7 @@ string msg_str
 
 
 #################
-# Process Settings
+# Process Info
 #################
 
 
@@ -53,17 +53,12 @@ bool source_connected
 # Process
 string[] available_processes
 string selected_process
+bool has_process_reload
 bool process_ready
 
-bool has_process_enable
-bool has_process_reload
-bool has_process_rate
-float32[] min_max_process_rates
-float32 set_process_rate
-
 ##########
-# Configs
-nepi_interfaces/ControlsStatus configs
+# Settings
+nepi_interfaces/ControlsStatus settings
 
 ##########
 # Controls
@@ -91,13 +86,9 @@ string image_pub_name
 bool image_pub_enabled
 string[] image_source_topics
 string[] image_pub_topics
-
-bool has_use_last_image
 bool use_last_image
 
-bool has_image_rate
-float32[] min_max_image_rates
-float32 set_image_rate
+
 
 ##########
 # Save Data
@@ -109,6 +100,14 @@ string[] data_products
 # Config
 bool has_config
 string config_topic
+
+##########
+# Rates
+float32[] min_max_process_rates
+float32 set_process_rate
+
+float32[] min_max_image_rates
+float32 set_image_rate
 
 ###############
 # Process Stats
@@ -129,10 +128,8 @@ float32 max_process_rate
 ###############
 # Display Controls
 ###############
-bool show_sources
-bool show_enable
+bool show_settings
 bool show_states
-bool show_rates
 bool show_process
 bool show_reload
 bool show_controls
