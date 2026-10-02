@@ -50,6 +50,10 @@ float32 z_m
 float32 x_m_per_sec
 float32 y_m_per_sec
 float32 z_m_per_sec
+# Linear velocity validity, independent of has_position. When false,
+# x/y/z_m_per_sec carry -999. time_velocity is the velocity sample time.
+bool has_velocity
+float32 time_velocity
 
 # Altitude meters in WGS84 frame
 bool has_altitude
