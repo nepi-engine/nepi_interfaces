@@ -22,6 +22,13 @@ string settings_topic
 string save_data_topic
 
 
+# Whether a servo is attached to this output. An open-loop board cannot sense
+# this (a PWM servo has no feedback wire), so the operator declares it with
+# set_servo_connected and it is saved with the device config. Device selectors
+# list only connected servos unless asked to show every channel.
+bool servo_connected
+
+
 # Which controls the UI should draw
 bool has_absolute_positioning
 bool has_adjustable_speed
