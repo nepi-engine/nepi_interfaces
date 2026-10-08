@@ -27,11 +27,15 @@ geometry_msgs/Vector3 vel_pixels
 
 # Position Data ENU Reference Frame
 float32 range_m
+
 float32 azimuth_deg
 float32 elevation_deg
-float32 heading_deg
-float32 roll_deg
+float32 rotation_deg
+
+float32 heading_degv
 float32 pitch_deg
+float32 roll_deg
+
 
 
 # Geometric Data in ENU Reference Frame
