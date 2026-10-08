@@ -20,6 +20,7 @@ string[] display_options
 string[] display_labels
 int32 display_round
 bool display_row
+bool display_bounds
 
 # Row grouping. Controls sharing the same non-empty display_group render on ONE
 # horizontal line, in the order they appear in the controls dict. The first
