@@ -29,6 +29,10 @@ geometry_msgs/Vector3 vel_pixels
 float32 range_m
 float32 azimuth_deg
 float32 elevation_deg
+float32 heading_deg
+float32 roll_deg
+float32 pitch_deg
+
 
 # Geometric Data in ENU Reference Frame
 float32 width_meters
