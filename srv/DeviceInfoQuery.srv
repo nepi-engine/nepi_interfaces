@@ -1,0 +1,12 @@
+
+---
+string device_name
+string device_path
+string node_name
+string node_namespace
+
+string serial_num
+string hw_version
+string sw_version
+
+string type

@@ -1,0 +1,9 @@
+# This service definition provides the bandwidth rates and limits
+
+---
+# TX and RX rates
+float32 tx_rate_mbps
+float32 rx_rate_mbps
+
+# TX limit -- Rate < 0.0 indicates no s/w limit is set
+float32 tx_limit_mbps

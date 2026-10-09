@@ -1,0 +1,7 @@
+# This service provides a mechanism to request the software update status fields
+# The response fields provide details about the current software updatability and status
+
+---
+# Response
+
+nepi_interfaces/MgrSoftwareStatus system_status

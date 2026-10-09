@@ -1,0 +1,23 @@
+# This service definition provides the capabilities report for image type data
+
+---
+bool has_options
+bool has_auto_adjust
+bool has_resolution
+bool has_contrast
+bool has_brightness
+bool has_threshold
+bool has_rotate_2d
+bool has_flip_horz
+bool has_flip_vert
+bool has_range
+bool has_zoom
+bool has_pan
+bool has_window
+bool has_zoom_3d
+bool has_rotate_3d
+bool has_tilt_3d
+bool has_camera_3d
+
+bool has_filters
+string[] filter_options

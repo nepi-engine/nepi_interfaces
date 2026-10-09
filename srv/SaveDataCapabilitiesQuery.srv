@@ -1,0 +1,6 @@
+# This service definition provides the list of savable data products produced by a node
+
+---
+# Array of data product names
+nepi_interfaces/SaveDataRate[] save_data_rates
+
