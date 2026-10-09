@@ -1,6 +1,0 @@
-# This service allows for queries of the state and status of
-# Time Synchronization subsystems.
-
----
-MgrTimeStatus time_status
-string[] available_timezones

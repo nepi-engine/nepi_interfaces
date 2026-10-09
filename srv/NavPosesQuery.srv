@@ -1,6 +1,0 @@
-# This message details a navpose solution message
-
----
-string[] navpose_frames
-NavPose[] navpose_frames_data
-

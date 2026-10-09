@@ -1,5 +1,0 @@
-# Request: No fields needed for this service
-
----
-# Response
-string[] running_scripts
