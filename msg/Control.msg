@@ -10,6 +10,8 @@ string[] options
 int32 round
 float32 min_bound
 float32 max_bound
+float32 delta_bound
+float32 dir_bound
 string[] value
 
 # Display Settings
