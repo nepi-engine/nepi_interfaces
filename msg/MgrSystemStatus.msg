@@ -87,6 +87,7 @@ bool sys_admin_mode_set
 string[] sys_run_mode_options
 string sys_run_mode
 bool sys_debug_enabled
+string sys_debug_namespace
 
 string[] sys_managers_ordered_list
 string[] sys_managers_active_list

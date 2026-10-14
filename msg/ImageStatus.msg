@@ -194,7 +194,7 @@ int32 num_crosshairs
 bool overlay_crosshair_names
 bool overlay_crosshair_pixels
 bool overlay_crosshair_degrees
-bool overlay_crosshair_messages
+bool overlay_crosshair_text
 nepi_interfaces/ImageCrosshair[] crosshairs
 
 ##########
@@ -215,7 +215,7 @@ int32 num_targets
 bool overlay_target_names
 bool overlay_target_pixels
 bool overlay_target_degrees
-bool overlay_target_messages
+bool overlay_target_text
 nepi_interfaces/ImageTarget[] targets
 
 
