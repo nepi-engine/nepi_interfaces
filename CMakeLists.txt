@@ -98,6 +98,7 @@ add_message_files(FILES
     Transform.msg
     TransformStatus.msg
     GotoErrors.msg
+    GotoGoals.msg
     GotoLocation.msg
     GotoPose.msg
     GotoPosition.msg

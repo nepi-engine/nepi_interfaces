@@ -38,6 +38,10 @@ GotoErrors errors_current
 # Updated after completion or timeout of last command control action
 GotoErrors errors_prev
 
+# Signed goal values for current control process 
+# Reset to 0 at the start of each command control action, keep their last values after completion or timeout
+GotoGoals goals_current
+
 # Success or failure of last command control (met movement error bounds before cmd_timeout time)
 # Updated after ready status goes from busy to ready value
 bool cmd_success
