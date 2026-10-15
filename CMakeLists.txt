@@ -66,6 +66,7 @@ add_message_files(FILES
     AutoManualSelection3DX.msg
     AutoStartEnabled.msg
     AxisControls.msg
+    AxisData.msg
     BoolArray.msg
     BoundingBox2D.msg
     BoundingBox3D.msg
