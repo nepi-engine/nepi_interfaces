@@ -7,4 +7,5 @@ string FATAL=fatal
 
 string level
 string message
+string color
 
