@@ -15,7 +15,28 @@ string data_ref_description
 string settings_topic
 string navpose_topic
 string save_data_topic
+# Data products supported by the device, from
+#SUPPORTED_DATA_PRODUCTS = ['image','color_image','bw_image',
+#                            'intensity_map','depth_map','pointcloud','navpose']
 string[] data_products
+string[] data_product_image_topics
+
+# Capabilities, also returned by IDXCapabilitiesQuery
+bool has_standby_mode
+
+bool has_resolution
+bool has_framerate
+bool has_contrast
+bool has_brightness
+bool has_threshold
+bool has_range
+bool has_auto_adjust
+
+bool has_color_image
+bool has_bw_image
+bool has_intensity_map
+bool has_depth_map
+bool has_pointcloud
 
 bool device_disabled
 

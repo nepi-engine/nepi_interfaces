@@ -19,6 +19,20 @@ string[] data_products
 string[] data_product_topics
 string[] data_product_image_topics
 
+# Capabilities, also returned by LSXCapabilitiesQuery
+bool has_standby_mode
+bool has_on_off_control
+bool has_intensity_control
+bool has_color_control
+string[] color_options_list
+bool has_kelvin_control
+int32 kelvin_min
+int32 kelvin_max
+bool has_blink_control
+bool has_hw_strobe
+bool reports_temperature
+bool reports_power
+
 
 bool standby_state
 bool on_off_state

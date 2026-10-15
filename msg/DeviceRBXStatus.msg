@@ -17,6 +17,27 @@ string[] data_products
 string[] data_product_topics
 string[] data_product_image_topics
 
+# Capabilities, also returned by RBXCapabilitiesQuery
+# Commanded controls for fields set to False will be ignored
+AxisControls control_support
+
+bool has_battery_feedback
+
+bool has_manual_controls
+bool has_autonomous_controls
+bool has_set_home
+bool has_go_home
+bool has_go_stop
+bool has_goto_pose
+bool has_goto_position
+bool has_goto_location
+bool has_goto_velocity
+
+string[] state_options
+string[] mode_options
+string[] setup_action_options
+string[] go_action_options
+
 # Human readable description of any current control process, set to string “None” if no active process
 string process_current
 

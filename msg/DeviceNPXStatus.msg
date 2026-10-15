@@ -38,6 +38,10 @@ bool has_altitude
 bool has_depth
 bool has_pan_tilt
 
+bool supports_updates
+
+float32[] pub_rate_min_max
+
 
 
 

@@ -29,13 +29,16 @@ string save_data_topic
 bool servo_connected
 
 
-# Which controls the UI should draw
-bool has_absolute_positioning
-bool has_adjustable_speed
-bool has_limit_controls
-bool has_homing
-bool has_set_home
-bool has_spin
+# Which controls the UI should draw, also returned by SVXCapabilitiesQuery
+uint8 mode
+bool has_absolute_positioning   # set by gotoPositionCb
+bool has_adjustable_speed       # set by setSpeedRatioCb + getSpeedRatioCb
+bool has_limit_controls         # always False, soft limits removed
+bool has_homing                 # set by goHomeCb
+bool has_set_home               # set by setHomePositionHereCb
+bool has_spin                   # if servo is continuous
+bool has_goto_control           # set by gotoPositionCb
+bool has_stop_control           # set by stopMovingCb
 
 
 # Rounding for commands sent and values displayed
