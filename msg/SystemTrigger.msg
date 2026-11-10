@@ -1,6 +1,6 @@
 # This message type is used for sending a system trigger msg
 
-Header header
+float64 timestamp
 
 string name
 

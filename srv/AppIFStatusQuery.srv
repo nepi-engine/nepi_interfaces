@@ -1,0 +1,5 @@
+# This message provides the NEPI App IF status
+
+---
+nepi_interfaces/AppIFStatus if_status
+

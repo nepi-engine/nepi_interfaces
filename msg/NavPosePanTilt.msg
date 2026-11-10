@@ -1,7 +1,7 @@
 # Pan and Tilt Data
 std_msgs/Header header
 
-float32 timestamp
+float64 timestamp
 
 # Orientation in 'ENU' frame
 float32 pan_deg

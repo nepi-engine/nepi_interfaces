@@ -1,0 +1,4 @@
+# This message provides the NEPI Data Product IF status
+
+---
+nepi_interfaces/DataProductIFStatus if_status

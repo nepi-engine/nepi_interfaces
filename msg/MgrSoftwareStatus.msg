@@ -126,7 +126,7 @@ string sys_admin_password_encrypted
 string[] sys_managers_options
 string[] sys_managers_enabled
 
-DictString[] user_restrictions_options
+string[] user_restrictions_options
 string[] user_restrictions_enabled
 
 

@@ -1,0 +1,4 @@
+# This message provides the NEPI Process IF status
+
+---
+nepi_interfaces/ProcessIFStatus if_status

@@ -48,6 +48,10 @@ string[] sources_pub_namespaces
 bool source_selected
 bool source_connected
 
+##########
+# Process Module
+string[] available_process_modules
+string selected_process_module
 
 ##########
 # Process

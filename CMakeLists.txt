@@ -55,7 +55,7 @@ find_package(catkin REQUIRED COMPONENTS
 ##     catkin_package(CATKIN_DEPENDS ...)
 ##   * uncomment the add_*_files sections below as needed
 ##     and list every .msg/.srv/.action file to be processed
-##   * uncomment the generate_messages entry below
+##   * uncomment the generate_messages  below
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
@@ -65,32 +65,40 @@ add_message_files(FILES
     AppStatus.msg
     AutoManualSelection3DX.msg
     AutoStartEnabled.msg
-    AxisControls.msg
-    AxisData.msg
+    BaseStatus.msg
+    BaseIFStatus.msg
     BoolArray.msg
     BoundingBox2D.msg
     BoundingBox3D.msg
     ColorBGR.msg
     Control.msg
     ControlsStatus.msg
+    ControlGroup.msg
+    ControlGroupsDict.msg
+    ConnectNodeIFStatus.msg
     ConnectIFStatus.msg
     Datum.msg
-    DataHeader.msg
     DataStatus.msg
+    DataGroup.msg
+    DataGroupsDict.msg
+    DataHeader.msg
     DepthMapStatus.msg
     DatafileCtrl3DX.msg
     IntArray.msg
     NavPoseStatus.msg
     PointcloudStatus.msg
     IntensityMapStatus.msg
-    DictString.msg
-    DictStringEntry.msg
+
+    Value.msg
+    ValuesDict.msg
+    Topic.msg
+    TopicsDict.msg
+
     DeviceIDXStatus.msg
     DeviceLSXStatus.msg
     DeviceNPXStatus.msg
     DevicePTXStatus.msg
     DeviceSVXStatus.msg
-    DeviceRBXInfo.msg
     DeviceRBXStatus.msg
     DriverStatus.msg
     ErrorBounds.msg
@@ -106,6 +114,13 @@ add_message_files(FILES
     GotoVelocity.msg
     HwTrigInCfg.msg
     HwTrigOutCfg.msg
+    
+    NodeIFStatus.msg
+    DataProductIFStatus.msg
+    DeviceIFStatus.msg
+    AppIFStatus.msg
+    ScriptIFStatus.msg
+    ProcessIFStatus.msg
     ImageCrosshair.msg
     ImagePixel.msg
     ImageDegrees.msg
@@ -126,12 +141,7 @@ add_message_files(FILES
     MgrSystemStatus.msg
     MgrSoftwareStatus.msg
     MgrTimeStatus.msg
-    MotorCommand.msg
-    MotorControl.msg
-    MotorStatus.msg
-    MotorsStatus.msg
     NavPose.msg
-    NavPoseStatus.msg
     NavPoses.msg
     NavPosesStatus.msg
     NavPoseAltitude.msg
@@ -163,9 +173,9 @@ add_message_files(FILES
     RUISettings.msg
     SaveDataRate.msg
     SaveDataStatus.msg
-    ServoLimits.msg
-    ServoPosition.msg
+
     SettingsStatus.msg
+    SingleAxisLimits.msg
     SingleAxisTimedMove.msg
     SingleAxisTimedSpeedMove.msg
     FieldOfView.msg
@@ -178,6 +188,8 @@ add_message_files(FILES
     SystemStates.msg
     SystemStatesStatus.msg
     SystemTrigger.msg
+    SystemTriggers.msg
+    SystemTriggersStatus.msg
     Target.msg
     Targets.msg
     TargetsStatus.msg
@@ -210,14 +222,13 @@ add_message_files(FILES
 ## Generate services in the 'srv' folder
 add_service_files(FILES
     ConvertRawTstamp.srv
-    DeviceInfoQuery.srv
     TimeStatusQuery.srv
     IPAddrQuery.srv
     WifiQuery.srv
     SaveDataCapabilitiesQuery.srv
     NEPILinkStatusQuery.srv
     BandwidthUsageQuery.srv
-    IDXCapabilitiesQuery.srv
+    
     GetScriptsQuery.srv
     GetRunningScriptsQuery.srv
     GetScriptStatusQuery.srv
@@ -225,11 +236,20 @@ add_service_files(FILES
     SetScriptEnabled.srv
     StopScript.srv
     GetSystemStatsQuery.srv
-    PTXCapabilitiesQuery.srv
-    SVXCapabilitiesQuery.srv
-    RBXCapabilitiesQuery.srv
-    NPXCapabilitiesQuery.srv
-    LSXCapabilitiesQuery.srv
+    NodeIFStatusQuery.srv
+    ConnectNodeIFStatusQuery.srv
+    DataProductIFStatusQuery.srv
+    DeviceInfoQuery.srv
+    DeviceIFStatusQuery.srv
+    AppIFStatusQuery.srv
+    ScriptIFStatusQuery.srv
+    ProcessIFStatusQuery.srv
+    DeviceIDXStatusQuery.srv
+    DevicePTXStatusQuery.srv
+    DeviceSVXStatusQuery.srv
+    DeviceRBXStatusQuery.srv
+    DeviceNPXStatusQuery.srv
+    DeviceLSXStatusQuery.srv
     AppStatusQuery.srv
     DriverStatusQuery.srv
     SetBoolState.srv
@@ -237,11 +257,7 @@ add_service_files(FILES
     SoftwareStatusQuery.srv
     SystemStatesQuery.srv
     SystemStatusQuery.srv
-    ImageCapabilitiesQuery.srv
-    DepthMapCapabilitiesQuery.srv
-    PointcloudCapabilitiesQuery.srv
     MgrNavPoseCapabilitiesQuery.srv
-    NavPoseCapabilitiesQuery.srv
     NavPoseQuery.srv
     NavPosesQuery.srv
     TransformQuery.srv

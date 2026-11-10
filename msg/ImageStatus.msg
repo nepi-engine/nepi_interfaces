@@ -1,34 +1,27 @@
 # This is the status message for image publishers
 
+##########################################
+### CUSTOM ###############################
+##########################################
 
-float64 timestamp
-string node_name
-string data_source_description
-string data_ref_description
+#### Connect Topics ####
+string navpose_connect_topic
+string navpose_connected_topic
 
-##########
-# Topics
-##########
-nepi_interfaces/DataStatus Topics
-
+#### Data Topics ####
 string image_topic
 string depth_map_topic
 string pointcloud_topic
-string save_data_topic
-string transform_topic
-string navpose_topic
-string config_topic
 
 ##########
 # Navpose
 ##########
 nepi_interfaces/NavPose navpose_msg
 
-
 ##########
 # Info
 ##########
-nepi_interfaces/DataStatus info
+string data_status_topic
 
 string encoding
 
@@ -239,3 +232,130 @@ float32 process_time
 float32 avg_pub_rate
 float32 last_pub_sec
 
+
+
+
+#################
+# Info
+#################
+
+#################
+# Capabilities
+#################
+bool has_resolution
+bool has_auto_adjust
+bool has_contrast
+bool has_brightness
+bool has_threshold
+bool has_rotate_2d
+bool has_flip_horz
+bool has_flip_vert
+bool has_range
+bool has_zoom
+bool has_pan
+bool has_window
+bool has_zoom_3d
+bool has_rotate_3d
+bool has_tilt_3d
+
+#################
+# Config Controls, Data, and Dict Group
+#################
+
+#################
+# Node Controls, Data, and Dict Groups
+#################
+
+#################
+# Topics
+#################
+
+#################
+# Stats
+#################
+
+#################
+# RUI
+#################
+
+
+
+##########################################
+### NODE IF REQUIRED #####################
+##########################################
+
+
+#################
+# Info
+#################
+float64 timestamp
+
+string id
+string name
+string display_name
+string description
+
+string type
+string sub_type
+string group
+string sub_group
+
+string node_name
+string node_namespace
+string namespace
+
+string device_name
+string serial_num
+string hw_version
+string sw_version
+
+string source_description
+string source_ref_description
+string end_description
+string end_ref_description
+
+string[] data_products
+
+#################
+# Capabilities 
+#################
+bool has_name_control
+
+#################
+# Config Controls, Data, and Dict Group
+#################
+
+
+#################
+# Node Controls, Data, and Dict Groups 
+#################
+
+
+#################
+# Topics
+#################
+
+## SYSTEM TOPICS
+## Where to find this device's other interfaces
+string msgs_topic
+string node_topic
+string settings_topic
+string transform_topic
+string save_data_topic
+string navpose_topic
+string states_topic
+string triggers_topic
+string config_topic
+
+string[] data_product_topics
+string[] data_product_image_topics
+
+#################
+# Stats 
+#################
+bool state
+string msg_str
+
+#################
+# RUI 
+#################

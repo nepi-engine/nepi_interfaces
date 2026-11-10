@@ -1,7 +1,7 @@
 # GoTo Velocity Msg
 # A timed open-loop body-frame velocity command
 # X,Y,Z Body is meters/second Forward, LEFT, Up
-# Yaw Body is degrees/second, positive to port
+# Yaw Body is degrees/second, positive to port (counter-clockwise seen from above)
 # duration_s is how long the device holds this command, in seconds
 #
 # Unlike GotoPosition, which names a target and drives a convergence loop

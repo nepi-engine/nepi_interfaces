@@ -12,4 +12,6 @@ string[] value
 string index
 string min_bound
 string max_bound
+string delta_bound
+string dir_bound
 string[] options

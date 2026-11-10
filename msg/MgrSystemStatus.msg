@@ -62,6 +62,9 @@ string[] active_topics
 string[] active_topic_types
 string[] active_services
 
+nepi_interfaces/ValuesDict node_if_topics
+
+
 ## Active NavPose
 string active_navpose_frames
 
@@ -80,6 +83,7 @@ string[] active_ai_detectors
 ## Debug, Admin, Manager, and User Settings
 string sys_timezone
 
+bool sys_admin_restricted
 bool sys_admin_enabled
 bool sys_admin_password_valid
 bool sys_admin_mode_set
@@ -87,6 +91,9 @@ bool sys_admin_mode_set
 string[] sys_run_mode_options
 string sys_run_mode
 bool sys_debug_enabled
+string[] sys_debug_available_options
+string[] sys_debug_options
+string sys_debug_level
 string sys_debug_namespace
 
 string[] sys_managers_ordered_list

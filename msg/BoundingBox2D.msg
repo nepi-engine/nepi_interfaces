@@ -1,6 +1,6 @@
 # This message provides data for a single 2D Bounding Box
 
-float32 timestamp
+float64 timestamp
 string name
 int16 id
 string uid

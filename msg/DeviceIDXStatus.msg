@@ -1,27 +1,19 @@
 # This message provides the NEPI IDX status
 
-# Device Identifiers
-string device_name
+
+##########################################
+### CUSTOM ###############################
+##########################################
+
+#################
+# Info
+#################
 string device_path
 string device_node_name
 
-string serial_num
-string hw_version
-string sw_version
-
-string data_source_description
-string data_ref_description
-
-string settings_topic
-string navpose_topic
-string save_data_topic
-# Data products supported by the device, from
-#SUPPORTED_DATA_PRODUCTS = ['image','color_image','bw_image',
-#                            'intensity_map','depth_map','pointcloud','navpose']
-string[] data_products
-string[] data_product_image_topics
-
-# Capabilities, also returned by IDXCapabilitiesQuery
+#################
+# Capabilities 
+#################
 bool has_standby_mode
 
 bool has_resolution
@@ -38,6 +30,11 @@ bool has_intensity_map
 bool has_depth_map
 bool has_pointcloud
 
+
+
+#################
+# Config Controls, Data, and Dict Group
+#################
 bool device_disabled
 
 # Degrees Current Info ENU
@@ -70,7 +67,7 @@ float32 resolution_ratio
 string resolution_current
 
 float32 max_framerate
-float32[] framerates
+
 
 bool auto_adjust_enabled
 string[] auto_adjust_controls
@@ -88,5 +85,99 @@ float32 threshold_ratio
 # Each range is expressed as a multiplier on the sensor's max range (0.0 - 1.0)
 RangeWindow range_window_ratios
 
+#################
+# Topics
+#################
+string connect_navpose_topic
+
+#################
+# Stats 
+#################
+float32[] framerates
+
+##########
+# Navpose
+##########
+nepi_interfaces/NavPose navpose_msg
 
 
+
+##########################################
+### NODE IF REQUIRED #####################
+##########################################
+
+
+#################
+# Info
+#################
+float64 timestamp
+
+string id
+string name
+string display_name
+string description
+
+string type
+string sub_type
+string group
+string sub_group
+
+string node_name
+string node_namespace
+string namespace
+
+string device_name
+string serial_num
+string hw_version
+string sw_version
+
+string source_description
+string source_ref_description
+string end_description
+string end_ref_description
+
+string[] data_products
+
+#################
+# Capabilities 
+#################
+bool has_name_control
+
+#################
+# Config Controls, Data, and Dict Group
+#################
+
+
+#################
+# Node Controls, Data, and Dict Groups 
+#################
+
+
+#################
+# Topics
+#################
+
+## SYSTEM TOPICS
+## Where to find this device's other interfaces
+string msgs_topic
+string node_topic
+string settings_topic
+string transform_topic
+string save_data_topic
+string navpose_topic
+string states_topic
+string triggers_topic
+string config_topic
+
+string[] data_product_topics
+string[] data_product_image_topics
+
+#################
+# Stats 
+#################
+bool state
+string msg_str
+
+#################
+# RUI 
+#################

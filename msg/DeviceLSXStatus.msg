@@ -1,25 +1,21 @@
 # This message provides the NEPI LSX status
 
+
+##########################################
+### CUSTOM ###############################
+##########################################
+
+#################
+# Info
+#################
 # Device Identifiers
-string device_name
 string device_path
 string device_node_name
 
-string serial_num
-string hw_version
-string sw_version
 
-string data_source_description
-string data_ref_description
-
-string settings_topic
-string navpose_topic
-string save_data_topic
-string[] data_products
-string[] data_product_topics
-string[] data_product_image_topics
-
-# Capabilities, also returned by LSXCapabilitiesQuery
+#################
+# Capabilities 
+#################
 bool has_standby_mode
 bool has_on_off_control
 bool has_intensity_control
@@ -33,12 +29,13 @@ bool has_hw_strobe
 bool reports_temperature
 bool reports_power
 
-
+#################
+# Config Controls, Data, and Dict Group
+#################
 bool standby_state
 bool on_off_state
 bool blink_state
 bool strobe_state
-
 
 # Blink Interval Secs
 float32 blink_interval
@@ -52,10 +49,103 @@ string color_setting
 # Kelvin Setting
 int32 kelvin_setting
 
+#################
+# Topics
+#################
+string connect_navpose_topic
+
+#################
+# Stats 
+#################
 # Device reported temp in degrees C
 uint8 temp_c	
 
 # Device reported power draw in Watts
 float32 power_w
 
+##########
+# Navpose
+##########
+nepi_interfaces/NavPose navpose_msg
 
+
+
+##########################################
+### NODE IF REQUIRED #####################
+##########################################
+
+
+#################
+# Info
+#################
+float64 timestamp
+
+string id
+string name
+string display_name
+string description
+
+string type
+string sub_type
+string group
+string sub_group
+
+string node_name
+string node_namespace
+string namespace
+
+string device_name
+string serial_num
+string hw_version
+string sw_version
+
+string source_description
+string source_ref_description
+string end_description
+string end_ref_description
+
+string[] data_products
+
+#################
+# Capabilities 
+#################
+bool has_name_control
+
+#################
+# Config Controls, Data, and Dict Group
+#################
+
+
+#################
+# Node Controls, Data, and Dict Groups 
+#################
+
+
+#################
+# Topics
+#################
+
+## SYSTEM TOPICS
+## Where to find this device's other interfaces
+string msgs_topic
+string node_topic
+string settings_topic
+string transform_topic
+string save_data_topic
+string navpose_topic
+string states_topic
+string triggers_topic
+string config_topic
+
+string[] data_product_topics
+string[] data_product_image_topics
+
+#################
+# Stats 
+#################
+bool state
+string msg_str
+
+#################
+# RUI 
+#################

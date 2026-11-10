@@ -1,6 +1,6 @@
 # This message type is used for single result
 
-float32 timestamp
+float64 timestamp
 
 # Datum Key Name string
 string name

@@ -1,7 +1,7 @@
 # Position message type for NavPose Data
 std_msgs/Header header
 
-float32 timestamp
+float64 timestamp
 
 # Position in 'ENU' frame
 float32 x_m

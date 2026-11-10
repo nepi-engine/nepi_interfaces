@@ -2,7 +2,7 @@
 
 std_msgs/Header header
 
-float32 timestamp
+float64 timestamp
 
 # Meters in 'MSL' frame
 float32 depth_m

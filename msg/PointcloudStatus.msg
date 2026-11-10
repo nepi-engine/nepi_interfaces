@@ -1,37 +1,38 @@
 # This is an optional status message for pointcloud publishers
 
 
-float64 timestamp
-string node_name
-string data_source_description
-string data_ref_description
 
 ##########
 # Topics
 ##########
-nepi_interfaces/DataStatus Topics
 
+
+
+#### Connect Topics ####
+string navpose_connect_topic
+string navpose_connected_topic
+
+#### Data Topics ####
 string image_topic
 string depth_map_topic
 string pointcloud_topic
-string save_data_topic
-string transform_topic
-string navpose_topic
-string config_topic
 
 ##########
 # Navpose
 ##########
 nepi_interfaces/NavPose navpose_msg
 
-
 ##########
-# Info
+# Capabilities
 ##########
-nepi_interfaces/DataStatus info
 
 bool has_rgb
 bool has_intensity
+
+##########
+# Data
+##########
+string data_status_topic
 
 int32 point_count
 
@@ -103,6 +104,88 @@ float32 avg_pub_rate
 float32 last_pub_sec
 
 
+
+
+
+##########################################
+### NODE IF REQUIRED #####################
+##########################################
+
+
+#################
+# Info
+#################
+float64 timestamp
+
+string id
+string name
+string display_name
+string description
+
+string type
+string sub_type
+string group
+string sub_group
+
+string node_name
+string node_namespace
+string namespace
+
+string device_name
+string serial_num
+string hw_version
+string sw_version
+
+string source_description
+string source_ref_description
+string end_description
+string end_ref_description
+
+string[] data_products
+
+#################
+# Capabilities 
+#################
+bool has_name_control
+
+#################
+# Config Controls, Data, and Dict Group
+#################
+
+
+#################
+# Node Controls, Data, and Dict Groups 
+#################
+
+
+#################
+# Topics
+#################
+
+## SYSTEM TOPICS
+## Where to find this device's other interfaces
+string msgs_topic
+string node_topic
+string settings_topic
+string transform_topic
+string save_data_topic
+string navpose_topic
+string states_topic
+string triggers_topic
+string config_topic
+
+string[] data_product_topics
+string[] data_product_image_topics
+
+#################
+# Stats 
+#################
+bool state
+string msg_str
+
+#################
+# RUI 
+#################
 
 
 

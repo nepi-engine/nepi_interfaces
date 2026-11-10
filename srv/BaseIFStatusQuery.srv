@@ -1,0 +1,4 @@
+# This message provides the NEPI Node IF status
+
+---
+nepi_interfaces/NodeIFStatus if_status

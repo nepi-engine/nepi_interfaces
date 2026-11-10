@@ -12,6 +12,7 @@ float32 min_bound
 float32 max_bound
 float32 delta_bound
 float32 dir_bound
+string[] value_names
 string[] value
 
 # Display Settings
@@ -19,7 +20,7 @@ bool display_disabled
 bool display_hidden
 string display_name
 string[] display_options
-string[] display_labels
+
 int32 display_round
 bool display_row
 bool display_bounds

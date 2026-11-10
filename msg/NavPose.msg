@@ -1,7 +1,7 @@
 # This message details a navpose solution message
 # Data is provided in the specified reference frames
 
-std_msgs/Header header
+float64 timestamp
 
 # 3D frame data provided in
 string navpose_frame
@@ -30,6 +30,9 @@ float32 heading_m_per_sec
 
 # Orientation Degrees in native frame ENU  (roll,pitch,yaw) right-hand
 # with axises defined as x forward, y left, and z up
+# roll_deg and pitch_deg are always REP-103 FLU body angles (roll about x
+# forward, pitch about y left), whatever frame_nav says; only yaw_deg and the
+# x/y/z position change between ENU and NED.
 bool has_orientation
 float32 time_orientation
 float32 roll_deg

@@ -1,0 +1,6 @@
+# This message provides the NEPI Script IF status
+
+---
+nepi_interfaces/ScriptIFStatus if_status
+
+

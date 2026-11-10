@@ -1,86 +1,203 @@
-## SVX Servo status msg
-## One SVX device = one servo
-## Open loop: position is reported as the last commanded value; nothing is measured.
-## Reverse axis conversion is handled by the SVX IF class
+## NEPI Servo status msg
 
+##########################################
+### CUSTOM ###############################
+##########################################
 
-# Device identity - displayed in UI, used to distinguish devices
-string device_name
+#################
+# Info
+#################
+# Device Identifiers
 string device_path
 string device_node_name
 
+#################
+# Capabilities 
+#################
+
+bool has_modes
+
+bool has_direction_control
+
+bool has_speed_feedback
+bool has_speed_control     
+bool has_set_max_speed
+
+bool has_position_feedback         
+bool has_position_control  
+
+bool has_jog_control
+bool has_jog_speed_control
+
+bool has_goto_control           
+bool has_stop_control    
+bool has_go_home_control           
+bool has_set_home_control    
+
+bool has_limit_controls
+
+bool has_calibration
+
+bool has_pan_control
+bool has_tilt_control
+
+# False when the driver declares its servos always connected (a fixed pan-tilt);
+# the servo page then hides the Servo Connected toggle
+bool has_connected_control
+
+#################
+# Config Controls, Data, and Dict Group
+#################
+bool is_spin
+bool is_rotate
+bool is_linear
+bool is_continous
+
+
+int32 move_decimal_place
+int32 report_decimal_place
+
+string[] mode_options
+string mode_name
+int32 mode_index
+
+bool reverse_enabled
+
+##### Move Direction #####
+### Direction for Rotational Axis is 1/-1 (+/-) right-hand rule around ENU axis
+### Direction for Linear Axis are 1/-1 (+/-) along ENU axis
+int32 dir_now
+
+
+##### Move Speed #####
+### Speed for Rotational Axis are deg/sec (+/-) right-hand rule around ENU axis
+### Speed for Linear Axis are meters/sec (+/-) along ENU axis
+
+float32 speed_max
+bool set_max_disabled
+
+float32 speed_now
+float32 speed_ratio
+
+##### Move Position #####
+### Pos for Rotational Axis are deg (+/-) right-hand rule around ENU axis
+### Pos for Linear Axis are meters (+/-) along ENU axis
+float32 pos_home
+
+float32 pos_now
+float32 pos_now_ratio
+
+float32 pos_goal
+float32 pos_goal_ratio
+
+##### Limits #####
+### Limits for Rotational Axis are deg (+/-) right-hand rule around ENU axis
+### Limits for Linear Axis are meters (+/-) along ENU axis
+
+float32 min_hard_limit
+float32 max_hard_limit
+
+float32 min_soft_limit
+float32 max_soft_limit
+
+# For Servo that support pan and tilt controls
+float32 pan_deg
+float32 tilt_deg
+#################
+# Topics
+#################
+string connect_navpose_topic
+
+#################
+# Stats
+#################
+# Servo connected: whether a servo is in use on this channel. Set by the operator
+# through set_servo_connected (saved), or always True when has_connected_control is False
+bool connected
+bool is_moving
+
+##########
+# Navpose
+##########
+nepi_interfaces/NavPose navpose_msg
+
+##########################################
+### NODE IF REQUIRED #####################
+##########################################
+
+
+#################
+# Info
+#################
+float64 timestamp
+
+string id
+string name
+string display_name
+string description
+
+string type
+string sub_type
+string group
+string sub_group
+
+string node_name
+string node_namespace
+string namespace
+
+string device_name
 string serial_num
 string hw_version
 string sw_version
 
-string data_source_description
-string data_ref_description
+string source_description
+string source_ref_description
+string end_description
+string end_ref_description
+
+string[] data_products
+
+#################
+# Capabilities 
+#################
+bool has_name_control
 
 
-# Where to find this device's other interfaces
+#################
+# Config Controls, Data, and Dict Group
+#################
+
+
+#################
+# Node Controls, Data, and Dict Groups 
+#################
+
+
+#################
+# Topics
+#################
+
+## SYSTEM TOPICS
+## Where to find this device's other interfaces
+string msgs_topic
+string node_topic
 string settings_topic
+string transform_topic
 string save_data_topic
+string navpose_topic
+string states_topic
+string triggers_topic
+string config_topic
 
+string[] data_product_topics
+string[] data_product_image_topics
 
-# Whether a servo is attached to this output. An open-loop board cannot sense
-# this (a PWM servo has no feedback wire), so the operator declares it with
-# set_servo_connected and it is saved with the device config. Device selectors
-# list only connected servos unless asked to show every channel.
-bool servo_connected
+#################
+# Stats 
+#################
+bool state
+string msg_str
 
-
-# Which controls the UI should draw, also returned by SVXCapabilitiesQuery
-uint8 mode
-bool has_absolute_positioning   # set by gotoPositionCb
-bool has_adjustable_speed       # set by setSpeedRatioCb + getSpeedRatioCb
-bool has_limit_controls         # always False, soft limits removed
-bool has_homing                 # set by goHomeCb
-bool has_set_home               # set by setHomePositionHereCb
-bool has_spin                   # if servo is continuous
-bool has_goto_control           # set by gotoPositionCb
-bool has_stop_control           # set by stopMovingCb
-
-
-# Rounding for commands sent and values displayed
-int32 move_decimal_place
-int32 report_decimal_place
-
-
-# Where the servo is and where it was told to go.
-# Reported as last commanded value - open loop, nothing is measured.
-float32 position_now_deg
-float32 position_goal_deg
-float32 position_now_ratio
-float32 position_goal_ratio
-
-
-# Bounds of the position slider in the UI, and the range the IF clamps to
-float32 min_softstop_deg
-float32 max_softstop_deg
-
-
-# Whether the axis is inverted
-bool reverse_enabled
-
-
-# Spin direction
-int32 spin_direction
-bool is_spinning
-
-
-# speed_ratio is the 0.0-1.0 dial the user sets.
-# speed_max_dps is what 1.0 means in deg/sec, so the UI can show real units.
-# speed_now_dps is speed_ratio * speed_max_dps, the commanded speed in real units.
-# Mirrors speed_pan_dps and speed_tilt_dps in DevicePTXStatus.
-# set_max_dps_disabled is True when the driver supplies no speed max setter,
-# so the UI must not offer the max speed input.
-bool set_max_dps_disabled
-float32 speed_max_dps
-float32 speed_ratio
-float32 speed_now_dps
-
-float32 home_pos_deg
-
-
-# Surfaces driver faults to the UI
-string[] error_msgs
+#################
+# RUI 
+#################

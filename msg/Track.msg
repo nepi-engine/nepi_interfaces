@@ -8,7 +8,7 @@ int16 id
 string uid
 float32 confidence
 
-NavPose navpose_msg
+nepi_interfaces/NavPose navpose_msg
 
 # Constants to indicate unset fields
 int32 INT_FIELD_UNSET=-999

@@ -1,7 +1,7 @@
 # Location message type for NavPose Track msg
 std_msgs/Header header
 
-float32 timestamp
+float64 timestamp
 string date_time
 
 # Location and Heading in Degrees
@@ -20,3 +20,9 @@ float32 altitude_m
 
 # depth in 'DEPTH' frame
 float32 depth_m
+
+# Pan Tilt degrees
+bool has_pan_tilt
+float32 time_pan_tilt
+float32 pan_deg
+float32 tilt_deg

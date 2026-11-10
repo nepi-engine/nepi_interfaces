@@ -2,7 +2,7 @@
 
 std_msgs/Header header
 
-float32 timestamp
+float64 timestamp
 
 # Meters in frame WGS84
 float32 altitude_m
