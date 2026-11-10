@@ -131,6 +131,11 @@ geometry_msgs/Vector3 camera_view
 geometry_msgs/Vector3 camera_position
 geometry_msgs/Vector3 camera_rotation
 
+# Stabilize adjustments
+bool stabilize_disabled
+bool stabilize_enabled
+float32 stabilize_rotate_deg
+
 # Live adjustments
 bool live_adjustments_disabled
 bool live_adjust_enabled
@@ -142,6 +147,9 @@ float32 live_adjust_x_degs
 float32 live_adjust_y_ratio
 float32 live_adjust_y_pixels
 float32 live_adjust_y_degs
+
+
+
 
 string[] filter_options
 bool[] filter_states
