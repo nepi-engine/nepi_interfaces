@@ -265,6 +265,7 @@ bool has_window
 bool has_zoom_3d
 bool has_rotate_3d
 bool has_tilt_3d
+bool has_stabilize
 
 #################
 # Config Controls, Data, and Dict Group

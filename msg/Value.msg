@@ -1,10 +1,8 @@
 ## Value Message
 
-# Supported Types = Bools, Strings, Ints, Floats
+# Supported Types = Bool, Bools, String, Strings, Int, Ints, Float, Floats
 # actual value is decoded by receiver
 
 string name
-string display_name
 string type
-bool is_list
 string[] values
