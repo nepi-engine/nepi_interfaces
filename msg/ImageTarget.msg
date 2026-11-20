@@ -24,3 +24,6 @@ int32 y_offset_pixel
 int32 r
 int32 g
 int32 b
+
+# Crosshair Rotation Degrees
+float32 rotate_deg

@@ -5,10 +5,10 @@ string display_name
 string namespace
 
 string controls_topic
-nepi_interfaces/ControlsStatus controls_msg
+nepi_interfaces/ValuesDict controls_dict
 
 string data_topic
-nepi_interfaces/DataStatus data_msg
+nepi_interfaces/ValuesDict data_dict
 
 nepi_interfaces/ValuesDict config_dict
 
