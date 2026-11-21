@@ -16,7 +16,6 @@ bool has_sourced
 bool has_updated
 bool has_fixed
 bool has_pan_tilt
-bool pan_tilt_adjusted
 
 bool apply_transforms
 
