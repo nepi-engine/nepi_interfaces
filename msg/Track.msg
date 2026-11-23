@@ -32,10 +32,9 @@ float32 azimuth_deg
 float32 elevation_deg
 float32 rotation_deg
 
-float32 heading_degv
-float32 pitch_deg
-float32 roll_deg
-
+float32 x_m
+float32 y_m
+float32 z_m
 
 
 # Geometric Data in ENU Reference Frame
