@@ -12,9 +12,11 @@ string frame_nav
 string frame_altitude
 string frame_depth
 
+float32 geoid_height_meters
+
 # Global Location
 bool has_location
-float32 time_location
+float64 time_location
 float32 latitude
 float32 longitude
 # Speed over ground, meters per second
@@ -23,8 +25,9 @@ float32 location_m_per_sec
 
 # Heading in degrees true north
 bool has_heading
-float32 time_heading
+float64 time_heading
 float32 heading_deg
+float32 heading_deg_per_sec
 # Ground speed in the heading direction, meters per second
 float32 heading_m_per_sec
 
@@ -34,7 +37,7 @@ float32 heading_m_per_sec
 # forward, pitch about y left), whatever frame_nav says; only yaw_deg and the
 # x/y/z position change between ENU and NED.
 bool has_orientation
-float32 time_orientation
+float64 time_orientation
 float32 roll_deg
 float32 pitch_deg
 float32 yaw_deg
@@ -45,47 +48,72 @@ float32 yaw_deg_per_sec
 
 # Relative Position meters in native frame ENU (x,y,z) with x forward, y left, and z up
 bool has_position
-float32 time_position
+float64 time_position
 float32 x_m
 float32 y_m
 float32 z_m
+# Linear velocity validity, independent of has_position. When false,
+# x/y/z_m_per_sec carry -999. time_velocity is the velocity sample time.
+bool has_velocity
+float64 time_velocity
 # Linear velocity meters per second in native frame ENU
 float32 x_m_per_sec
 float32 y_m_per_sec
 float32 z_m_per_sec
-# Linear velocity validity, independent of has_position. When false,
-# x/y/z_m_per_sec carry -999. time_velocity is the velocity sample time.
-bool has_velocity
-float32 time_velocity
+
 
 # Altitude meters in WGS84 frame
 bool has_altitude
-float32 time_altitude
+float64 time_altitude
 float32 altitude_m
-float32 geoid_height_meters
+
 # Vertical rate (altitude change), meters per second
 float32 altitude_m_per_sec
 
 # Depth meters from surface
 bool has_depth
-float32 time_depth
+float64 time_depth
 float32 depth_m
 # Depth rate (depth change), meters per second
 float32 depth_m_per_sec
 
+
+###################################
 # Pan Tilt degrees
 bool has_pan_tilt
-float32 time_pan_tilt
+float64 time_pan_tilt
 float32 pan_deg
 float32 tilt_deg
+float32 pan_deg_per_sec
+float32 tilt_deg_per_sec
+
+float32 pan_tilt_latitude
+float32 pan_tilt_longitude
+float32 pan_tilt_location_m_per_sec
+
 float32 pan_tilt_heading_deg
-float32 pan_tilt_x_m
-float32 pan_tilt_y_m
-float32 pan_tilt_z_m
+float32 pan_tilt_heading_deg_per_sec
+float32 pan_tilt_heading_m_per_sec
+
 float32 pan_tilt_roll_deg
 float32 pan_tilt_pitch_deg
 float32 pan_tilt_yaw_deg
+float32 pan_tilt_roll_deg_per_sec
+float32 pan_tilt_pitch_deg_per_sec
+float32 pan_tilt_yaw_deg_per_sec
 
+float32 pan_tilt_x_m
+float32 pan_tilt_y_m
+float32 pan_tilt_z_m
+float32 pan_tilt_x_m_per_sec
+float32 pan_tilt_y_m_per_sec
+float32 pan_tilt_z_m_per_sec
+
+float32 pan_tilt_altitude_m
+float32 pan_tilt_altitude_m_per_sec
+
+float32 pan_tilt_depth_m
+float32 pan_tilt_depth_m_per_sec
 
 
 
