@@ -1,4 +1,4 @@
-# Process Process Header Message
+# Data Header Message
 
 string process_name
 string process_namespace

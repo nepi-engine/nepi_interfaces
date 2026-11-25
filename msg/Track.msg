@@ -3,12 +3,14 @@
 nepi_interfaces/DataHeader data_header
 
 float64 timestamp
+
+# Source NavPose Msg
+nepi_interfaces/NavPose navpose_msg
+
 string name
 int16 id
 string uid
 float32 confidence
-
-nepi_interfaces/NavPose navpose_msg
 
 # Constants to indicate unset fields
 int32 INT_FIELD_UNSET=-999
@@ -31,10 +33,6 @@ float32 range_m
 float32 azimuth_deg
 float32 elevation_deg
 float32 rotation_deg
-
-float32 x_m
-float32 y_m
-float32 z_m
 
 
 # Geometric Data in ENU Reference Frame
@@ -68,6 +66,43 @@ float32 shape_circle
 int32[] contour_moments
 
 
+###################
+## NavPose Data
+# Calculated from source navpose and target data
+string navpose_frame
+string navpose_description
+string frame_nav
+string frame_altitude
+string frame_depth
 
+float32 geoid_height_meters
 
+float32 latitude
+float32 longitude
+float32 location_m_per_sec
 
+float32 heading_deg
+float32 heading_deg_per_sec
+float32 heading_m_per_sec
+
+float32 roll_deg
+float32 pitch_deg
+float32 yaw_deg
+
+float32 roll_deg_per_sec
+float32 pitch_deg_per_sec
+float32 yaw_deg_per_sec
+
+float32 x_m
+float32 y_m
+float32 z_m
+
+float32 x_m_per_sec
+float32 y_m_per_sec
+float32 z_m_per_sec
+
+float32 altitude_m
+float32 altitude_m_per_sec
+
+float32 depth_m
+float32 depth_m_per_sec
