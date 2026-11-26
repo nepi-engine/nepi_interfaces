@@ -79,7 +79,8 @@ float32 depth_m_per_sec
 
 
 ###################################
-# Pan Tilt degrees
+# Pan Tilt
+nepi_interfaces/Transform pt_transform
 bool has_pan_tilt
 float64 time_pan_tilt
 float32 pan_deg
