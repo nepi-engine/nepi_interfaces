@@ -14,6 +14,8 @@ string frame_depth
 
 float32 geoid_height_meters
 
+nepi_interfaces/Transform transform
+
 # Global Location
 bool has_location
 float64 time_location

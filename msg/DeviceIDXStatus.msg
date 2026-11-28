@@ -37,10 +37,23 @@ bool has_pointcloud
 #################
 bool device_disabled
 
-# Degrees Current Info ENU
+# Degrees ENU
 int32 width_deg
 int32 height_deg
-float32 aspect_ratio_deg
+
+
+# Publishing Values Based on Current IF Configurations
+int32 color_image_width_deg
+int32 color_image_height_deg
+string color_image_resolution_current
+
+int32 depth_map_width_deg
+int32 depth_map_height_deg
+string depth_map_resolution_current
+
+int32 pointcloud_width_deg
+int32 pointcloud_height_deg
+string pointcloud_resolution_current
 
 # Image perspective options ['pov','top']
 string perspective
@@ -63,8 +76,7 @@ float32 min_range_m_adj
 float32 max_range_m_adj
 
 # Data Controls
-float32 resolution_ratio
-string resolution_current
+
 
 float32 max_framerate
 
