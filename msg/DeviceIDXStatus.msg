@@ -39,7 +39,9 @@ bool device_disabled
 
 # Degrees ENU
 int32 width_deg
+int32 width_deg_px
 int32 height_deg
+int32 height_deg_px
 
 
 # Publishing Values Based on Current IF Configurations

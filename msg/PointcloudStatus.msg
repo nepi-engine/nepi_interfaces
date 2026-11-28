@@ -86,6 +86,23 @@ int32 outlier_k_points
 
 RangeWindow range_min_max_m
 
+
+# Stabilize adjustments
+bool stabilize_disabled
+bool stabilize_enabled
+float32 stabilize_rotate_deg
+
+# Live adjustments
+bool live_adjustments_disabled
+bool live_adjust_enabled
+float32 live_adjust_rotate_ratio
+float32 live_adjust_rotate_deg
+float32 live_adjust_x_ratio
+float32 live_adjust_x_pixels
+float32 live_adjust_x_degs
+float32 live_adjust_y_ratio
+float32 live_adjust_y_pixels
+float32 live_adjust_y_degs
 ##########
 ### Render Controls
 ##########
